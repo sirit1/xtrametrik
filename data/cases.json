@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "id": "isla",
+      "company": "Retailer B2B Regional",
+      "category": "B2B Mayorista",
+      "beforeAfter": {
+        "before": 120000,
+        "after": 410000
+      },
+      "roi": "+320%",
+      "timeframe": "7 días",
+      "metrics": [
+        {
+          "label": "Pedidos B2B",
+          "before": "~30/semana",
+          "after": "~130/semana",
+          "improvement": "+333%"
+        },
+        {
+          "label": "Ticket promedio",
+          "before": "$4,000",
+          "after": "$5,800",
+          "improvement": "+45%"
+        },
+        {
+          "label": "ROI campañas",
+          "before": "1.2x",
+          "after": "4.8x",
+          "improvement": "+400%"
+        }
+      ],
+      "industry": "Retail/Distribución",
+      "solution": [
+        "Estrategia O2O",
+        "WhatsApp Business integrado",
+        "Embudo automático"
+      ],
+      "testimonial": "El Dr. Sirit transformó nuestro modelo. Pasamos de catálogos pasivos a máquina de pedidos.",
+      "author": "Gerente Comercial, La Isla",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400"
+      }
+    },
+    {
+      "id": "yasman",
+      "company": "Distribuidor Regional - 50+ Sucursales",
+      "category": "Distribución Logística",
+      "beforeAfter": {
+        "before": 250000,
+        "after": 445000
+      },
+      "roi": "+78%",
+      "timeframe": "14 días",
+      "metrics": [
+        {
+          "label": "Eficiencia operativa",
+          "before": "62%",
+          "after": "110%",
+          "improvement": "+78%"
+        },
+        {
+          "label": "Cobertura geográfica",
+          "before": "180km",
+          "after": "380km",
+          "improvement": "+211%"
+        },
+        {
+          "label": "Costo por entrega",
+          "before": "$8.50",
+          "after": "$4.20",
+          "improvement": "-51%"
+        }
+      ],
+      "industry": "Logística",
+      "solution": [
+        "Dashboard IA",
+        "Optimización de rutas",
+        "Predicción de demanda"
+      ],
+      "testimonial": "Pasamos de 'hacer entregas' a 'optimizar operaciones'. La IA nos multiplicó capacidad sin personal.",
+      "author": "Jefe de Operaciones, Yasman",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1565927566330-7161a3cc3f0c?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=600&h=400"
+      }
+    },
+    {
+      "id": "sisters",
+      "company": "Cadena de Retail F&B - 8 Locales",
+      "category": "Retail Impulso",
+      "beforeAfter": {
+        "before": 180000,
+        "after": 504000
+      },
+      "roi": "+180%",
+      "timeframe": "10 días",
+      "metrics": [
+        {
+          "label": "Compra impulsiva",
+          "before": "18%",
+          "after": "44%",
+          "improvement": "+144%"
+        },
+        {
+          "label": "Tráfico medio",
+          "before": "280/día",
+          "after": "520/día",
+          "improvement": "+86%"
+        },
+        {
+          "label": "Conversión",
+          "before": "12%",
+          "after": "28%",
+          "improvement": "+133%"
+        }
+      ],
+      "industry": "Retail F&B",
+      "solution": [
+        "Content O2O",
+        "Estrategia de interceptación",
+        "Integración de datos"
+      ],
+      "testimonial": "Entendimos que el engagement digital NO vende. Lo que vende es convertir tráfico en caja.",
+      "author": "Directora Comercial, Las Sisters",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400"
+      }
+    },
+    {
+      "id": "cafe",
+      "company": "Negocio Local Independiente - 1 Loc",
+      "category": "Retail Local",
+      "beforeAfter": {
+        "before": 85000,
+        "after": 213000
+      },
+      "roi": "+156%",
+      "timeframe": "5 días",
+      "metrics": [
+        {
+          "label": "Tráfico cruzado",
+          "before": "~40/semana",
+          "after": "~160/semana",
+          "improvement": "+300%"
+        },
+        {
+          "label": "Ticket promedio",
+          "before": "$12",
+          "after": "$31",
+          "improvement": "+158%"
+        },
+        {
+          "label": "Retención semanal",
+          "before": "35%",
+          "after": "78%",
+          "improvement": "+123%"
+        }
+      ],
+      "industry": "Café/Gastronomía",
+      "solution": [
+        "Estrategia de comunidad",
+        "Programa de retención",
+        "Integración local"
+      ],
+      "testimonial": "No somos cadena. Pero con XtraMetrik ejecutamos como si lo fuéramos.",
+      "author": "Propietario, Café Central",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1542744094-fe8228ebd0e3?w=600&h=400"
+      }
+    },
+    {
+      "id": "fintech",
+      "company": "Fintech Regulada - Servicios Financieros",
+      "category": "Servicios Financieros",
+      "beforeAfter": {
+        "before": 500000,
+        "after": 1200000
+      },
+      "roi": "+140%",
+      "timeframe": "21 días",
+      "metrics": [
+        {
+          "label": "Conversión digital",
+          "before": "8.2%",
+          "after": "19.6%",
+          "improvement": "+139%"
+        },
+        {
+          "label": "Usuarios activos",
+          "before": "15K",
+          "after": "42K",
+          "improvement": "+180%"
+        },
+        {
+          "label": "Retención M1",
+          "before": "42%",
+          "after": "76%",
+          "improvement": "+81%"
+        }
+      ],
+      "industry": "Fintech",
+      "solution": [
+        "Governance IA (ISO 42001)",
+        "Auditoría de compliance",
+        "Arquitectura de datos"
+      ],
+      "testimonial": "La IA es poderosa, pero sin governance es riesgosa. XtraMetrik nos dio ambas.",
+      "author": "Chief Compliance Officer, TechBank",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400"
+      }
+    },
+    {
+      "id": "salud",
+      "company": "Plataforma Healthcare Regulada",
+      "category": "Healthcare",
+      "beforeAfter": {
+        "before": 350000,
+        "after": 680000
+      },
+      "roi": "+94%",
+      "timeframe": "18 días",
+      "metrics": [
+        {
+          "label": "Pacientes activos",
+          "before": "8K",
+          "after": "17K",
+          "improvement": "+113%"
+        },
+        {
+          "label": "Precisión diagnóstica",
+          "before": "87%",
+          "after": "94%",
+          "improvement": "+8%"
+        },
+        {
+          "label": "Privacidad (HIPAA)",
+          "before": "92%",
+          "after": "100%",
+          "improvement": "Compliant"
+        }
+      ],
+      "industry": "Healthcare",
+      "solution": [
+        "IA local/privada",
+        "Compliance HIPAA",
+        "Governance de datos"
+      ],
+      "testimonial": "La privacidad del paciente no es negociable. XtraMetrik nos dio IA sin comprometer datos.",
+      "author": "Médico Jefe, MediData",
+      "images": {
+        "hero": "https://images.unsplash.com/photo-1576091160550-112173f7f869?w=600&h=400",
+        "dashboard": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400"
+      }
+    }
+  ]
+}

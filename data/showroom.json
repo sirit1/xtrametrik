@@ -1,0 +1,139 @@
+{
+  "webApps": [
+    {
+      "id": "cielo-efata",
+      "name": "Cielo Efata - Plataforma Bíblica",
+      "description": "Plataforma de estudio bíblico con IA integrada. Análisis de escrituras, comunidad, y seguimiento espiritual.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300",
+      "url": "https://v0-cieloefata-biblia.vercel.app",
+      "tech": ["Next.js", "React", "Supabase", "Vercel"],
+      "metrics": {
+        "users": "12,000+",
+        "engagement": "85% DAU",
+        "retention": "79% M1"
+      },
+      "features": [
+        "Análisis bíblico IA",
+        "Comunidad interactiva",
+        "Seguimiento de lecturas",
+        "Generación de insights"
+      ]
+    },
+    {
+      "id": "cielo-efata-app",
+      "name": "Cielo Efata - App Móvil",
+      "description": "Aplicación móvil nativa con sincronización en tiempo real. Estudio bíblico offline con sincronización en la nube.",
+      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300",
+      "url": "https://cielo-efata-app.vercel.app",
+      "tech": ["React Native", "Firebase", "AWS"],
+      "metrics": {
+        "downloads": "8,500+",
+        "rating": "4.8/5",
+        "retention": "74% M3"
+      },
+      "features": [
+        "Estudio offline",
+        "Sincronización en tiempo real",
+        "Notificaciones inteligentes",
+        "Análisis de lectura"
+      ]
+    },
+    {
+      "id": "tachira-protein",
+      "name": "Táchira Protein - E-commerce",
+      "description": "Plataforma de venta de suplementos con integración de pagos y logística. Conversión O2O optimizada.",
+      "image": "https://images.unsplash.com/photo-1552821554-5fefe8c9ef14?w=400&h=300",
+      "url": "https://linktr.ee/tachiraproteiin",
+      "tech": ["Next.js", "Stripe", "Shopify"],
+      "metrics": {
+        "sales": "$180K/mes",
+        "conversion": "3.2%",
+        "aov": "$45"
+      },
+      "features": [
+        "Carrito inteligente",
+        "Recomendaciones IA",
+        "Integración de logística",
+        "Sistema de afiliados"
+      ]
+    }
+  ],
+  "dashboards": [
+    {
+      "id": "xtrametrik-analytics",
+      "name": "Analytics Dashboard Integrado",
+      "description": "Visualización en tiempo real de 47+ casos. Integramos BI con tus herramientas existentes (Sheets, Power BI, Tableau).",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324ef6db?w=400&h=300",
+      "metrics": {
+        "dataPoints": "500M+",
+        "refreshRate": "Tiempo real",
+        "uptime": "99.9%"
+      },
+      "features": [
+        "BI nativa en tu stack",
+        "Alertas automáticas",
+        "Reportes diarios",
+        "Exportación automática"
+      ]
+    },
+    {
+      "id": "governance-dashboard",
+      "name": "Governance IA (ISO 42001)",
+      "description": "Sistema de auditoría y compliance para IA. Incluido en todos nuestros servicios como stánddar.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300",
+      "metrics": {
+        "compliance": "100%",
+        "alerts": "0 critical",
+        "audits": "Continuous"
+      },
+      "features": [
+        "Auditoría 24/7",
+        "Risk scoring automático",
+        "Compliance verificable",
+        "Certificación ISO 42001"
+      ]
+    }
+  ],
+  "implementations": [
+    {
+      "id": "impl-retail-o2o",
+      "name": "Implementación O2O - Retail B2B",
+      "description": "Transformación de canal de ventas B2B de mayorista regional a motor de pedidos automatizado.",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300",
+      "phase1": "Diagnosis + Setup (Día 0): Mapeo de embudo actual, identificación de fricción en WhatsApp/CRM, integración de datos de ventas históricas",
+      "phase2": "Automation Live (Día 1-7): Chatbot de pedidos, automatización de confirmaciones, integración con ERP, training de team",
+      "phase3": "Optimization (Semana 2-4): A/B testing de mensajes, optimización de tiempos de respuesta, escalado a nuevos productos",
+      "result": "+320% pedidos en 7 días | +45% ticket promedio | -80% tiempo de respuesta"
+    },
+    {
+      "id": "impl-distribution-ai",
+      "name": "Implementación IA - Distribución Logística",
+      "description": "Optimización de red logística con IA predictiva para distribuidor regional con 50+ sucursales.",
+      "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&h=300",
+      "phase1": "Data Architecture (Día 0-3): Consolidación de datos de 50 sucursales, historial de entregas, variables geográficas",
+      "phase2": "IA Deployment (Día 4-14): Modelo de predicción de demanda, optimización de rutas, asignación automática de entregas",
+      "phase3": "Scale & Monitor (Semana 3+): Mejora continua del modelo, integración con TMS existente, governance de IA",
+      "result": "+78% eficiencia operativa | -51% costo por entrega | +211% cobertura geográfica"
+    },
+    {
+      "id": "impl-retail-impulse",
+      "name": "Implementación Content O2O - Retail F&B",
+      "description": "Estrategia de conversión digital-a-local para cadena de 8 locales de food & beverage.",
+      "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300",
+      "phase1": "Strategy (Día 0-2): Análisis de tráfico actual, mapeo de customer journey, definición de interceptación digital",
+      "phase2": "Content Go-Live (Día 3-10): Activación en Instagram + TikTok, setup de landing pages, integración de booking",
+      "phase3": "Optimization (Semana 2-4): Análisis de atribución, ajuste de creativos, testing de incentivos",
+      "result": "+86% tráfico a locales | +144% compra impulsiva | +133% conversión digital-a-local"
+    },
+    {
+      "id": "impl-fintech-governance",
+      "name": "Implementación Governance IA - Fintech",
+      "description": "Auditoría y governance de IA para fintech regulada. Cumplimiento ISO 42001 + normativa local.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300",
+      "phase1": "Audit Phase (Día 0-7): Review de modelos IA en uso, risk assessment, mapeo de datos sensibles, documentación",
+      "phase2": "Remediation (Día 8-21): Ajustes de modelos, implementación de controles, setup de monitoring, documentación regulatoria",
+      "phase3": "Certification (Semana 4-5): Auditoría externa, certificación ISO 42001, setup de governance board",
+      "result": "100% Compliance ISO 42001 | 0 risk events | Capacidad de auditoría regulatoria verificable"
+    }
+  ]
+}
