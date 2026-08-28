@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { ShieldCheck, Route, TrendingUp, ArrowRight, Check } from 'lucide-react'
+import { ShieldCheck, Route, TrendingUp, ArrowRight, Check, MessageCircle } from 'lucide-react'
 import { useI18n } from '@/components/i18n/language-provider'
+import { WHATSAPP_URL } from '@/lib/site'
 
 const icons = [ShieldCheck, Route, TrendingUp]
 
@@ -54,7 +55,7 @@ export default function EnginesSection() {
 
                 <div>
                   <p className="mb-2.5 text-[11px] font-bold uppercase tracking-wide text-foreground/45">
-                    {t.engines.labelIncludes}
+                    {engine.coming ? t.engines.todayLabel : t.engines.labelIncludes}
                   </p>
                   <ul className="flex flex-col gap-2">
                     {engine.actions.map((action) => (
@@ -69,6 +70,18 @@ export default function EnginesSection() {
                   </ul>
                 </div>
 
+                {engine.coming ? (
+                  <div className="rounded-lg border border-dashed border-primary/40 bg-primary/5 p-4">
+                    <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-foreground/45">
+                      {t.engines.comingLabel}
+                    </p>
+                    <p className="mb-2 font-montserrat text-xs font-black uppercase tracking-wider text-primary">
+                      {t.engines.comingStatus}
+                    </p>
+                    <p className="text-sm leading-snug text-foreground/75">{engine.coming}</p>
+                  </div>
+                ) : null}
+
                 <p className="mt-auto border-t border-border/40 pt-4 font-montserrat text-sm font-black text-primary">
                   {engine.metric}
                 </p>
@@ -77,7 +90,7 @@ export default function EnginesSection() {
           })}
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-6">
           <Link
             href="#diagnostico"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-bold text-primary-foreground transition-opacity hover:opacity-90"
@@ -85,6 +98,15 @@ export default function EnginesSection() {
             {t.engines.cta}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground/55 transition-colors hover:text-brand"
+          >
+            <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+            {t.hero.whatsapp}
+          </a>
         </div>
       </div>
     </section>
