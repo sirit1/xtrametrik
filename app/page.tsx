@@ -8,6 +8,7 @@ import PainPointsUrgency from '@/components/pain-points-urgency'
 import AuthorityHero from '@/components/authority-hero'
 import RiskMatrixCompact from '@/components/risk-matrix-compact'
 import CasesGridCompact from '@/components/cases-grid-compact'
+import LiveProjects from '@/components/live-projects'
 import BlogSection from '@/components/blog-section'
 import ConsultationForm from '@/components/consultation-form'
 import PremiumCTA from '@/components/premium-cta'
@@ -21,6 +22,7 @@ export default function Home() {
         <HeroPremium />
         <MethodSteps />
         <EnginesSection />
+        <LiveProjects />
         <PainPointsUrgency />
         <AuthorityHero />
         <RiskMatrixCompact />

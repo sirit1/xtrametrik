@@ -24,6 +24,12 @@ export type Project = {
   url: string
   urlLabel: string
   image: string
+  /** Contain for brand marks; cover for screenshots. */
+  imageFit?: 'cover' | 'contain'
+  /** Short line under the name on cards (optional). */
+  subtitle?: Record<Locale, string>
+  /** Show a small “Hecho por XtraMetrik” credit on this project. */
+  creditXtraMetrik?: boolean
   /** Mobile captures are portrait and must be height-capped, not stretched. */
   orientation: 'landscape' | 'portrait'
   imageAlt: Record<Locale, string>
@@ -37,21 +43,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: 'cielo-efata-biblia',
+    slug: 'revelatio',
     engine: 'ia',
-    name: 'Cielo Efatá - Biblia de Estudio',
-    url: 'https://v0-cieloefata-biblia.vercel.app',
-    urlLabel: 'v0-cieloefata-biblia.vercel.app',
-    image: '/projects/cielo-efata-web.png',
+    name: 'Revelatio',
+    subtitle: {
+      es: 'Biblia de estudio / inteligencia exegética',
+      en: 'Bible study / exegetical intelligence',
+    },
+    url: 'https://revelatiobiblia.vercel.app',
+    urlLabel: 'revelatiobiblia.vercel.app',
+    image: '/brand/revelatio-logo-master.jpeg',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
     orientation: 'landscape',
     imageAlt: {
-      es: 'Cielo Efatá: asistente de IA para estudio profundo de la Biblia',
-      en: 'Cielo Efatá: AI assistant for deep Bible study',
+      es: 'Logo de Revelatio by Efata: Biblia de estudio e inteligencia exegética',
+      en: 'Revelatio by Efata logo: Bible study and exegetical intelligence',
     },
     sector: { es: 'Plataforma IA · Estudio bíblico · Community', en: 'AI Platform · Bible study · Community' },
     summary: {
-      es: 'Producto IA potenciado para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp —incluyendo "Buenos Días".',
-      en: 'AI-powered product for deep Scripture study. Assistant interprets biblical text, structures the evangelistic journey in three stages, and activates community with automated WhatsApp API campaigns — including "Good Morning" activation.',
+      es: 'Producto IA en vivo de XtraMetrik para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp —incluyendo "Buenos Días".',
+      en: 'Live XtraMetrik AI product for deep Scripture study. Assistant interprets biblical text, structures the evangelistic journey in three stages, and activates community with automated WhatsApp API campaigns — including "Good Morning" activation.',
     },
     features: {
       es: [

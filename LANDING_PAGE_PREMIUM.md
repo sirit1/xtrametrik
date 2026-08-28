@@ -152,11 +152,11 @@ Se ha transformado completamente el portafolio de XtraMetrik de una landing page
 
 **3 Proyectos Desarrollados:**
 
-1. **Cielo Efata - Biblia**
-   - App de consulta interactiva
+1. **Revelatio**
+   - Biblia de estudio / inteligencia exegética
    - Búsqueda avanzada, notas personalizadas, sync nube
    - Tech: Next.js, React, TypeScript, Tailwind
-   - Link: https://v0-cieloefata-biblia.vercel.app/
+   - Link: https://revelatiobiblia.vercel.app
 
 2. **Cielo Efata - App**
    - Plataforma integral de comunidad

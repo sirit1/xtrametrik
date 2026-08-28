@@ -6,7 +6,7 @@ import ProjectsShowcase from '@/components/projects-showcase'
 export const metadata: Metadata = {
   title: 'Proyectos entregados: producto real en producción',
   description:
-    'Plataformas y canales digitales construidos por XtraMetrik, con enlace en vivo para comprobarlos. Cielo Efatá y Táchira Protein.',
+    'Plataformas y canales digitales construidos por XtraMetrik, con enlace en vivo para comprobarlos. Revelatio y Táchira Protein.',
   alternates: { canonical: '/proyectos' },
 }
 
