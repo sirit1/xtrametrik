@@ -152,7 +152,7 @@ export const es = {
           'Tus equipos pegan emails de clientes, precios y estrategia comercial en ChatGPT, Claude y Copilot. Nadie registra qué sale de la empresa.',
         impact: 'Multa y fuga de datos vitales hacia competidores',
         solution: 'Diagnóstico ahora (cuestionario de 5 preguntas). AILock, el producto que ve el prompt antes de que salga, está en construcción. No hay demo ni producto instalado.',
-        metric: 'Hoy medimos la exposición. Próximamente, la capa.',
+        metric: 'Hoy medimos la exposición. Próximamente, AILock.',
       },
       {
         title: 'Marketing que no se traduce en facturación',
@@ -651,7 +651,7 @@ export const en: Dict = {
           'Your teams paste client emails, pricing and commercial strategy into ChatGPT, Claude and Copilot. Nobody logs what leaves the company.',
         impact: 'Fines and vital data leaking to competitors',
         solution: 'Assessment now (5-question questionnaire). AILock, the product that sees the prompt before it leaves, is under construction. No demo and no installed product.',
-        metric: 'Today we measure exposure. The layer comes later.',
+        metric: 'Today we measure exposure. AILock comes later.',
       },
       {
         title: 'Marketing that never becomes revenue',
