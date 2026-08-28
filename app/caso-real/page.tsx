@@ -6,7 +6,7 @@ import SampleReport from '@/components/sample-report'
 export const metadata: Metadata = {
   title: 'Diagnóstico de muestra: fuga de datos por IA sin control',
   description:
-    'El problema es real: empleados pegando datos de empresa en ChatGPT. Hoy el entregable es un cuestionario de 5 preguntas. AILock, la capa de gobernanza, está en construcción. No hay demo de un producto instalado.',
+    'El problema es real: empleados pegando datos de empresa en ChatGPT. Hoy el entregable es un cuestionario de 5 preguntas. AILock está en construcción. No hay demo de un producto instalado.',
   alternates: { canonical: '/caso-real' },
 }
 

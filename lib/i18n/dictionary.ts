@@ -42,7 +42,7 @@ export const es = {
   containment: {
     badge: 'El problema, sin humo',
     title: 'La fuga es real. El producto que la cierra, todavía no.',
-    sub: 'Los empleados pegan precios, clientes y estrategia en ChatGPT y Claude. Sale sin control. Eso es multa y fuga a la competencia. Hoy no instalamos una capa en tu empresa: medimos la exposición. La capa de gobernanza está en construcción.',
+    sub: 'Los empleados pegan precios, clientes y estrategia en ChatGPT y Claude. Sale sin control. Eso es multa y fuga a la competencia. Hoy no instalamos AILock en tu empresa: medimos la exposición. El producto estrella está en construcción.',
     labelDeliverable: 'Entregable',
     steps: [
       {
@@ -57,7 +57,7 @@ export const es = {
       {
         number: '02',
         title: 'Contener',
-        subtitle: 'Capa de gobernanza · en construcción',
+        subtitle: 'AILock · en construcción',
         description:
           'El plan es ver el prompt antes de que salga de chatgpt.com o claude.ai. AILock, esa capa, no está instalada en ninguna empresa. Un plan — no un producto en producción.',
         deliverable: 'Plan. No un SaaS ya implantado.',
@@ -82,8 +82,8 @@ export const es = {
     sub: 'XtraMetrik mueve tres frentes. Hoy la puerta comercial es el diagnóstico de 5 preguntas. AILock, el producto estrella contra la fuga, está en construcción — no es un SaaS ya instalado.',
     labelIncludes: 'Qué hay hoy',
     todayLabel: 'Hoy — la oferta',
-    comingLabel: 'Capa de gobernanza',
-    comingStatus: 'EN CONSTRUCCIÓN · próximamente',
+    comingLabel: 'Próximamente',
+    comingStatus: 'EN CONSTRUCCIÓN · no está en producción',
     items: [
       {
         tag: 'Producto estrella · EN CONSTRUCCIÓN',
@@ -151,7 +151,7 @@ export const es = {
         problem:
           'Tus equipos pegan emails de clientes, precios y estrategia comercial en ChatGPT, Claude y Copilot. Nadie registra qué sale de la empresa.',
         impact: 'Multa y fuga de datos vitales hacia competidores',
-        solution: 'Diagnóstico ahora (cuestionario de 5 preguntas). La capa de gobernanza — AILock — está en construcción. No hay demo ni producto instalado.',
+        solution: 'Diagnóstico ahora (cuestionario de 5 preguntas). AILock, el producto que ve el prompt antes de que salga, está en construcción. No hay demo ni producto instalado.',
         metric: 'Hoy medimos la exposición. Próximamente, la capa.',
       },
       {
@@ -188,7 +188,7 @@ export const es = {
     ],
     after: [
       'La exposición, medida: cinco preguntas y un PDF',
-      'Capa de gobernanza: EN CONSTRUCCIÓN, no instalada',
+      'AILock: EN CONSTRUCCIÓN, no instalado',
       'Cada campaña conectada a facturación rastreable (O2O)',
       'Redes convertidas en canal comercial medible',
       'Siguiente corte, si el diagnóstico encuentra riesgo material',
@@ -440,7 +440,7 @@ export const es = {
     },
     solution: {
       eyebrow: 'Hoy y próximamente — con honestidad',
-      title: 'Diagnóstico ahora. Capa de gobernanza, en construcción.',
+      title: 'Diagnóstico ahora. AILock, en construcción.',
       body: 'No instalamos AILock en tu empresa porque ese producto todavía no existe. Lo que sí existe: un cuestionario de 5 preguntas y un PDF con tu exposición. La capa que ve el prompt antes de que salga de chatgpt.com o claude.ai está en construcción. No hay demo, ni capturas, ni métricas de un SaaS en producción.',
       stepsLabel: 'Qué ofrecemos hoy (y qué no)',
       steps: [
@@ -453,7 +453,7 @@ export const es = {
       results: [
         { value: '5', label: 'Preguntas. Esa es la puerta.' },
         { value: 'PDF', label: 'Informe al instante, no una demo' },
-        { value: '—', label: 'Capa de gobernanza: en construcción' },
+        { value: '—', label: 'AILock: en construcción. Sin demo.' },
         { value: '0', label: 'Productos AILock instalados. Todavía no.' },
       ],
     },
@@ -541,7 +541,7 @@ export const en: Dict = {
   containment: {
     badge: 'The problem, without the theatre',
     title: 'The leak is real. The product that closes it is not here yet.',
-    sub: 'Employees paste prices, clients and strategy into ChatGPT and Claude. It leaves with no control. That is fines and leakage to competitors. Today we do not install a layer in your company: we measure exposure. The governance layer is under construction.',
+    sub: 'Employees paste prices, clients and strategy into ChatGPT and Claude. It leaves with no control. That is fines and leakage to competitors. Today we do not install AILock in your company: we measure exposure. The flagship product is under construction.',
     labelDeliverable: 'Deliverable',
     steps: [
       {
@@ -556,7 +556,7 @@ export const en: Dict = {
       {
         number: '02',
         title: 'Contain',
-        subtitle: 'Governance layer · under construction',
+        subtitle: 'AILock · under construction',
         description:
           'The plan is to see the prompt before it leaves chatgpt.com or claude.ai. AILock, that layer, is not installed in any company. A plan — not a product in production.',
         deliverable: 'A plan. Not a SaaS already deployed.',
@@ -581,8 +581,8 @@ export const en: Dict = {
     sub: 'XtraMetrik moves on three fronts. Today the commercial door is the 5-question assessment. AILock, the flagship against the leak, is under construction — not a SaaS already installed.',
     labelIncludes: 'What exists today',
     todayLabel: 'Today — the offer',
-    comingLabel: 'Governance layer',
-    comingStatus: 'UNDER CONSTRUCTION · coming soon',
+    comingLabel: 'Coming soon',
+    comingStatus: 'UNDER CONSTRUCTION · not in production',
     items: [
       {
         tag: 'Flagship · UNDER CONSTRUCTION',
@@ -646,11 +646,11 @@ export const en: Dict = {
     labelSolution: 'How we solve it',
     items: [
       {
-        title: 'Data leakage through ungoverned AI',
+        title: 'Data leakage through uncontrolled AI',
         problem:
           'Your teams paste client emails, pricing and commercial strategy into ChatGPT, Claude and Copilot. Nobody logs what leaves the company.',
         impact: 'Fines and vital data leaking to competitors',
-        solution: 'Assessment now (5-question questionnaire). The governance layer — AILock — is under construction. No demo and no installed product.',
+        solution: 'Assessment now (5-question questionnaire). AILock, the product that sees the prompt before it leaves, is under construction. No demo and no installed product.',
         metric: 'Today we measure exposure. The layer comes later.',
       },
       {
@@ -687,7 +687,7 @@ export const en: Dict = {
     ],
     after: [
       'Exposure measured: five questions and a PDF',
-      'Governance layer: UNDER CONSTRUCTION, not installed',
+      'AILock: UNDER CONSTRUCTION, not installed',
       'Every campaign tied to traceable revenue (O2O)',
       'Social turned into a measurable sales channel',
       'Next cut, if the assessment finds material risk',
@@ -939,7 +939,7 @@ export const en: Dict = {
     },
     solution: {
       eyebrow: 'Today and coming soon — honestly',
-      title: 'Assessment now. Governance layer, under construction.',
+      title: 'Assessment now. AILock, under construction.',
       body: 'We do not install AILock in your company because that product does not exist yet. What does exist: a 5-question questionnaire and a PDF with your exposure. The layer that sees the prompt before it leaves chatgpt.com or claude.ai is under construction. No demo, no screenshots, no metrics from a SaaS in production.',
       stepsLabel: 'What we offer today (and what we do not)',
       steps: [
@@ -952,7 +952,7 @@ export const en: Dict = {
       results: [
         { value: '5', label: 'Questions. That is the door.' },
         { value: 'PDF', label: 'Instant report, not a demo' },
-        { value: '—', label: 'Governance layer: under construction' },
+        { value: '—', label: 'AILock: under construction. No demo.' },
         { value: '0', label: 'AILock products installed. Not yet.' },
       ],
     },
