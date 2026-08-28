@@ -20,25 +20,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'XtraMetrik · Governance de IA y rentabilidad B2B verificable',
+    default: 'XtraMetrik · Casa matriz: IA, datos y conversión O2O',
     template: '%s · XtraMetrik',
   },
   description:
-    'De caos de IA a control verificable en 7 días: diagnóstico, governance ISO 42001 y auditoría independiente para empresas B2B.',
+    'Casa matriz de gobernanza de IA, blindaje de datos y conversión O2O. Diagnóstico de 5 preguntas. Los productos son prueba, no la marca.',
   keywords:
-    'governance IA, ISO 42001, EU AI Act, compliance IA, business intelligence, rentabilidad B2B, transformación digital',
+    'XtraMetrik, casa matriz, fuga de datos, ChatGPT, diagnóstico IA, conversión O2O, blindaje de datos',
   openGraph: {
-    title: 'XtraMetrik · Governance de IA y rentabilidad B2B verificable',
+    title: 'XtraMetrik · Casa matriz: IA, datos y conversión O2O',
     description:
-      'Diagnóstico, governance ISO 42001 y auditoría independiente en 7 días. Compliance demostrable.',
+      'Diagnóstico de 5 preguntas. Menos riesgo de multa y de que datos vitales se fuguen a la competencia.',
     type: 'website',
     url: SITE_URL,
     siteName: 'XtraMetrik',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XtraMetrik · Governance de IA y rentabilidad B2B',
-    description: 'De caos de IA a control verificable en 7 días.',
+    title: 'XtraMetrik · Casa matriz',
+    description: 'Diagnóstico de 5 preguntas. Productos como prueba, no como marca.',
   },
 }
 

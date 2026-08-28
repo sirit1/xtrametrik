@@ -126,12 +126,20 @@ export default function Footer() {
           <p className="text-xs text-foreground/50">
             © {year} XtraMetrik. {t.footer.rights}
           </p>
-          <a
-            href="https://www.xtrametrik.com"
-            className="text-xs text-foreground/50 hover:text-primary transition-colors font-semibold"
-          >
-            xtrametrik.com
-          </a>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/admin/leads"
+              className="text-[11px] text-foreground/35 transition-colors hover:text-foreground/60"
+            >
+              {t.footer.admin}
+            </Link>
+            <a
+              href="https://www.xtrametrik.com"
+              className="text-xs text-foreground/50 hover:text-primary transition-colors font-semibold"
+            >
+              xtrametrik.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

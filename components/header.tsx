@@ -52,7 +52,7 @@ export default function Header() {
             <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label={t.nav.menuToggle}
               aria-expanded={isOpen}
             >
               {isOpen ? (

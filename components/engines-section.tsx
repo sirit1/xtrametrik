@@ -25,10 +25,12 @@ export default function EnginesSection() {
         <div className="grid gap-6 lg:grid-cols-3">
           {t.engines.items.map((engine, i) => {
             const Icon = icons[i] ?? ShieldCheck
+            const sectionId = i === 0 ? 'blindaje' : i === 1 ? 'conversion-o2o' : undefined
             return (
               <article
                 key={engine.name}
-                className="flex flex-col gap-5 rounded-xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40"
+                id={sectionId}
+                className="flex scroll-mt-24 flex-col gap-5 rounded-xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40"
               >
                 <div className="flex items-center justify-between gap-3">
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
