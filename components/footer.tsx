@@ -12,9 +12,9 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   const navLinks = [
-    { label: t.nav.engines, href: '/#motores' },
-    { label: t.nav.method, href: '/#pasos' },
-    { label: t.nav.cases, href: '/#casos' },
+    { label: t.homeAilock.title, href: '/#ailock' },
+    { label: t.nav.projects, href: '/proyectos' },
+    { label: t.nav.blog, href: '/blog' },
     { label: t.nav.contact, href: '/#diagnostico' },
   ]
 
@@ -38,7 +38,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-10 md:grid-cols-4 mb-12">
           <div className="flex flex-col gap-4">
-            <BrandLogo size="lg" />
+            <BrandLogo size="lg" variant="lockup" />
             <p className="text-sm text-foreground/60 leading-relaxed">{t.footer.tagline}</p>
             <div className="flex gap-4">
               <a

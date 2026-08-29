@@ -2,36 +2,24 @@
 
 import Header from '@/components/header'
 import HeroPremium from '@/components/hero-premium'
-import MethodSteps from '@/components/method-steps'
-import EnginesSection from '@/components/engines-section'
-import PainPointsUrgency from '@/components/pain-points-urgency'
-import AuthorityHero from '@/components/authority-hero'
-import RiskMatrixCompact from '@/components/risk-matrix-compact'
-import CasesGridCompact from '@/components/cases-grid-compact'
+import HomeAilock from '@/components/home-ailock'
+import HomeO2o from '@/components/home-o2o'
 import LiveProjects from '@/components/live-projects'
-import BlogSection from '@/components/blog-section'
+import HomeBlogLine from '@/components/home-blog-line'
 import ConsultationForm from '@/components/consultation-form'
-import PremiumCTA from '@/components/premium-cta'
 import Footer from '@/components/footer'
-import StickyDiagnostico from '@/components/sticky-diagnostico'
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <StickyDiagnostico />
       <main>
         <HeroPremium />
-        <MethodSteps />
-        <EnginesSection />
+        <HomeAilock />
+        <HomeO2o />
         <LiveProjects />
-        <PainPointsUrgency />
-        <AuthorityHero />
-        <RiskMatrixCompact />
-        <CasesGridCompact />
-        <BlogSection />
+        <HomeBlogLine />
         <ConsultationForm />
-        <PremiumCTA />
       </main>
       <Footer />
     </div>

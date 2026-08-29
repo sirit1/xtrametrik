@@ -19,15 +19,14 @@ export const es = {
     brandSlogan: 'Casa matriz · AILock y webapps',
   },
   hero: {
-    kicker: 'XtraMetrik · casa matriz — construye webapps y AILock, manejo de riesgo de IA',
+    kicker: 'AILock · manejo de riesgo de IA',
     badge: 'Diagnóstico gratuito · 5 preguntas · PDF al instante',
-    titleTop: 'Tus empleados están enviando',
-    titleAccent: 'los datos de tu empresa',
-    titleEnd: 'sin ningún control',
-    sub: 'Cada prompt en ChatGPT con precios, clientes o estrategia sale de tu perímetro y no queda registrado en ninguna parte.',
+    titleTop: 'Menos multa.',
+    titleAccent: 'Menos fuga',
+    titleEnd: 'a ChatGPT y Claude.',
+    sub: 'AILock es el producto estrella. Todavía no se instala. La puerta es el diagnóstico de 5 preguntas.',
     subStrong: 'Eso es riesgo de multa y de que datos vitales se fuguen a la competencia.',
-    subEnd:
-      'AILock es el producto estrella: control de fugas, para que lo que pegas en ChatGPT o Claude no se vaya a la competencia, y menos riesgo de multa. Todavía no se instala. La puerta es el cuestionario de 5 preguntas.',
+    subEnd: 'Hoy medimos la exposición. AILock, después.',
     cta1: 'Empezar cuestionario de 5 preguntas',
     cta2: 'Ver un diagnóstico de muestra',
     ctaNote: 'Gratis · sin compromiso · el PDF se descarga al terminar',
@@ -39,6 +38,14 @@ export const es = {
     metric2: 'Consultas trazables',
     metric3: 'Empresas transformadas',
     metric4: 'Rentabilidad promedio',
+  },
+  homeAilock: {
+    kicker: 'Producto estrella · en construcción',
+    title: 'AILock',
+    body: 'Manejo de riesgo de IA y control de fugas: lo que pegas en ChatGPT o Claude no se va a la competencia. Menos riesgo de multa. No está instalado. Sin demo. Hoy el cuestionario mide la exposición.',
+  },
+  homeO2o: {
+    line: 'La casa también convierte redes en facturas: método O2O, de seguidor a caja registradora.',
   },
   containment: {
     badge: 'El problema, sin humo',
@@ -251,6 +258,8 @@ export const es = {
     minRead: 'min de lectura',
     indexTitle: 'Biblioteca de análisis',
     indexSub: 'Manejo de riesgo de IA, fugas y rentabilidad B2B, explicados sin humo.',
+    homeLine: 'Análisis sobre fugas, multa y diagnóstico, sin humo.',
+    homeLink: 'Ir al blog →',
   },
   article: {
     back: 'Volver al blog',
@@ -522,15 +531,14 @@ export const en: Dict = {
     brandSlogan: 'Parent firm · AILock and webapps',
   },
   hero: {
-    kicker: 'XtraMetrik · parent firm — we build webapps and AILock, AI risk management',
+    kicker: 'AILock · AI risk management',
     badge: 'Free assessment · 5 questions · instant PDF',
-    titleTop: 'Your employees are sending',
-    titleAccent: 'your company data',
-    titleEnd: 'with zero control',
-    sub: 'Every prompt into ChatGPT carrying pricing, clients or strategy leaves your perimeter and is logged nowhere.',
+    titleTop: 'Less fine risk.',
+    titleAccent: 'Less leak',
+    titleEnd: 'into ChatGPT and Claude.',
+    sub: 'AILock is the flagship. It does not install yet. The door is the 5-question diagnosis.',
     subStrong: 'That is the risk of fines and of vital data leaking to competitors.',
-    subEnd:
-      'AILock is the flagship: leak control, so what you paste into ChatGPT or Claude does not go to a competitor, and less fine risk. It does not install yet. The door is the 5-question questionnaire.',
+    subEnd: 'Today we measure exposure. AILock comes later.',
     cta1: 'Start the 5-question questionnaire',
     cta2: 'See a sample assessment',
     ctaNote: 'Free · no commitment · the PDF downloads when you finish',
@@ -542,6 +550,14 @@ export const en: Dict = {
     metric2: 'Traceable prompts',
     metric3: 'Companies transformed',
     metric4: 'Average profitability lift',
+  },
+  homeAilock: {
+    kicker: 'Flagship · under construction',
+    title: 'AILock',
+    body: 'AI risk management and leak control: what you paste into ChatGPT or Claude does not go to a competitor. Less fine risk. Not installed. No demo. Today the questionnaire measures exposure.',
+  },
+  homeO2o: {
+    line: 'The firm also turns social into invoices: O2O, from follower to the register.',
   },
   containment: {
     badge: 'The problem, without the theatre',
@@ -754,6 +770,8 @@ export const en: Dict = {
     minRead: 'min read',
     indexTitle: 'Analysis library',
     indexSub: 'AI risk management, leaks and B2B profitability, explained without the hype.',
+    homeLine: 'Analyses on leaks, fines and diagnosis, without the hype.',
+    homeLink: 'Go to the blog →',
   },
   article: {
     back: 'Back to blog',

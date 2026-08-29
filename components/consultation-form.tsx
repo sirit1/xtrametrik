@@ -163,7 +163,7 @@ export default function ConsultationForm() {
     result?.level === 'high' ? f.riskHigh : result?.level === 'medium' ? f.riskMedium : f.riskLow
 
   return (
-    <section id="diagnostico" className="scroll-mt-24 bg-muted/40 py-20 md:py-28">
+    <section id="diagnostico" className="scroll-mt-24 bg-muted/40 py-12 md:py-16">
       <div className="mx-auto max-w-4xl px-4">
         <div className="mb-10 text-center">
           <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary">

@@ -20,7 +20,7 @@ export default function LiveProjects() {
   return (
     <section
       id="proyectos"
-      className="scroll-mt-20 border-t border-border/40 bg-background px-4 py-10 sm:px-6 sm:py-16 lg:px-8"
+      className="scroll-mt-20 border-t border-border/40 bg-background px-4 py-8 sm:px-6 lg:px-8"
       aria-labelledby="projects-title"
     >
       <div className="mx-auto max-w-6xl">
@@ -51,13 +51,13 @@ export default function LiveProjects() {
                 />
               </div>
 
-              <div className="mb-4 overflow-hidden rounded-lg bg-[#0B1528]">
+              <div className="mb-4 overflow-hidden rounded-lg bg-[#0B1320]">
                 <Image
                   src={project.image}
                   alt={project.imageAlt[locale]}
                   width={1024}
                   height={1004}
-                  className="mx-auto h-44 w-full object-contain p-4"
+                  className="mx-auto h-32 w-full object-contain p-3"
                 />
               </div>
 

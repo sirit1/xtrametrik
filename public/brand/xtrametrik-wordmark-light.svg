@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="XtraMetrik wordmark">
+  <!-- Light-surface wordmark. Do not place on the dark site as-is: Metri is navy. -->
+  <rect width="640" height="160" fill="#FFFFFF"/>
+  <text x="320" y="78" text-anchor="middle" font-family="Montserrat, Inter, Arial, sans-serif" font-weight="800" font-size="52" letter-spacing="-1">
+    <tspan fill="#00D1C1">Xt</tspan><tspan fill="#FF751F">ra</tspan><tspan fill="#003049">Metri</tspan><tspan fill="#FF751F">k</tspan>
+  </text>
+  <text x="320" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="16" fill="#003049">
+    Strategy &amp; Growth Businesses
+  </text>
+</svg>
