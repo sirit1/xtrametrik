@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import { LanguageProvider } from '@/components/i18n/language-provider'
 import { SITE_URL } from '@/lib/site'
+import { HOME_CANONICAL, HOME_DESCRIPTION, HOME_KEYWORDS, HOME_TITLE } from '@/lib/seo'
 import './globals.css'
 
 const montserrat = Montserrat({ 
@@ -20,25 +21,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'XtraMetrik · AILock y webapps: manejo de riesgo de IA',
+    default: HOME_TITLE,
     template: '%s · XtraMetrik',
   },
-  description:
-    'Casa matriz: construye webapps y AILock, manejo de riesgo de IA. Control de fugas: lo que pegas en ChatGPT o Claude no se va a la competencia. Diagnóstico de 5 preguntas. AILock está en construcción.',
-  keywords:
-    'XtraMetrik, AILock, manejo de riesgo de IA, fuga de datos, ChatGPT, Claude, diagnóstico IA, conversión O2O',
+  description: HOME_DESCRIPTION,
+  keywords: HOME_KEYWORDS,
   openGraph: {
-    title: 'XtraMetrik · AILock y webapps: manejo de riesgo de IA',
-    description:
-      'Diagnóstico de 5 preguntas. AILock es el producto que detiene la fuga. Menos riesgo de multa y de que datos vitales se fuguen a la competencia.',
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     type: 'website',
-    url: SITE_URL,
+    url: HOME_CANONICAL,
+    locale: 'es_ES',
     siteName: 'XtraMetrik',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XtraMetrik · AILock y webapps',
-    description: 'Diagnóstico de 5 preguntas. AILock: manejo de riesgo de IA. En construcción.',
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
   },
 }
 
