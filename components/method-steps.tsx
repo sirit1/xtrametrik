@@ -16,7 +16,7 @@ export default function MethodSteps() {
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-2xl">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand">
             {t.containment.badge}
           </p>
           <h2 className="mb-4 font-montserrat text-3xl font-black text-balance sm:text-4xl">
@@ -31,10 +31,10 @@ export default function MethodSteps() {
             return (
               <li
                 key={step.title}
-                className="relative flex flex-col gap-4 rounded-xl border border-border/40 bg-background p-6"
+                className="card-tap relative flex flex-col gap-4 rounded-xl border border-border/40 bg-background p-6"
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-montserrat text-4xl font-black leading-none text-primary/25">
+                  <span className="font-montserrat text-4xl font-black leading-none text-brand/25">
                     {step.number}
                   </span>
                   <span className="rounded-full border border-border px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-foreground/50">
@@ -43,9 +43,9 @@ export default function MethodSteps() {
                 </div>
 
                 <div>
-                  <Icon className="mb-3 h-5 w-5 text-primary" aria-hidden="true" />
+                  <Icon className="mb-3 h-5 w-5 text-brand" aria-hidden="true" />
                   <h3 className="mb-1 font-montserrat text-lg font-black">{step.title}</h3>
-                  <p className="text-sm font-semibold text-primary">{step.subtitle}</p>
+                  <p className="text-sm font-semibold text-brand">{step.subtitle}</p>
                 </div>
 
                 <p className="text-sm leading-relaxed text-foreground/70">{step.description}</p>

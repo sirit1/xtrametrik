@@ -14,7 +14,7 @@ export default function EnginesSection() {
     <section id="motores" className="border-t border-border/30 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-3xl">
-          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+          <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand">
             {t.engines.badge}
           </p>
           <h2 className="mb-4 font-montserrat text-3xl font-black text-balance sm:text-4xl">
@@ -31,11 +31,11 @@ export default function EnginesSection() {
               <article
                 key={engine.name}
                 id={sectionId}
-                className="flex scroll-mt-24 flex-col gap-5 rounded-xl border border-border/50 bg-card p-6 transition-colors hover:border-primary/40"
+                className="card-tap flex scroll-mt-24 flex-col gap-5 rounded-xl border border-border/50 bg-card p-6"
               >
                 <div className="flex items-center justify-between gap-3">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                    <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-brand/10">
+                    <Icon className="h-5 w-5 text-brand" aria-hidden="true" />
                   </span>
                   <span className="text-[11px] font-bold uppercase tracking-wider text-foreground/40">
                     {engine.tag}
@@ -44,7 +44,7 @@ export default function EnginesSection() {
 
                 <div>
                   <h3 className="mb-2 font-montserrat text-xl font-black">{engine.name}</h3>
-                  <p className="text-sm font-semibold leading-snug text-primary">
+                  <p className="text-sm font-semibold leading-snug text-brand">
                     {engine.promise}
                   </p>
                 </div>
@@ -61,7 +61,7 @@ export default function EnginesSection() {
                     {engine.actions.map((action) => (
                       <li key={action} className="flex items-start gap-2">
                         <Check
-                          className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-primary"
+                          className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-brand"
                           aria-hidden="true"
                         />
                         <span className="text-sm leading-snug text-foreground/80">{action}</span>
@@ -71,18 +71,18 @@ export default function EnginesSection() {
                 </div>
 
                 {engine.coming ? (
-                  <div className="rounded-lg border border-dashed border-primary/40 bg-primary/5 p-4">
+                  <div className="rounded-lg border border-dashed border-brand/40 bg-brand/5 p-4">
                     <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-foreground/45">
                       {t.engines.comingLabel}
                     </p>
-                    <p className="mb-2 font-montserrat text-xs font-black uppercase tracking-wider text-primary">
+                    <p className="mb-2 font-montserrat text-xs font-black uppercase tracking-wider text-brand">
                       {t.engines.comingStatus}
                     </p>
                     <p className="text-sm leading-snug text-foreground/75">{engine.coming}</p>
                   </div>
                 ) : null}
 
-                <p className="mt-auto border-t border-border/40 pt-4 font-montserrat text-sm font-black text-primary">
+                <p className="mt-auto border-t border-border/40 pt-4 font-montserrat text-sm font-black text-brand">
                   {engine.metric}
                 </p>
               </article>

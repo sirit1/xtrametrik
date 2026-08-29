@@ -29,7 +29,7 @@ export default function GovernanceAIAction() {
   ]
 
   return (
-    <section id="governance" className="py-24 px-4 sm:px-6 lg:px-8 bg-background border-t border-border/30">
+    <section id="riesgo-ia" className="py-24 px-4 sm:px-6 lg:px-8 bg-background border-t border-border/30">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-16">
@@ -39,7 +39,7 @@ export default function GovernanceAIAction() {
           </div>
 
           <h2 className="text-5xl sm:text-6xl font-bold font-montserrat mb-6 text-balance">
-            Governance de IA<br />
+            Manejo de riesgo de IA<br />
             <span className="text-primary">en Acción</span>
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl">
@@ -98,7 +98,7 @@ export default function GovernanceAIAction() {
         {/* Framework Overview */}
         <div className="bg-gradient-to-br from-accent/10 to-primary/10 border border-primary/30 rounded-lg p-12">
           <h3 className="text-3xl font-bold font-montserrat mb-8 text-white">
-            Marco de Governance IA de XtraMetrik
+            Marco de riesgo de IA de XtraMetrik
           </h3>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -134,7 +134,7 @@ export default function GovernanceAIAction() {
           <div className="flex items-start gap-4">
             <AlertCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
             <div>
-              <h4 className="text-lg font-bold text-primary mb-2">¿Qué sucede sin Governance IA?</h4>
+              <h4 className="text-lg font-bold text-primary mb-2">¿Qué sucede sin manejo de riesgo de IA?</h4>
               <ul className="space-y-2 text-foreground/80">
                 <li>✗ Multas regulatorias por uso no auditable de IA (GDPR: hasta €20M)</li>
                 <li>✗ Responsabilidad legal por decisiones sesgadas (créditos, empleabilidad)</li>

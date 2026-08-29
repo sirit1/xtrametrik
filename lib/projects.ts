@@ -18,7 +18,7 @@ export type Project = {
    * Which capability this work proves. 'ia' covers building AI products
    * end-to-end — the technical ground the AI Shielding engine stands on.
    */
-  engine: 'ia' | 'blindaje' | 'o2o' | 'conversion'
+  engine: 'ia' | 'blindaje' | 'o2o' | 'conversion' | 'webapp'
   name: string
   /** Live, clickable proof. */
   url: string
@@ -82,6 +82,84 @@ export const projects: Project[] = [
       ],
     },
     stack: ['Next.js', 'AI SDK', 'Neon Postgres', 'Supabase Auth', 'WhatsApp API', 'Automation'],
+  },
+  {
+    slug: 'cafe-central',
+    engine: 'webapp',
+    name: 'Café Central',
+    subtitle: {
+      es: 'Carta digital · Castro, Chiloé',
+      en: 'Digital menu · Castro, Chiloé',
+    },
+    url: 'https://cafe-central-8719.vercel.app',
+    urlLabel: 'cafe-central-8719.vercel.app',
+    image: '/projects/cafe-central-logo.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Logo de Café Central, carta digital en Castro, Chiloé',
+      en: 'Café Central logo, digital menu in Castro, Chiloé',
+    },
+    sector: { es: 'Webapp · Gastronomía · Chiloé', en: 'Webapp · Hospitality · Chiloé' },
+    summary: {
+      es: 'Webapp pública y clickable: carta digital y pedidos para Café Central en Castro, Chiloé. Todavía no está terminada. Prueba de que la casa también construye webapps.',
+      en: 'Public, clickable webapp: digital menu and orders for Café Central in Castro, Chiloé. Not finished yet. Proof that the firm also builds webapps.',
+    },
+    features: {
+      es: [
+        'Carta digital para pedir sin fila',
+        'Pedidos con pago en la barra y retiro para llevar',
+        'Local en Blanco Encalada, Castro, Chiloé',
+        'Pública y clickable ahora. Aún en construcción.',
+      ],
+      en: [
+        'Digital menu so guests can order without a queue',
+        'Orders paid at the bar, pickup to go',
+        'Shop on Blanco Encalada, Castro, Chiloé',
+        'Public and clickable now. Still being built.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'Carta digital'],
+  },
+  {
+    slug: 'cobra',
+    engine: 'webapp',
+    name: 'Cobra',
+    subtitle: {
+      es: 'PWA de recibos por WhatsApp',
+      en: 'WhatsApp receipts PWA',
+    },
+    url: 'https://cobra-rho.vercel.app',
+    urlLabel: 'cobra-rho.vercel.app',
+    image: '/projects/cobra-icon.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Icono de Cobra, PWA de recibos por WhatsApp hecha por XtraMetrik',
+      en: 'Cobra icon, WhatsApp receipts PWA made by XtraMetrik',
+    },
+    sector: { es: 'Webapp · PWA · Recibos', en: 'Webapp · PWA · Receipts' },
+    summary: {
+      es: 'PWA de recibos por WhatsApp. Hecho por XtraMetrik. Ábrela: recibo, historial y ajustes. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'WhatsApp receipts PWA. Made by XtraMetrik. Open it: receipt, history and settings. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Emitir un recibo y enviarlo por WhatsApp',
+        'Historial de recibos en el dispositivo',
+        'Ajustes de la PWA',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Issue a receipt and send it on WhatsApp',
+        'Receipt history on the device',
+        'PWA settings',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['PWA', 'WhatsApp', 'Vercel'],
   },
   {
     slug: 'cielo-efata-emocional',

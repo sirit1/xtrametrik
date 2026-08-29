@@ -45,14 +45,14 @@ export default function Footer() {
                 href={LINKEDIN_PROFILE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/50 hover:text-primary transition-colors"
+                className="text-foreground/50 hover:text-brand transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-5 h-5" />
               </a>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="text-foreground/50 hover:text-primary transition-colors"
+                className="text-foreground/50 hover:text-brand transition-colors"
                 aria-label={CONTACT_EMAIL}
               >
                 <Mail className="w-5 h-5" />
@@ -67,7 +67,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                    className="text-sm text-foreground/60 hover:text-brand transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                      className="text-sm text-foreground/60 hover:text-brand transition-colors"
                     >
                       {item.label}
                     </a>
@@ -95,7 +95,7 @@ export default function Footer() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                      className="text-sm text-foreground/60 hover:text-brand transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                    className="text-sm text-foreground/60 hover:text-brand transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
             </Link>
             <a
               href="https://www.xtrametrik.com"
-              className="text-xs text-foreground/50 hover:text-primary transition-colors font-semibold"
+              className="text-xs text-foreground/50 hover:text-brand transition-colors font-semibold"
             >
               xtrametrik.com
             </a>

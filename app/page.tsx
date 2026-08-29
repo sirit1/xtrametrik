@@ -13,11 +13,13 @@ import BlogSection from '@/components/blog-section'
 import ConsultationForm from '@/components/consultation-form'
 import PremiumCTA from '@/components/premium-cta'
 import Footer from '@/components/footer'
+import StickyDiagnostico from '@/components/sticky-diagnostico'
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <StickyDiagnostico />
       <main>
         <HeroPremium />
         <MethodSteps />

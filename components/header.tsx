@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap text-foreground/80 hover:text-primary transition-colors font-semibold text-sm"
+                className="whitespace-nowrap text-foreground/80 hover:text-brand transition-colors font-semibold text-sm"
               >
                 {item.label}
               </Link>
@@ -56,9 +56,9 @@ export default function Header() {
               aria-expanded={isOpen}
             >
               {isOpen ? (
-                <X className="w-6 h-6 text-primary" />
+                <X className="w-6 h-6 text-brand" />
               ) : (
-                <Menu className="w-6 h-6 text-primary" />
+                <Menu className="w-6 h-6 text-brand" />
               )}
             </button>
           </div>
@@ -70,7 +70,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors font-medium text-sm py-1"
+                className="text-foreground/80 hover:text-brand transition-colors font-medium text-sm py-1"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

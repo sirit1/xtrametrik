@@ -25,7 +25,7 @@ export default function AuthorityHero() {
 
         <div className="flex flex-col gap-6">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand">
               {t.differentiator.eyebrow}
             </p>
             <h2 className="mb-4 font-montserrat text-3xl font-black text-balance sm:text-4xl">
@@ -38,7 +38,7 @@ export default function AuthorityHero() {
             {credentials.map((item) => (
               <li key={item.title} className="flex gap-3">
                 <item.icon
-                  className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary"
+                  className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand"
                   aria-hidden="true"
                 />
                 <div>

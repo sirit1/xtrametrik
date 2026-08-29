@@ -20,32 +20,32 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'XtraMetrik · Casa matriz: IA, datos y conversión O2O',
+    default: 'XtraMetrik · AILock y webapps: manejo de riesgo de IA',
     template: '%s · XtraMetrik',
   },
   description:
-    'Casa matriz de gobernanza de IA, blindaje de datos y conversión O2O. Diagnóstico de 5 preguntas. Los productos son prueba, no la marca.',
+    'Casa matriz: construye webapps y AILock, manejo de riesgo de IA. Control de fugas: lo que pegas en ChatGPT o Claude no se va a la competencia. Diagnóstico de 5 preguntas. AILock está en construcción.',
   keywords:
-    'XtraMetrik, casa matriz, fuga de datos, ChatGPT, diagnóstico IA, conversión O2O, blindaje de datos',
+    'XtraMetrik, AILock, manejo de riesgo de IA, fuga de datos, ChatGPT, Claude, diagnóstico IA, conversión O2O',
   openGraph: {
-    title: 'XtraMetrik · Casa matriz: IA, datos y conversión O2O',
+    title: 'XtraMetrik · AILock y webapps: manejo de riesgo de IA',
     description:
-      'Diagnóstico de 5 preguntas. Menos riesgo de multa y de que datos vitales se fuguen a la competencia.',
+      'Diagnóstico de 5 preguntas. AILock es el producto que detiene la fuga. Menos riesgo de multa y de que datos vitales se fuguen a la competencia.',
     type: 'website',
     url: SITE_URL,
     siteName: 'XtraMetrik',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XtraMetrik · Casa matriz',
-    description: 'Diagnóstico de 5 preguntas. Productos como prueba, no como marca.',
+    title: 'XtraMetrik · AILock y webapps',
+    description: 'Diagnóstico de 5 preguntas. AILock: manejo de riesgo de IA. En construcción.',
   },
 }
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#121212',
+  themeColor: '#0B1220',
   colorScheme: 'dark',
 }
 

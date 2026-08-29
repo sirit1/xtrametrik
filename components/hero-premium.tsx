@@ -21,7 +21,7 @@ export default function HeroPremium() {
         />
       </div>
       <div
-        className="absolute -top-32 right-0 -z-10 h-96 w-96 rounded-full bg-primary/10 blur-3xl"
+        className="absolute -top-32 right-0 -z-10 h-96 w-96 rounded-full bg-brand/10 blur-3xl"
         aria-hidden="true"
       />
 

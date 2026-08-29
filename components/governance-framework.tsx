@@ -26,7 +26,7 @@ const frameworks: Framework[] = [
     pillars: ['Predicción Precisa', 'Optimización Dinámica', 'ROI Real', 'Escalabilidad Comprobada']
   },
   {
-    title: 'Governance IA Aplicada',
+    title: 'AILock · riesgo de IA',
     subtitle: 'Auditoría y Validación Continua',
     description: 'Framework de control que asegura que la IA sirve a tus objetivos, no al revés. Transparencia total en cada decisión.',
     icon: <Shield className="w-8 h-8 text-primary" />,
@@ -53,7 +53,7 @@ const modules = [
   {
     number: '4',
     title: 'Monitoreo IA',
-    description: 'Sistema de governance que valida cada decisión. Reportes diarios. Optimización continua sin intervención manual.'
+    description: 'Sistema de control de fugas que valida cada decisión. Reportes diarios. Optimización continua sin intervención manual.'
   }
 ]
 

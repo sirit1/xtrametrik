@@ -40,25 +40,25 @@ export default function RiskMatrixCompact() {
             </div>
           </div>
 
-          <div className="flex flex-col p-7 bg-card border border-primary/50 rounded-xl">
+          <div className="flex flex-col p-7 bg-card border border-brand/40 rounded-xl">
             <div className="flex items-center gap-3 mb-6">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" aria-hidden="true" />
+              <CheckCircle2 className="w-5 h-5 text-brand flex-shrink-0" aria-hidden="true" />
               <h3 className="text-lg font-black font-montserrat">{t.risk.afterTitle}</h3>
             </div>
 
             <ul className="flex flex-col gap-3 flex-1">
               {t.risk.after.map((item) => (
                 <li key={item} className="flex gap-3 text-sm text-foreground/75 leading-relaxed">
-                  <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <Check className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" aria-hidden="true" />
                   {item}
                 </li>
               ))}
             </ul>
 
             <div className="mt-6 pt-5 border-t border-border/40">
-              <p className="text-xs font-bold text-primary mb-2">{t.risk.riskControlled}</p>
-              <div className="w-full bg-primary/15 rounded-full h-1.5" role="presentation">
-                <div className="bg-primary h-1.5 rounded-full" style={{ width: '8%' }} />
+              <p className="text-xs font-bold text-brand mb-2">{t.risk.riskControlled}</p>
+              <div className="w-full bg-brand/15 rounded-full h-1.5" role="presentation">
+                <div className="bg-brand h-1.5 rounded-full" style={{ width: '8%' }} />
               </div>
             </div>
           </div>

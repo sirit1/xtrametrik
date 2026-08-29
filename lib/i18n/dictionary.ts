@@ -16,17 +16,18 @@ export const es = {
     menuToggle: 'Abrir menú',
     language: 'Idioma',
     /** Slogan corto bajo el logo. La línea larga de casa matriz va en el kicker del hero. */
-    brandSlogan: 'Casa matriz · control y conversión',
+    brandSlogan: 'Casa matriz · AILock y webapps',
   },
   hero: {
-    kicker: 'XtraMetrik · casa matriz — gobernanza de IA, blindaje de datos y conversión O2O',
+    kicker: 'XtraMetrik · casa matriz — construye webapps y AILock, manejo de riesgo de IA',
     badge: 'Diagnóstico gratuito · 5 preguntas · PDF al instante',
     titleTop: 'Tus empleados están enviando',
     titleAccent: 'los datos de tu empresa',
     titleEnd: 'sin ningún control',
     sub: 'Cada prompt en ChatGPT con precios, clientes o estrategia sale de tu perímetro y no queda registrado en ninguna parte.',
     subStrong: 'Eso es riesgo de multa y de que datos vitales se fuguen a la competencia.',
-    subEnd: 'XtraMetrik es la casa matriz que pone ese riesgo sobre la mesa. El primer paso es el diagnóstico.',
+    subEnd:
+      'AILock es el producto estrella: control de fugas, para que lo que pegas en ChatGPT o Claude no se vaya a la competencia, y menos riesgo de multa. Todavía no se instala. La puerta es el cuestionario de 5 preguntas.',
     cta1: 'Empezar cuestionario de 5 preguntas',
     cta2: 'Ver un diagnóstico de muestra',
     ctaNote: 'Gratis · sin compromiso · el PDF se descarga al terminar',
@@ -59,7 +60,7 @@ export const es = {
         title: 'Contener',
         subtitle: 'AILock · en construcción',
         description:
-          'El plan es ver el prompt antes de que salga de chatgpt.com o claude.ai. AILock, esa capa, no está instalada en ninguna empresa. Un plan — no un producto en producción.',
+          'El plan es AILock: ver el prompt antes de que salga de chatgpt.com o claude.ai. No está instalado en ninguna empresa. Un plan — no un producto en producción.',
         deliverable: 'Plan. No un SaaS ya implantado.',
         duration: 'Próximamente',
       },
@@ -68,8 +69,8 @@ export const es = {
         title: 'Certificar',
         subtitle: 'Cuando haya algo que certificar',
         description:
-          'El destino es evidencia para un regulador. Hoy no certificamos una capa que aún no existe. El primer corte es el diagnóstico.',
-        deliverable: 'Hoy: el informe. La capa, después.',
+          'El destino es evidencia para un regulador. Hoy no certificamos un producto que aún no existe. El primer corte es el diagnóstico.',
+        deliverable: 'Hoy: el informe. AILock, después.',
         duration: 'Después',
       },
     ],
@@ -79,7 +80,7 @@ export const es = {
   engines: {
     badge: 'La casa matriz',
     title: 'Menos riesgo. Y un camino a facturación medible.',
-    sub: 'XtraMetrik mueve tres frentes. Hoy la puerta comercial es el diagnóstico de 5 preguntas. AILock, el producto estrella contra la fuga, está en construcción — no es un SaaS ya instalado.',
+    sub: 'La casa construye webapps y AILock. Hoy la puerta comercial es el diagnóstico de 5 preguntas. AILock, el producto estrella de manejo de riesgo de IA, está en construcción — no es un SaaS ya instalado.',
     labelIncludes: 'Qué hay hoy',
     todayLabel: 'Hoy — la oferta',
     comingLabel: 'Próximamente',
@@ -88,7 +89,8 @@ export const es = {
       {
         tag: 'Producto estrella · EN CONSTRUCCIÓN',
         name: 'AILock',
-        promise: 'Menos riesgo de multa y menos riesgo de que datos vitales se fuguen a competidores.',
+        promise:
+          'Manejo de riesgo de IA y control de fugas: lo que pegas en ChatGPT o Claude no se va a la competencia. Menos riesgo de multa.',
         problem: 'Los empleados pegan precios, clientes y estrategia en ChatGPT y Claude. Sale sin registro. Nadie en la empresa lo detiene. Eso es real. Lo que no es real: un producto ya instalado que lo para.',
         actions: [
           'Diagnóstico de 5 preguntas para medir la exposición. PDF al instante.',
@@ -211,7 +213,7 @@ export const es = {
         tag: 'Riesgo de fuga',
         title: 'Fintech · 500 empleados',
         challenge: 'Uso masivo de ChatGPT con datos de clientes en prompts, sin política interna. Nadie registraba qué salía.',
-        result: 'Diagnóstico de exposición. No hay capa instalada que vender — AILock está en construcción.',
+        result: 'Diagnóstico de exposición. No hay AILock instalado que vender — el producto está en construcción.',
         roi: '€2.1M de exposición estimada a multa (el problema, no un ROI de producto)',
       },
       {
@@ -235,7 +237,7 @@ export const es = {
     badge: 'Insights',
     title: 'Transformación Digital + IA',
     titleAccent: 'La newsletter, en formato lectura',
-    sub: '20 análisis sobre governance, seguridad, compliance y rentabilidad verificable. Publicados también en LinkedIn.',
+    sub: '20 análisis sobre riesgo de IA, fugas, compliance y rentabilidad verificable. Publicados también en LinkedIn.',
     newsletterCta: 'Suscribirme en LinkedIn',
     viewAll: 'Ver los 20 artículos',
     readMore: 'Leer análisis',
@@ -248,7 +250,7 @@ export const es = {
     latest: 'Últimos análisis',
     minRead: 'min de lectura',
     indexTitle: 'Biblioteca de análisis',
-    indexSub: 'Governance de IA, compliance y rentabilidad B2B explicados sin humo.',
+    indexSub: 'Manejo de riesgo de IA, fugas y rentabilidad B2B, explicados sin humo.',
   },
   article: {
     back: 'Volver al blog',
@@ -267,7 +269,7 @@ export const es = {
     badge: 'Gratis · Sin compromiso',
     title: 'Diagnóstico de riesgo y rentabilidad en PDF',
     sub: 'Responde cinco preguntas y descarga tu informe en PDF al instante, con tu nivel de exposición, la cifra en euros y el plan de contención de 7 días.',
-    perk: 'Incluye valoración de exposición, atribución y checklist ISO 42001',
+    perk: 'Incluye valoración de exposición, atribución y checklist de riesgo de IA',
     name: 'Nombre',
     email: 'Email corporativo',
     company: 'Empresa',
@@ -343,7 +345,8 @@ export const es = {
       'si en el diagnóstico no encontramos riesgo material ni potencial de rentabilidad, te lo decimos y no hay propuesta.',
   },
   footer: {
-    tagline: 'Casa matriz: gobernanza de IA, blindaje de datos y conversión O2O. Los productos son prueba, no la marca.',
+    tagline:
+      'Casa matriz: webapps y AILock, manejo de riesgo de IA. Control de fugas. Los productos en vivo son prueba, no la marca.',
     colNav: 'Navegación',
     colContent: 'Contenido',
     colLegal: 'Legal',
@@ -362,10 +365,10 @@ export const es = {
     sub: 'Producto real, en producción y con enlace en vivo. Sin cifras que no podamos demostrar: haz clic y compruébalo tú.',
     liveLabel: 'Ver en vivo',
     liveBadge: 'Trabajo vivo de la casa',
-    liveTitle: 'Prueba de que la casa matriz construye.',
+    liveTitle: 'Prueba de ejecución. La casa también construye webapps.',
     liveSub:
-      'Revelatio y Café Central no son la marca. Son trabajo en producción de XtraMetrik. Ábrelos.',
-    openProject: 'Abrir proyecto →',
+      'Revelatio, Café Central y Cobra no son la marca. Son trabajo clickable de XtraMetrik. Ábrelos.',
+    openProject: 'Abrir →',
     viewPortfolio: 'Ver portafolio completo',
     madeBy: 'Hecho por XtraMetrik',
     iaBadge: 'IA',
@@ -378,6 +381,7 @@ export const es = {
       blindaje: 'Blindaje de IA',
       o2o: 'Método O2O',
       conversion: 'Conversión que factura',
+      webapp: 'Webapp',
     },
     honestyTitle: 'Por qué aquí no verás métricas de vanidad',
     honestyBody:
@@ -441,13 +445,13 @@ export const es = {
     solution: {
       eyebrow: 'Hoy y próximamente — con honestidad',
       title: 'Diagnóstico ahora. AILock, en construcción.',
-      body: 'No instalamos AILock en tu empresa porque ese producto todavía no existe. Lo que sí existe: un cuestionario de 5 preguntas y un PDF con tu exposición. La capa que ve el prompt antes de que salga de chatgpt.com o claude.ai está en construcción. No hay demo, ni capturas, ni métricas de un SaaS en producción.',
+      body: 'No instalamos AILock en tu empresa porque ese producto todavía no existe. Lo que sí existe: un cuestionario de 5 preguntas y un PDF con tu exposición. AILock — el producto que ve el prompt antes de que salga de chatgpt.com o claude.ai — está en construcción. No hay demo, ni capturas, ni métricas de un SaaS en producción.',
       stepsLabel: 'Qué ofrecemos hoy (y qué no)',
       steps: [
         'Hoy: cuestionario de 5 preguntas y PDF con índice de exposición.',
         'Hoy: WhatsApp si prefieres hablar antes de rellenar el formulario.',
         'Próximamente: AILock — extensión que ve el prompt antes de que salga. El empleado ve la decisión, no la regla.',
-        'No: una capa ya instalada, una demo clickable, ni “100% de consultas trazables”.',
+        'No: AILock ya instalado, una demo clickable, ni “100% de consultas trazables”.',
       ],
       afterLabel: 'Estado actual, sin teatro',
       results: [
@@ -468,7 +472,7 @@ export const es = {
     subtitle: 'Informe generado automáticamente por el Método XtraMetrik',
     section1: '1. Datos de la organización',
     section2: '2. Nivel de exposición estimado',
-    section3: '3. Checklist ISO 42001',
+    section3: '3. Checklist de riesgo de IA',
     section4: '4. Siguientes pasos',
     company: 'Empresa',
     contact: 'Contacto',
@@ -515,17 +519,18 @@ export const en: Dict = {
     menuToggle: 'Open menu',
     language: 'Language',
     /** Short line under the logo. The full casa-matriz line is the hero kicker. */
-    brandSlogan: 'Parent firm · control and conversion',
+    brandSlogan: 'Parent firm · AILock and webapps',
   },
   hero: {
-    kicker: 'XtraMetrik · parent firm — AI control, data shielding and O2O conversion',
+    kicker: 'XtraMetrik · parent firm — we build webapps and AILock, AI risk management',
     badge: 'Free assessment · 5 questions · instant PDF',
     titleTop: 'Your employees are sending',
     titleAccent: 'your company data',
     titleEnd: 'with zero control',
     sub: 'Every prompt into ChatGPT carrying pricing, clients or strategy leaves your perimeter and is logged nowhere.',
     subStrong: 'That is the risk of fines and of vital data leaking to competitors.',
-    subEnd: 'XtraMetrik is the parent firm that puts that risk on the table. The first step is the assessment.',
+    subEnd:
+      'AILock is the flagship: leak control, so what you paste into ChatGPT or Claude does not go to a competitor, and less fine risk. It does not install yet. The door is the 5-question questionnaire.',
     cta1: 'Start the 5-question questionnaire',
     cta2: 'See a sample assessment',
     ctaNote: 'Free · no commitment · the PDF downloads when you finish',
@@ -558,7 +563,7 @@ export const en: Dict = {
         title: 'Contain',
         subtitle: 'AILock · under construction',
         description:
-          'The plan is to see the prompt before it leaves chatgpt.com or claude.ai. AILock, that layer, is not installed in any company. A plan — not a product in production.',
+          'The plan is AILock: see the prompt before it leaves chatgpt.com or claude.ai. It is not installed in any company. A plan — not a product in production.',
         deliverable: 'A plan. Not a SaaS already deployed.',
         duration: 'Coming soon',
       },
@@ -567,8 +572,8 @@ export const en: Dict = {
         title: 'Certify',
         subtitle: 'When there is something to certify',
         description:
-          'The destination is evidence for a regulator. Today we do not certify a layer that does not exist yet. The first cut is the assessment.',
-        deliverable: 'Today: the report. The layer, later.',
+          'The destination is evidence for a regulator. Today we do not certify a product that does not exist yet. The first cut is the assessment.',
+        deliverable: 'Today: the report. AILock, later.',
         duration: 'Later',
       },
     ],
@@ -578,7 +583,7 @@ export const en: Dict = {
   engines: {
     badge: 'The parent firm',
     title: 'Less risk. And a path to measurable revenue.',
-    sub: 'XtraMetrik moves on three fronts. Today the commercial door is the 5-question assessment. AILock, the flagship against the leak, is under construction — not a SaaS already installed.',
+    sub: 'The firm builds webapps and AILock. Today the commercial door is the 5-question assessment. AILock, the flagship for AI risk management, is under construction — not a SaaS already installed.',
     labelIncludes: 'What exists today',
     todayLabel: 'Today — the offer',
     comingLabel: 'Coming soon',
@@ -587,7 +592,8 @@ export const en: Dict = {
       {
         tag: 'Flagship · UNDER CONSTRUCTION',
         name: 'AILock',
-        promise: 'Less risk of fines and less risk that vital data leaks to competitors.',
+        promise:
+          'AI risk management and leak control: what you paste into ChatGPT or Claude does not go to a competitor. Less fine risk.',
         problem: 'Employees paste prices, clients and strategy into ChatGPT and Claude. It leaves unlogged. Nobody in the company stops it. That is real. What is not real: a product already installed that blocks it.',
         actions: [
           'A 5-question assessment to measure exposure. PDF instantly.',
@@ -710,7 +716,7 @@ export const en: Dict = {
         tag: 'Leak risk',
         title: 'Fintech · 500 employees',
         challenge: 'Heavy ChatGPT usage with client data in prompts and no internal policy. Nobody logged what left.',
-        result: 'Exposure assessment. There is no installed layer to sell — AILock is under construction.',
+        result: 'Exposure assessment. There is no installed AILock to sell — the product is under construction.',
         roi: '€2.1M estimated fine exposure (the problem, not product ROI)',
       },
       {
@@ -734,7 +740,7 @@ export const en: Dict = {
     badge: 'Insights',
     title: 'Digital Transformation + AI',
     titleAccent: 'The newsletter, in long form',
-    sub: '20 analyses on governance, security, compliance and verifiable profitability. Also published on LinkedIn.',
+    sub: '20 analyses on AI risk, leaks, compliance and verifiable profitability. Also published on LinkedIn.',
     newsletterCta: 'Subscribe on LinkedIn',
     viewAll: 'See all 20 articles',
     readMore: 'Read analysis',
@@ -747,7 +753,7 @@ export const en: Dict = {
     latest: 'Latest analyses',
     minRead: 'min read',
     indexTitle: 'Analysis library',
-    indexSub: 'AI governance, compliance and B2B profitability explained without the hype.',
+    indexSub: 'AI risk management, leaks and B2B profitability, explained without the hype.',
   },
   article: {
     back: 'Back to blog',
@@ -766,7 +772,7 @@ export const en: Dict = {
     badge: 'Free · No commitment',
     title: 'Risk and profitability assessment in PDF',
     sub: 'Answer five questions and download your PDF report instantly, with your exposure level, the figure in euros and the 7-day containment plan.',
-    perk: 'Includes exposure valuation, attribution and ISO 42001 checklist',
+    perk: 'Includes exposure valuation, attribution and an AI risk checklist',
     name: 'Name',
     email: 'Work email',
     company: 'Company',
@@ -842,7 +848,8 @@ export const en: Dict = {
       'if the assessment finds no material risk and no profitability upside, we tell you and there is no proposal.',
   },
   footer: {
-    tagline: 'Parent firm: AI control, data shielding and O2O conversion. Products are proof, not the brand.',
+    tagline:
+      'Parent firm: webapps and AILock, AI risk management. Leak control. Live products are proof, not the brand.',
     colNav: 'Navigation',
     colContent: 'Content',
     colLegal: 'Legal',
@@ -861,10 +868,10 @@ export const en: Dict = {
     sub: 'Real product, in production, with a live link. No figures we cannot prove: click and check for yourself.',
     liveLabel: 'View live',
     liveBadge: 'Live work from the firm',
-    liveTitle: 'Proof that the parent firm builds.',
+    liveTitle: 'Proof of execution. The firm also builds webapps.',
     liveSub:
-      'Revelatio and Café Central are not the brand. They are XtraMetrik work in production. Open them.',
-    openProject: 'Open project →',
+      'Revelatio, Café Central and Cobra are not the brand. They are clickable XtraMetrik work. Open them.',
+    openProject: 'Open →',
     viewPortfolio: 'See the full portfolio',
     madeBy: 'Made by XtraMetrik',
     iaBadge: 'AI',
@@ -877,6 +884,7 @@ export const en: Dict = {
       blindaje: 'AI Shielding',
       o2o: 'O2O Method',
       conversion: 'Conversion that bills',
+      webapp: 'Webapp',
     },
     honestyTitle: 'Why you will not find vanity metrics here',
     honestyBody:
@@ -940,13 +948,13 @@ export const en: Dict = {
     solution: {
       eyebrow: 'Today and coming soon — honestly',
       title: 'Assessment now. AILock, under construction.',
-      body: 'We do not install AILock in your company because that product does not exist yet. What does exist: a 5-question questionnaire and a PDF with your exposure. The layer that sees the prompt before it leaves chatgpt.com or claude.ai is under construction. No demo, no screenshots, no metrics from a SaaS in production.',
+      body: 'We do not install AILock in your company because that product does not exist yet. What does exist: a 5-question questionnaire and a PDF with your exposure. AILock — the product that sees the prompt before it leaves chatgpt.com or claude.ai — is under construction. No demo, no screenshots, no metrics from a SaaS in production.',
       stepsLabel: 'What we offer today (and what we do not)',
       steps: [
         'Today: a 5-question questionnaire and a PDF with an exposure index.',
         'Today: WhatsApp if you prefer to talk before filling the form.',
         'Coming soon: AILock — an extension that sees the prompt before it leaves. The employee sees the decision, not the rule.',
-        'Not: an already-installed layer, a clickable demo, or “100% of queries traceable”.',
+        'Not: AILock already installed, a clickable demo, or “100% of queries traceable”.',
       ],
       afterLabel: 'Current state, no theatre',
       results: [
@@ -967,7 +975,7 @@ export const en: Dict = {
     subtitle: 'Report generated automatically by the XtraMetrik Method',
     section1: '1. Organization data',
     section2: '2. Estimated exposure level',
-    section3: '3. ISO 42001 checklist',
+    section3: '3. AI risk checklist',
     section4: '4. Next steps',
     company: 'Company',
     contact: 'Contact',

@@ -62,7 +62,7 @@ export default function ProjectsShowcase() {
 
               <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-md bg-primary/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">
+                  <span className="rounded-md bg-brand/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-brand">
                     {c.engines[p.engine]}
                   </span>
                   <span className="text-xs text-muted-foreground">{p.sector[locale]}</span>
@@ -143,10 +143,10 @@ export default function ProjectsShowcase() {
               ].map((step, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/5 to-transparent p-6"
+                  className="rounded-2xl border border-brand/20 bg-gradient-to-b from-brand/5 to-transparent p-6"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary font-bold text-primary-foreground">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand font-bold text-brand-foreground">
                       {i + 1}
                     </span>
                     <span className="font-montserrat text-sm font-black uppercase tracking-wider">
@@ -160,7 +160,7 @@ export default function ProjectsShowcase() {
               ))}
             </div>
 
-            <p className="mt-8 text-center text-sm font-bold text-primary">{c.o2oProof}</p>
+            <p className="mt-8 text-center text-sm font-bold text-brand">{c.o2oProof}</p>
           </div>
         </section>
       )}

@@ -52,7 +52,7 @@ export default function Hero() {
             href="#frameworks"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-all font-bold text-lg"
           >
-            Auditoría de Governance IA
+            Diagnóstico de riesgo de IA
           </a>
         </div>
 

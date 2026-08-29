@@ -13,7 +13,7 @@ export default function AIGovernanceHub() {
     { icon: Shield, title: 'Central de Control', desc: 'Dashboard único donde ver TODAS las IAs en uso en la empresa' },
     { icon: Lock, title: 'Data Isolation', desc: 'APIs custom que filtran datos sensibles antes de llegar a IA pública' },
     { icon: Database, title: 'Audit Trail Completo', desc: 'Cada consulta logeada, auditada, verificable ante reguladores' },
-    { icon: CheckCircle2, title: 'ISO 42001 Certificado', desc: 'Governance de IA que cumple normas internacionales' },
+    { icon: CheckCircle2, title: 'ISO 42001 Certificado', desc: 'Manejo de riesgo de IA alineado a normas internacionales' },
     { icon: Users, title: 'Políticas por Rol', desc: 'Empleados usan IA pero con restricciones por departamento' },
     { icon: Zap, title: 'Alertas en Tiempo Real', desc: 'Detección automática cuando alguien intenta compartir datos críticos' },
   ]
@@ -51,7 +51,7 @@ export default function AIGovernanceHub() {
         <div className="mb-16 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/15 rounded-full border border-primary mb-6">
             <AlertCircle className="w-4 h-4 text-primary" />
-            <span className="text-sm font-bold text-primary">EL PROBLEMA MÁS CRÍTICO: IA SIN GOVERNANCE</span>
+            <span className="text-sm font-bold text-primary">EL PROBLEMA MÁS CRÍTICO: IA SIN CONTROL DE FUGAS</span>
           </div>
           
           <h2 className="text-5xl sm:text-6xl font-black font-montserrat mb-6 text-balance leading-tight">
@@ -126,7 +126,7 @@ export default function AIGovernanceHub() {
               Reservar Auditoría Gratis
             </button>
             <button className="px-8 py-3 bg-background border-2 border-primary text-foreground font-black rounded-lg hover:bg-background/80 transition-all">
-              Ver Casos de Governance
+              Ver casos de riesgo de IA
             </button>
           </div>
         </div>
