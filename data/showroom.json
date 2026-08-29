@@ -16,21 +16,16 @@
     },
     {
       "id": "cielo-efata-app",
-      "name": "Cielo Efata - App Móvil",
-      "description": "Aplicación móvil nativa con sincronización en tiempo real. Estudio bíblico offline con sincronización en la nube.",
-      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300",
+      "name": "Cielo Efatá - App Evaluación Emocional",
+      "description": "App móvil de IA de Cielo Efatá: evaluación emocional científica. Producto aparte de Revelatio.",
+      "image": "/projects/cielo-efata-mobile.png",
       "url": "https://cielo-efata-app.vercel.app",
-      "tech": ["React Native", "Firebase", "AWS"],
-      "metrics": {
-        "downloads": "8,500+",
-        "rating": "4.8/5",
-        "retention": "74% M3"
-      },
+      "tech": ["Next.js", "React", "PWA"],
       "features": [
-        "Estudio offline",
-        "Sincronización en tiempo real",
-        "Notificaciones inteligentes",
-        "Análisis de lectura"
+        "Evaluación emocional científica",
+        "Perfil emocional personal",
+        "Historial de evaluaciones",
+        "Campañas de comunidad vía WhatsApp"
       ]
     },
     {

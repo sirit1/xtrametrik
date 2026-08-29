@@ -141,7 +141,7 @@ export const es = {
   pain: {
     badge: 'Los 3 riesgos que cuantificamos',
     title: '¿Cuál te está costando más dinero?',
-    sub: 'De 47 diagnósticos ejecutados, el 95% de las empresas B2B presentaba estos tres problemas al mismo tiempo.',
+    sub: 'Tres problemas que aparecen juntos en la operación B2B. El diagnóstico pone cifra al que más te duele.',
     labelProblem: 'Problema',
     labelImpact: 'Impacto',
     labelSolution: 'Cómo lo resolvemos',
@@ -640,7 +640,7 @@ export const en: Dict = {
   pain: {
     badge: 'The 3 risks we quantify',
     title: 'Which one is costing you the most?',
-    sub: 'Across 47 assessments, 95% of B2B companies had all three problems at the same time.',
+    sub: 'Three problems that show up together in B2B operations. The assessment puts a number on the one costing you most.',
     labelProblem: 'Problem',
     labelImpact: 'Impact',
     labelSolution: 'How we solve it',

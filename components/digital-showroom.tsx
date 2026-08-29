@@ -12,8 +12,8 @@ export default function DigitalShowroom() {
       focus: 'Experiencia de usuario + Escalabilidad'
     },
     {
-      name: 'Cielo Efata - App',
-      description: 'Plataforma integral de comunidad con dashboard de usuarios, gestión de eventos, contenido dinámico y análisis de engagement comunitario.',
+      name: 'Cielo Efatá - App Evaluación Emocional',
+      description: 'App móvil de IA de Cielo Efatá: evaluación emocional científica. Producto aparte de Revelatio (biblia de estudio).',
       tech: ['Next.js 16', 'Supabase', 'Realtime', 'PostgreSQL'],
       url: 'https://cielo-efata-app.vercel.app/',
       focus: 'Backend escalable + Datos en tiempo real'
