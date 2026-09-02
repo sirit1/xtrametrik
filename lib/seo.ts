@@ -5,14 +5,14 @@ export const HOME_TITLE =
   'Fuga de datos ChatGPT empresa: menos multa · diagnóstico de 5 preguntas | XtraMetrik'
 
 export const HOME_DESCRIPTION =
-  'Menos riesgo de multa y menos fuga de datos de empresa a ChatGPT y Claude. Diagnóstico gratuito de 5 preguntas. PDF al instante. AILock, el producto que detiene la fuga, está en construcción.'
+  'AILock: manejo de riesgo de IA. Menos fuga de datos de empresa a ChatGPT y Claude, menos riesgo de multa. Empieza el diagnóstico de AILock: 5 preguntas, PDF al instante.'
 
 export const HOME_KEYWORDS =
   'fuga de datos ChatGPT empresa, multa, diagnóstico, Claude, AILock, XtraMetrik'
 
 /**
- * One FAQPage for the home. Three facts only: who we are, what the
- * questionnaire is, that AILock is not built yet. No gobernanza keyword.
+ * One FAQPage for the home. What XtraMetrik is, what the AILock diagnosis is,
+ * how to start. No gobernanza. No claim of a forced install.
  */
 export const homeFaqJsonLd = {
   '@context': 'https://schema.org',
@@ -23,23 +23,23 @@ export const homeFaqJsonLd = {
       name: '¿Qué es XtraMetrik?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'XtraMetrik es la casa matriz que construye webapps y AILock. El trabajo comercial es manejo de riesgo de IA: menos fuga de datos de empresa a ChatGPT y Claude, y menos riesgo de multa. Los productos en vivo son prueba de ejecución, no la marca.',
+        text: 'XtraMetrik es la casa matriz de AILock, manejo de riesgo de IA: menos fuga de datos de empresa a ChatGPT y Claude, y menos riesgo de multa. También construye webapps. Los productos en vivo son prueba de ejecución.',
       },
     },
     {
       '@type': 'Question',
-      name: '¿Qué es el diagnóstico de 5 preguntas?',
+      name: '¿Qué es el diagnóstico de AILock?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Un cuestionario gratuito. Cinco preguntas sobre cómo usa tu equipo ChatGPT, Claude u otras IAs con datos de empresa. Al terminar descargas un PDF con tu exposición. Esa es la puerta comercial. No es una demo de producto.',
+        text: 'El primer paso de AILock. Cinco preguntas sobre cómo usa tu equipo ChatGPT, Claude u otras IAs con datos de empresa. Al terminar descargas un PDF con tu exposición. Hoy existen las 5 preguntas y el PDF.',
       },
     },
     {
       '@type': 'Question',
-      name: '¿AILock ya está en producción?',
+      name: '¿Cómo empiezo con AILock?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. AILock es el producto estrella de XtraMetrik para control de fugas — lo que pegas en ChatGPT o Claude no se va a la competencia — y todavía está en construcción. No hay demo ni instalación. Hoy medimos la exposición con el diagnóstico de 5 preguntas.',
+        text: 'Empieza el diagnóstico de AILock y mide tu exposición. No afirmamos un despliegue forzado en tu empresa. El cuestionario es la conversión: 5 preguntas y un PDF.',
       },
     },
   ],

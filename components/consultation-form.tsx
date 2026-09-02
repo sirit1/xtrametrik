@@ -119,22 +119,22 @@ export default function ConsultationForm() {
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault()
     setStatus('sending')
+    let saved = true
     try {
       const response = await fetch('/api/diagnostico', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...answers, ...contact, locale }),
       })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error ?? 'error')
-      setSubmitted(true)
-      setStatus('idle')
-      setStep(2)
-      // The report is the promised deliverable: hand it over immediately.
-      await buildPdf()
+      const data = await response.json().catch(() => ({}))
+      if (!response.ok || data.saved === false) saved = false
     } catch {
-      setStatus('error')
+      saved = false
     }
+    setSubmitted(true)
+    setStatus(saved ? 'idle' : 'error')
+    setStep(2)
+    await buildPdf()
   }
 
   function answerSummary() {
@@ -344,6 +344,12 @@ export default function ConsultationForm() {
 
           {step === 2 && result && (
             <div className="flex flex-col gap-8">
+              {status === 'error' && (
+                <p className="flex items-center gap-2 text-sm font-medium text-destructive">
+                  <AlertTriangle className="h-4 w-4" aria-hidden="true" />
+                  {f.errorTitle}
+                </p>
+              )}
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary/10">
                   <Check className="h-5 w-5 text-primary" aria-hidden="true" />

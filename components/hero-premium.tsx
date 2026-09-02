@@ -36,6 +36,7 @@ export default function HeroPremium() {
           <FileDown className="h-4 w-4" aria-hidden="true" />
           {t.hero.cta1}
         </Link>
+        <p className="text-xs text-muted-foreground">{t.hero.ctaNote}</p>
       </div>
     </section>
   )
