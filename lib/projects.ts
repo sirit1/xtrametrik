@@ -162,6 +162,45 @@ export const projects: Project[] = [
     stack: ['PWA', 'WhatsApp', 'Vercel'],
   },
   {
+    slug: 'la-manzanita',
+    engine: 'webapp',
+    name: 'La Manzanita',
+    subtitle: {
+      es: 'Catálogo Apple reacondicionado · San Cristóbal, Táchira',
+      en: 'Refurbished Apple catalogue · San Cristóbal, Táchira',
+    },
+    url: 'https://lamanzanita.vercel.app',
+    urlLabel: 'lamanzanita.vercel.app',
+    image: '/projects/la-manzanita-logo.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Logo de La Manzanita, catálogo Apple reacondicionado en San Cristóbal, Táchira',
+      en: 'La Manzanita logo, refurbished Apple catalogue in San Cristóbal, Táchira',
+    },
+    sector: { es: 'Webapp · E-commerce · Táchira', en: 'Webapp · E-commerce · Táchira' },
+    summary: {
+      es: 'Webapp de catálogo y e-commerce: Apple Store de reacondicionado en San Cristóbal, Táchira. iPhone, MacBook, iPad, Watch y accesorios. Hecho por XtraMetrik. Pública y clickable. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'Catalogue and e-commerce webapp: refurbished Apple Store in San Cristóbal, Táchira. iPhone, MacBook, iPad, Watch and accessories. Made by XtraMetrik. Public and clickable. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Catálogo de iPhone, MacBook, iPad, Watch y accesorios',
+        'Carrito y compra en la webapp',
+        'Local en San Cristóbal, Táchira',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Catalogue of iPhone, MacBook, iPad, Watch and accessories',
+        'Cart and checkout in the webapp',
+        'Shop in San Cristóbal, Táchira',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'E-commerce'],
+  },
+  {
     slug: 'cielo-efata-emocional',
     engine: 'ia',
     name: 'Cielo Efatá - App Evaluación Emocional',
