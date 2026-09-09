@@ -93,7 +93,7 @@ export function buildReportDoc(input: ReportInput) {
 
   doc.setFontSize(8)
   doc.setTextColor(...ORANGE)
-  doc.text('AI GOVERNANCE & B2B PERFORMANCE', M, 57)
+  doc.text('AILOCK · AI RISK MANAGEMENT', M, 57)
 
   doc.setFont('helvetica', 'normal')
   doc.setFontSize(12)

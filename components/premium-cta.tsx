@@ -28,16 +28,16 @@ export default function PremiumCTA() {
           </Link>
           <Link
             href="/blog"
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border hover:border-primary text-foreground hover:text-primary rounded-lg font-bold transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-border hover:border-brand text-foreground hover:text-brand rounded-lg font-bold transition-colors"
           >
             {t.finalCta.secondary}
           </Link>
         </div>
 
-        <div className="flex gap-3 mt-4 p-6 bg-card border border-primary/25 rounded-xl text-left">
-          <ShieldCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
+        <div className="flex gap-3 mt-4 p-6 bg-card border border-brand/25 rounded-xl text-left">
+          <ShieldCheck className="w-5 h-5 text-brand flex-shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-sm text-foreground/80 leading-relaxed">
-            <span className="font-bold text-primary">{t.finalCta.guaranteeLabel}</span>{' '}
+            <span className="font-bold text-brand">{t.finalCta.guaranteeLabel}</span>{' '}
             {t.finalCta.guarantee}
           </p>
         </div>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { ArrowRight, ArrowUpRight, Check, ShieldCheck } from 'lucide-react'
 import { useI18n } from '@/components/i18n/language-provider'
 import { projects } from '@/lib/projects'
+import XtraMetrikCredit from '@/components/xtrametrik-credit'
 
 export default function ProjectsShowcase() {
   const { t, locale } = useI18n()
@@ -47,8 +48,10 @@ export default function ProjectsShowcase() {
                   alt={p.imageAlt[locale]}
                   width={1280}
                   height={800}
-                  className={`w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02] ${
-                    p.orientation === 'portrait' ? 'max-h-[520px]' : 'h-auto'
+                  className={`w-full transition-transform duration-500 group-hover:scale-[1.02] ${
+                    p.imageFit === 'contain'
+                      ? 'max-h-[420px] bg-[#0B1528] object-contain p-6'
+                      : `object-cover object-top ${p.orientation === 'portrait' ? 'max-h-[520px]' : 'h-auto'}`
                   }`}
                 />
                 <span className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-background/90 px-3 py-1.5 text-xs font-bold text-foreground backdrop-blur">
@@ -59,7 +62,7 @@ export default function ProjectsShowcase() {
 
               <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-md bg-primary/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-primary">
+                  <span className="rounded-md bg-brand/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-brand">
                     {c.engines[p.engine]}
                   </span>
                   <span className="text-xs text-muted-foreground">{p.sector[locale]}</span>
@@ -68,6 +71,10 @@ export default function ProjectsShowcase() {
                 <h2 className="mt-4 font-montserrat text-3xl font-black tracking-tight">
                   {p.name}
                 </h2>
+                {p.subtitle && (
+                  <p className="mt-1 text-sm font-semibold text-foreground/55">{p.subtitle[locale]}</p>
+                )}
+                {p.creditXtraMetrik && <XtraMetrikCredit className="mt-3" />}
 
                 <p className="mt-4 leading-relaxed text-muted-foreground text-pretty">
                   {p.summary[locale]}
@@ -136,10 +143,10 @@ export default function ProjectsShowcase() {
               ].map((step, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/5 to-transparent p-6"
+                  className="rounded-2xl border border-brand/20 bg-gradient-to-b from-brand/5 to-transparent p-6"
                 >
                   <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary font-bold text-primary-foreground">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand font-bold text-brand-foreground">
                       {i + 1}
                     </span>
                     <span className="font-montserrat text-sm font-black uppercase tracking-wider">
@@ -153,7 +160,7 @@ export default function ProjectsShowcase() {
               ))}
             </div>
 
-            <p className="mt-8 text-center text-sm font-bold text-primary">{c.o2oProof}</p>
+            <p className="mt-8 text-center text-sm font-bold text-brand">{c.o2oProof}</p>
           </div>
         </section>
       )}

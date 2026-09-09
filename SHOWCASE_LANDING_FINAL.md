@@ -47,7 +47,7 @@ Características:
 - ✅ Métricas y features por item
 
 **Web Apps (Funcionales):**
-- Cielo Efata (https://cieloefata.com)
+- Revelatio (https://revelatiobiblia.vercel.app)
 - Cielo Efata App
 - Táchira Protein (https://tachirapro.com)
 
@@ -175,7 +175,7 @@ data/
 - ✅ 6 casos con métricas reales
 - ✅ Testimonios verificables
 - ✅ ROI + timeframes específicos
-- ✅ URLs funcionales (Cielo Efata, Táchira)
+- ✅ URLs funcionales (Revelatio, Táchira)
 
 ### UX/Diseño
 - ✅ Dark mode premium

@@ -34,7 +34,7 @@ De una landing page genérica... a una que ES ELLA MISMA el showcase de capacida
     ├─ 3 tabs: Web Apps | Dashboards | Implementaciones
     ├─ Click para expandir detalles
     ├─ Links funcionales a apps reales:
-    │  ├─ Cielo Efata (https://cieloefata.com)
+    │  ├─ Revelatio (https://revelatiobiblia.vercel.app)
     │  └─ Táchira Protein (https://tachirapro.com)
     └─ Nada dummy, TODO real
 

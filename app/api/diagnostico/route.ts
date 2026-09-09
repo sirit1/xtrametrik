@@ -1,4 +1,4 @@
-import { db } from '@/lib/db'
+import { getDb } from '@/lib/db'
 import { leads } from '@/lib/db/schema'
 import { scoreDiagnostic, type Locale } from '@/lib/diagnostic'
 import { NextResponse } from 'next/server'
@@ -31,8 +31,7 @@ export async function POST(request: Request) {
     }
 
     const result = scoreDiagnostic(answers, locale)
-
-    await db.insert(leads).values({
+    const payload = {
       name,
       email,
       company: body.company ? String(body.company).trim() : null,
@@ -48,11 +47,23 @@ export async function POST(request: Request) {
       riskLevel: result.level,
       locale,
       source: 'landing',
-    })
+    }
 
-    return NextResponse.json({ ok: true, result })
+    const db = getDb()
+    if (!db) {
+      return NextResponse.json({ ok: true, result, saved: false })
+    }
+
+    try {
+      await db.insert(leads).values(payload)
+    } catch (error) {
+      console.error('[diagnostico] save failed:', error instanceof Error ? error.message : error)
+      return NextResponse.json({ ok: true, result, saved: false })
+    }
+
+    return NextResponse.json({ ok: true, result, saved: true })
   } catch (error) {
-    console.log('[v0] diagnostico error:', error instanceof Error ? error.message : error)
-    return NextResponse.json({ error: 'server_error' }, { status: 500 })
+    console.error('[diagnostico] error:', error instanceof Error ? error.message : error)
+    return NextResponse.json({ error: 'server_error' }, { status: 503 })
   }
 }

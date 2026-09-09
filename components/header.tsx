@@ -12,10 +12,8 @@ export default function Header() {
   const { t } = useI18n()
 
   const navItems = [
-    { label: t.nav.engines, href: '/#motores' },
-    { label: t.nav.method, href: '/#pasos' },
+    { label: t.homeAilock.title, href: '/#ailock' },
     { label: t.nav.projects, href: '/proyectos' },
-    { label: t.nav.sample, href: '/caso-real' },
     { label: t.nav.blog, href: '/blog' },
     { label: t.nav.contact, href: '/#diagnostico' },
   ]
@@ -24,14 +22,14 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur border-b border-border/30">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center gap-4">
-          <BrandLogo size="md" />
+          <BrandLogo size="md" variant="horizontal" />
 
           <div className="hidden md:flex items-center gap-5 lg:gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap text-foreground/80 hover:text-primary transition-colors font-semibold text-sm"
+                className="whitespace-nowrap text-foreground/80 hover:text-brand transition-colors font-semibold text-sm"
               >
                 {item.label}
               </Link>
@@ -52,13 +50,13 @@ export default function Header() {
             <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label={t.nav.menuToggle}
               aria-expanded={isOpen}
             >
               {isOpen ? (
-                <X className="w-6 h-6 text-primary" />
+                <X className="w-6 h-6 text-brand" />
               ) : (
-                <Menu className="w-6 h-6 text-primary" />
+                <Menu className="w-6 h-6 text-brand" />
               )}
             </button>
           </div>
@@ -70,7 +68,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors font-medium text-sm py-1"
+                className="text-foreground/80 hover:text-brand transition-colors font-medium text-sm py-1"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

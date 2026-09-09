@@ -97,7 +97,7 @@ export default function NarrativeCases() {
                       {caseData.id === 'sisters' && 'Activación en redes sociales, setup de landing pages, integración de booking online'}
                       {caseData.id === 'cafe' && 'Setup de programa de retención, integración CRM local, activación de WhatsApp Business'}
                       {caseData.id === 'fintech' && 'Implementación de controles IA, setup de monitoring, documentación regulatoria, training'}
-                      {caseData.id === 'salud' && 'Implementación de IA local, configuración de HIPAA, setup de governance automático'}
+                      {caseData.id === 'salud' && 'Implementación de IA local, configuración de HIPAA, setup de control de fugas'}
                     </p>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function NarrativeCases() {
                       {caseData.id === 'yasman' && 'Mejora continua del modelo IA, integración con sistemas legacy, entrenamiento de operadores'}
                       {caseData.id === 'sisters' && 'Análisis de atribución, ajuste de creativos, testing de incentivos y promociones'}
                       {caseData.id === 'cafe' && 'Optimización de programa de retención, análisis de LTV, expansion a eventos/actividades'}
-                      {caseData.id === 'fintech' && 'Auditoría externa, certificación ISO 42001, setup de governance board mensual'}
+                      {caseData.id === 'fintech' && 'Auditoría externa, certificación ISO 42001, comité mensual de riesgo de IA'}
                       {caseData.id === 'salud' && 'Mejora de precisión diagnóstica, análisis de resultados, ampliación a nuevas especialidades'}
                     </p>
                   </div>

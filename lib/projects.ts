@@ -18,12 +18,18 @@ export type Project = {
    * Which capability this work proves. 'ia' covers building AI products
    * end-to-end — the technical ground the AI Shielding engine stands on.
    */
-  engine: 'ia' | 'blindaje' | 'o2o' | 'conversion'
+  engine: 'ia' | 'blindaje' | 'o2o' | 'conversion' | 'webapp'
   name: string
   /** Live, clickable proof. */
   url: string
   urlLabel: string
   image: string
+  /** Contain for brand marks; cover for screenshots. */
+  imageFit?: 'cover' | 'contain'
+  /** Short line under the name on cards (optional). */
+  subtitle?: Record<Locale, string>
+  /** Show a small “Hecho por XtraMetrik” credit on this project. */
+  creditXtraMetrik?: boolean
   /** Mobile captures are portrait and must be height-capped, not stretched. */
   orientation: 'landscape' | 'portrait'
   imageAlt: Record<Locale, string>
@@ -37,21 +43,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: 'cielo-efata-biblia',
+    slug: 'revelatio',
     engine: 'ia',
-    name: 'Cielo Efatá - Biblia de Estudio',
-    url: 'https://v0-cieloefata-biblia.vercel.app',
-    urlLabel: 'v0-cieloefata-biblia.vercel.app',
-    image: '/projects/cielo-efata-web.png',
+    name: 'Revelatio',
+    subtitle: {
+      es: 'Biblia de estudio / inteligencia exegética',
+      en: 'Bible study / exegetical intelligence',
+    },
+    url: 'https://revelatiobiblia.vercel.app',
+    urlLabel: 'revelatiobiblia.vercel.app',
+    image: '/brand/revelatio-logo-master.jpeg',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
     orientation: 'landscape',
     imageAlt: {
-      es: 'Cielo Efatá: asistente de IA para estudio profundo de la Biblia',
-      en: 'Cielo Efatá: AI assistant for deep Bible study',
+      es: 'Logo de Revelatio by Efata: Biblia de estudio e inteligencia exegética',
+      en: 'Revelatio by Efata logo: Bible study and exegetical intelligence',
     },
     sector: { es: 'Plataforma IA · Estudio bíblico · Community', en: 'AI Platform · Bible study · Community' },
     summary: {
-      es: 'Producto IA potenciado para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp —incluyendo "Buenos Días".',
-      en: 'AI-powered product for deep Scripture study. Assistant interprets biblical text, structures the evangelistic journey in three stages, and activates community with automated WhatsApp API campaigns — including "Good Morning" activation.',
+      es: 'Producto IA en vivo de XtraMetrik para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp —incluyendo "Buenos Días".',
+      en: 'Live XtraMetrik AI product for deep Scripture study. Assistant interprets biblical text, structures the evangelistic journey in three stages, and activates community with automated WhatsApp API campaigns — including "Good Morning" activation.',
     },
     features: {
       es: [
@@ -70,6 +82,162 @@ export const projects: Project[] = [
       ],
     },
     stack: ['Next.js', 'AI SDK', 'Neon Postgres', 'Supabase Auth', 'WhatsApp API', 'Automation'],
+  },
+  {
+    slug: 'cafe-central',
+    engine: 'webapp',
+    name: 'Café Central',
+    subtitle: {
+      es: 'Carta digital · Castro, Chiloé',
+      en: 'Digital menu · Castro, Chiloé',
+    },
+    url: 'https://cafe-central-8719.vercel.app',
+    urlLabel: 'cafe-central-8719.vercel.app',
+    image: '/projects/cafe-central-logo.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Logo de Café Central, carta digital en Castro, Chiloé',
+      en: 'Café Central logo, digital menu in Castro, Chiloé',
+    },
+    sector: { es: 'Webapp · Gastronomía · Chiloé', en: 'Webapp · Hospitality · Chiloé' },
+    summary: {
+      es: 'Webapp pública y clickable: carta digital y pedidos para Café Central en Castro, Chiloé. Todavía no está terminada. Prueba de que la casa también construye webapps.',
+      en: 'Public, clickable webapp: digital menu and orders for Café Central in Castro, Chiloé. Not finished yet. Proof that the firm also builds webapps.',
+    },
+    features: {
+      es: [
+        'Carta digital para pedir sin fila',
+        'Pedidos con pago en la barra y retiro para llevar',
+        'Local en Blanco Encalada, Castro, Chiloé',
+        'Pública y clickable ahora. Aún en construcción.',
+      ],
+      en: [
+        'Digital menu so guests can order without a queue',
+        'Orders paid at the bar, pickup to go',
+        'Shop on Blanco Encalada, Castro, Chiloé',
+        'Public and clickable now. Still being built.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'Carta digital'],
+  },
+  {
+    slug: 'cobra',
+    engine: 'webapp',
+    name: 'Cobra',
+    subtitle: {
+      es: 'PWA de recibos por WhatsApp',
+      en: 'WhatsApp receipts PWA',
+    },
+    url: 'https://cobra-rho.vercel.app',
+    urlLabel: 'cobra-rho.vercel.app',
+    image: '/projects/cobra-icon.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Icono de Cobra, PWA de recibos por WhatsApp hecha por XtraMetrik',
+      en: 'Cobra icon, WhatsApp receipts PWA made by XtraMetrik',
+    },
+    sector: { es: 'Webapp · PWA · Recibos', en: 'Webapp · PWA · Receipts' },
+    summary: {
+      es: 'PWA de recibos por WhatsApp. Hecho por XtraMetrik. Ábrela: recibo, historial y ajustes. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'WhatsApp receipts PWA. Made by XtraMetrik. Open it: receipt, history and settings. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Emitir un recibo y enviarlo por WhatsApp',
+        'Historial de recibos en el dispositivo',
+        'Ajustes de la PWA',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Issue a receipt and send it on WhatsApp',
+        'Receipt history on the device',
+        'PWA settings',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['PWA', 'WhatsApp', 'Vercel'],
+  },
+  {
+    slug: 'la-manzanita',
+    engine: 'webapp',
+    name: 'La Manzanita',
+    subtitle: {
+      es: 'Catálogo Apple reacondicionado · San Cristóbal, Táchira',
+      en: 'Refurbished Apple catalogue · San Cristóbal, Táchira',
+    },
+    url: 'https://lamanzanita.vercel.app',
+    urlLabel: 'lamanzanita.vercel.app',
+    image: '/projects/la-manzanita-logo.png',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Logo de La Manzanita, catálogo Apple reacondicionado en San Cristóbal, Táchira',
+      en: 'La Manzanita logo, refurbished Apple catalogue in San Cristóbal, Táchira',
+    },
+    sector: { es: 'Webapp · E-commerce · Táchira', en: 'Webapp · E-commerce · Táchira' },
+    summary: {
+      es: 'Webapp de catálogo y e-commerce: Apple Store de reacondicionado en San Cristóbal, Táchira. iPhone, MacBook, iPad, Watch y accesorios. Hecho por XtraMetrik. Pública y clickable. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'Catalogue and e-commerce webapp: refurbished Apple Store in San Cristóbal, Táchira. iPhone, MacBook, iPad, Watch and accessories. Made by XtraMetrik. Public and clickable. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Catálogo de iPhone, MacBook, iPad, Watch y accesorios',
+        'Carrito y compra en la webapp',
+        'Local en San Cristóbal, Táchira',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Catalogue of iPhone, MacBook, iPad, Watch and accessories',
+        'Cart and checkout in the webapp',
+        'Shop in San Cristóbal, Táchira',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'E-commerce'],
+  },
+  {
+    slug: 'cielo-efata',
+    engine: 'webapp',
+    name: 'Cielo Efatá',
+    subtitle: {
+      es: 'Sello editorial · El texto manda',
+      en: 'Editorial house · The text leads',
+    },
+    url: 'https://www.cieloefata.com',
+    urlLabel: 'www.cieloefata.com',
+    image: '/projects/cielo-efata-sello.jpg',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Sello de Cielo Efatá, sitio editorial de lectura bíblica',
+      en: 'Cielo Efatá seal, editorial site for biblical reading',
+    },
+    sector: { es: 'Webapp · Editorial · Lectura bíblica', en: 'Webapp · Publishing · Biblical reading' },
+    summary: {
+      es: 'Sitio editorial de Cielo Efatá. El texto manda: taller de lectura, cortes (2 Pedro 1) y obras. No es Revelatio ni la app de evaluación emocional. Hecho por XtraMetrik. Público y clickable. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'Cielo Efatá editorial site. The text leads: reading workshop, published cuts (2 Peter 1) and books. Not Revelatio and not the emotional-eval app. Made by XtraMetrik. Public and clickable. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Taller de lectura y corte publicado (2 Pedro 1)',
+        'Obras y tratados bajo el sello',
+        'Agente bíblico para consultar el texto',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Reading workshop and published cut (2 Peter 1)',
+        'Books and treatises under the imprint',
+        'Biblical agent to consult the text',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'Editorial'],
   },
   {
     slug: 'cielo-efata-emocional',

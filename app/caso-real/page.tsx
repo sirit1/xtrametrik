@@ -4,9 +4,9 @@ import Footer from '@/components/footer'
 import SampleReport from '@/components/sample-report'
 
 export const metadata: Metadata = {
-  title: 'Caso real: cómo blindamos una fintech de 500 empleados en 7 días',
+  title: 'Diagnóstico de muestra: fuga de datos por IA sin control',
   description:
-    'Diagnóstico real anonimizado: problema, diagnóstico y solución. €2.1M de exposición a sanción evitada y control centralizado de IA operativo en 5 días.',
+    'El problema es real: empleados pegando datos de empresa en ChatGPT. Hoy el entregable es un cuestionario de 5 preguntas. AILock está en construcción. No hay demo de un producto instalado.',
   alternates: { canonical: '/caso-real' },
 }
 

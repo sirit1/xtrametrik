@@ -2,79 +2,74 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useI18n } from '@/components/i18n/language-provider'
 
 type Size = 'sm' | 'md' | 'lg'
 
-const MARK_SIZE: Record<Size, number> = { sm: 36, md: 48, lg: 64 }
-const WORD_SIZE: Record<Size, string> = {
-  sm: 'text-base',
-  md: 'text-xl',
-  lg: 'text-2xl',
+const LOCKUP: Record<Size, { w: number; h: number; className: string }> = {
+  sm: { w: 88, h: 88, className: 'h-12 w-12' },
+  md: { w: 128, h: 128, className: 'h-16 w-16' },
+  lg: { w: 160, h: 160, className: 'h-[5.5rem] w-[5.5rem]' },
 }
-const TAGLINE_SIZE: Record<Size, string> = {
-  sm: 'text-[9px]',
-  md: 'text-[10px]',
-  lg: 'text-[11px]',
+
+const MARK: Record<Size, { px: number; word: string }> = {
+  sm: { px: 32, word: 'text-base' },
+  md: { px: 40, word: 'text-xl' },
+  lg: { px: 52, word: 'text-2xl' },
 }
 
 /**
- * The single source of truth for the XtraMetrik brand mark.
- *
- * The logo art is cyan on black, so it needs a cyan-tinted ring to separate it
- * from the near-black page background — otherwise it disappears, which is the
- * exact problem this component was created to fix.
+ * Official lockup on the dark site. Header uses the cyan mark + dark-safe
+ * wordmark (Metri stays white). Footer uses the navy lockup. The light
+ * wordmark (Metri navy) is not used here — it disappears on this background.
  */
 export function BrandLogo({
   size = 'md',
-  showWordmark = true,
-  showTagline = true,
+  variant = 'horizontal',
   href = '/',
   className = '',
 }: {
   size?: Size
-  showWordmark?: boolean
-  showTagline?: boolean
+  variant?: 'horizontal' | 'lockup'
   href?: string | null
   className?: string
 }) {
-  const { t } = useI18n()
-  const px = MARK_SIZE[size]
+  const lockup = LOCKUP[size]
+  const mark = MARK[size]
 
-  const content = (
-    <span className={`flex flex-shrink-0 items-center gap-3 ${className}`}>
-      <span
-        className="flex items-center justify-center overflow-hidden rounded-xl ring-1 ring-brand/30"
-        style={{ width: px, height: px }}
-      >
+  const content =
+    variant === 'lockup' ? (
+      <span className={`flex flex-shrink-0 ${className}`}>
         <Image
-          src="/brand/xtrametrik-logo.jpg"
+          src="/brand/xtrametrik-lockup-dark.svg"
           alt="XtraMetrik"
-          width={px}
-          height={px}
+          width={lockup.w}
+          height={lockup.h}
           priority
-          className="h-full w-full object-cover"
+          className={`${lockup.className} rounded-xl object-contain`}
         />
       </span>
-
-      {showWordmark && (
-        <span className="flex flex-col leading-none">
-          <span
-            className={`font-montserrat font-black tracking-tight text-foreground ${WORD_SIZE[size]}`}
-          >
-            XTRA<span className="text-brand">METRIK</span>
-          </span>
-          {showTagline && (
-            <span
-              className={`mt-1 whitespace-nowrap font-bold uppercase tracking-[0.14em] text-brand/70 ${TAGLINE_SIZE[size]}`}
-            >
-              {t.nav.brandSlogan}
-            </span>
-          )}
+    ) : (
+      <span className={`flex flex-shrink-0 items-center gap-3 ${className}`}>
+        <Image
+          src="/brand/xtrametrik-mark.svg"
+          alt=""
+          width={mark.px}
+          height={mark.px}
+          priority
+          className="h-auto w-auto"
+          style={{ width: mark.px, height: mark.px }}
+        />
+        <span
+          className={`font-montserrat font-black tracking-tight leading-none ${mark.word}`}
+          aria-label="XtraMetrik"
+        >
+          <span className="text-brand">Xt</span>
+          <span className="text-primary">ra</span>
+          <span className="text-foreground">Metri</span>
+          <span className="text-primary">k</span>
         </span>
-      )}
-    </span>
-  )
+      </span>
+    )
 
   if (!href) return content
 

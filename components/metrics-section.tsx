@@ -26,7 +26,7 @@ export default function MetricsSection() {
       icon: CheckCircle2,
       label: 'ISO 42001 Certified',
       value: '100%',
-      description: 'Governance IA',
+      description: 'AILock · riesgo de IA',
     },
   ]
 

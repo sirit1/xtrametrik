@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import { LanguageProvider } from '@/components/i18n/language-provider'
 import { SITE_URL } from '@/lib/site'
+import { HOME_CANONICAL, HOME_DESCRIPTION, HOME_KEYWORDS, HOME_TITLE } from '@/lib/seo'
 import './globals.css'
 
 const montserrat = Montserrat({ 
@@ -20,32 +21,30 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'XtraMetrik · Governance de IA y rentabilidad B2B verificable',
+    default: HOME_TITLE,
     template: '%s · XtraMetrik',
   },
-  description:
-    'De caos de IA a control verificable en 7 días: diagnóstico, governance ISO 42001 y auditoría independiente para empresas B2B.',
-  keywords:
-    'governance IA, ISO 42001, EU AI Act, compliance IA, business intelligence, rentabilidad B2B, transformación digital',
+  description: HOME_DESCRIPTION,
+  keywords: HOME_KEYWORDS,
   openGraph: {
-    title: 'XtraMetrik · Governance de IA y rentabilidad B2B verificable',
-    description:
-      'Diagnóstico, governance ISO 42001 y auditoría independiente en 7 días. Compliance demostrable.',
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
     type: 'website',
-    url: SITE_URL,
+    url: HOME_CANONICAL,
+    locale: 'es_ES',
     siteName: 'XtraMetrik',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XtraMetrik · Governance de IA y rentabilidad B2B',
-    description: 'De caos de IA a control verificable en 7 días.',
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
   },
 }
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#121212',
+  themeColor: '#0B1320',
   colorScheme: 'dark',
 }
 

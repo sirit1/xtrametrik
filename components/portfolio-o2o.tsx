@@ -32,7 +32,7 @@ const cases: CaseStudy[] = [
     name: 'Yasman',
     type: 'Distribución Hiperlocal',
     challenge: 'Dispersión geográfica, falta de coordinación entre vendedores, sin optimización de rutas',
-    solution: 'Dashboard operativo + Modelo de distribución inteligente + Governance IA',
+    solution: 'Dashboard operativo + Modelo de distribución inteligente + AILock',
     results: ['Eficiencia logística +78%', 'Cobertura +200km', 'Rentabilidad sostenible'],
     icon: <Percent className="w-6 h-6 text-primary" />
   }

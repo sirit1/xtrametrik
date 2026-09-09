@@ -11,9 +11,9 @@ export default function ArticleCard({ article }: { article: Article }) {
   const content = getContent(article, locale)
 
   return (
-    <article className="flex flex-col h-full p-6 bg-card border border-border/40 rounded-xl hover:border-primary/60 transition-colors">
+    <article className="card-tap flex flex-col h-full p-6 bg-card border border-border/40 rounded-xl">
       <div className="flex items-center gap-3 mb-4">
-        <span className="text-[11px] font-bold uppercase tracking-wide text-primary">
+        <span className="text-[11px] font-bold uppercase tracking-wide text-brand">
           {article.category}
         </span>
         <span className="flex items-center gap-1 text-[11px] text-foreground/50">
@@ -23,7 +23,7 @@ export default function ArticleCard({ article }: { article: Article }) {
       </div>
 
       <h3 className="text-lg font-bold font-montserrat mb-3 leading-snug text-pretty">
-        <Link href={`/blog/${article.slug}`} className="hover:text-primary transition-colors">
+        <Link href={`/blog/${article.slug}`} className="hover:text-brand transition-colors">
           {content.title}
         </Link>
       </h3>
@@ -32,7 +32,7 @@ export default function ArticleCard({ article }: { article: Article }) {
 
       <Link
         href={`/blog/${article.slug}`}
-        className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:gap-3 transition-all"
+        className="inline-flex items-center gap-2 text-sm font-bold text-brand hover:gap-3 transition-all"
       >
         {t.blog.readMore}
         <ArrowRight className="w-4 h-4" aria-hidden="true" />

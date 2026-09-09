@@ -9,7 +9,7 @@
 ### URLs Actualizadas:
 
 **Web Apps:**
-- Cielo Efata: `https://cielo-efata.vercel.app`
+- Revelatio: `https://revelatiobiblia.vercel.app`
 - Táchira Protein: `https://linktr.ee/tachiraproteiin`
 
 **Dashboards:**

@@ -17,7 +17,13 @@ export default async function LeadsPage() {
     return <LoginForm />
   }
 
-  const rows = await getLeads()
+  let rows: Awaited<ReturnType<typeof getLeads>> = []
+  try {
+    rows = await getLeads()
+  } catch (error) {
+    console.error('[admin/leads] getLeads failed:', error instanceof Error ? error.message : error)
+    rows = []
+  }
   const stats = summarize(rows)
 
   const cards = [

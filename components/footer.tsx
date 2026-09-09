@@ -12,9 +12,9 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   const navLinks = [
-    { label: t.nav.engines, href: '/#motores' },
-    { label: t.nav.method, href: '/#pasos' },
-    { label: t.nav.cases, href: '/#casos' },
+    { label: t.homeAilock.title, href: '/#ailock' },
+    { label: t.nav.projects, href: '/proyectos' },
+    { label: t.nav.blog, href: '/blog' },
     { label: t.nav.contact, href: '/#diagnostico' },
   ]
 
@@ -38,21 +38,21 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid gap-10 md:grid-cols-4 mb-12">
           <div className="flex flex-col gap-4">
-            <BrandLogo size="lg" />
+            <BrandLogo size="lg" variant="lockup" />
             <p className="text-sm text-foreground/60 leading-relaxed">{t.footer.tagline}</p>
             <div className="flex gap-4">
               <a
                 href={LINKEDIN_PROFILE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-foreground/50 hover:text-primary transition-colors"
+                className="text-foreground/50 hover:text-brand transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon className="w-5 h-5" />
               </a>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="text-foreground/50 hover:text-primary transition-colors"
+                className="text-foreground/50 hover:text-brand transition-colors"
                 aria-label={CONTACT_EMAIL}
               >
                 <Mail className="w-5 h-5" />
@@ -67,7 +67,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                    className="text-sm text-foreground/60 hover:text-brand transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                      className="text-sm text-foreground/60 hover:text-brand transition-colors"
                     >
                       {item.label}
                     </a>
@@ -95,7 +95,7 @@ export default function Footer() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                      className="text-sm text-foreground/60 hover:text-brand transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -112,7 +112,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                    className="text-sm text-foreground/60 hover:text-brand transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -126,12 +126,20 @@ export default function Footer() {
           <p className="text-xs text-foreground/50">
             © {year} XtraMetrik. {t.footer.rights}
           </p>
-          <a
-            href="https://www.xtrametrik.com"
-            className="text-xs text-foreground/50 hover:text-primary transition-colors font-semibold"
-          >
-            xtrametrik.com
-          </a>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/admin/leads"
+              className="text-[11px] text-foreground/35 transition-colors hover:text-foreground/60"
+            >
+              {t.footer.admin}
+            </Link>
+            <a
+              href="https://www.xtrametrik.com"
+              className="text-xs text-foreground/50 hover:text-brand transition-colors font-semibold"
+            >
+              xtrametrik.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>

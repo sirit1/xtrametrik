@@ -28,6 +28,8 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
+  --color-highlight: var(--highlight);
+  --color-risk: var(--risk);
   --color-brand-foreground: var(--brand-foreground);
   --color-brand: var(--brand);
   --color-primary-foreground: var(--primary-foreground);
@@ -49,116 +51,102 @@
 
 :root {
   color-scheme: dark;
-  /* XtraMetrik Orange Energy */
-  --background: #0D0D0D;
-  --foreground: #FFFFFF;
-  --card: #1A1A1A;
-  --card-foreground: #FFFFFF;
-  --popover: #1A1A1A;
-  --popover-foreground: #FFFFFF;
-  /* IDENTITY — the cyan of the real logo. Brand marks, seals, signature only. */
-  --brand: #58E0E0;
-  --brand-foreground: #0D0D0D;
-  /* ACTION — orange is reserved for CTAs, urgency and risk. Never identity. */
-  --primary: #FF6B35;
-  --primary-foreground: #0D0D0D;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #FF6B35;
-  --muted: #2A2A2A;
-  --muted-foreground: #888888;
-  --accent: #FFFFFF;
-  --accent-foreground: #0D0D0D;
-  --destructive: #FF4444;
-  --border: #2A2A2A;
-  --input: #1A1A1A;
-  --ring: #FF6B35;
-  --chart-1: #FF6B35;
-  --chart-2: #FFFFFF;
-  --chart-3: #FF6B35;
-  --chart-4: #888888;
-  --chart-5: #2A2A2A;
+  /* Official brand manual. */
+  --background: #0B1320;
+  --foreground: #F4F7FA;
+  --card: #003049;
+  --card-foreground: #F4F7FA;
+  --popover: #003049;
+  --popover-foreground: #F4F7FA;
+  /* IDENTITY — turquoise. Links, live work, marks. */
+  --brand: #00D1C1;
+  --brand-foreground: #0B1320;
+  /* SELL — vibrant orange. Questionnaire CTA only. */
+  --primary: #FF751F;
+  --primary-foreground: #0B1320;
+  --secondary: #003049;
+  --secondary-foreground: #F4F7FA;
+  --muted: #0F2433;
+  --muted-foreground: #B8C0C8;
+  --accent: #F4F7FA;
+  --accent-foreground: #0B1320;
+  --risk: #FF5A3C;
+  --highlight: #FF9F1C;
+  --destructive: #FF5A3C;
+  --border: #1A3A4A;
+  --input: #003049;
+  --ring: #FF751F;
+  --chart-1: #FF751F;
+  --chart-2: #00D1C1;
+  --chart-3: #FF5A3C;
+  --chart-4: #FF9F1C;
+  --chart-5: #003049;
   --radius: 0.5rem;
-  --sidebar: #0D0D0D;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #FF6B35;
-  --sidebar-primary-foreground: #0D0D0D;
-  --sidebar-accent: #FFFFFF;
-  --sidebar-accent-foreground: #0D0D0D;
-  --sidebar-border: #2A2A2A;
-  --sidebar-ring: #FF6B35;
+  --sidebar: #0B1320;
+  --sidebar-foreground: #F4F7FA;
+  --sidebar-primary: #FF751F;
+  --sidebar-primary-foreground: #0B1320;
+  --sidebar-accent: #F4F7FA;
+  --sidebar-accent-foreground: #0B1320;
+  --sidebar-border: #1A3A4A;
+  --sidebar-ring: #FF751F;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-inter: 'Inter', sans-serif;
 }
 
-.dark {
+/* Keep brand tokens. Do not let shadcn dark/oklch wipe cyan + orange. */
+.dark,
+html.dark {
   color-scheme: dark;
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #0B1320;
+  --foreground: #F4F7FA;
+  --card: #003049;
+  --card-foreground: #F4F7FA;
+  --popover: #003049;
+  --popover-foreground: #F4F7FA;
+  --brand: #00D1C1;
+  --brand-foreground: #0B1320;
+  --primary: #FF751F;
+  --primary-foreground: #0B1320;
+  --secondary: #003049;
+  --secondary-foreground: #F4F7FA;
+  --muted: #0F2433;
+  --muted-foreground: #B8C0C8;
+  --accent: #F4F7FA;
+  --accent-foreground: #0B1320;
+  --risk: #FF5A3C;
+  --highlight: #FF9F1C;
+  --destructive: #FF5A3C;
+  --border: #1A3A4A;
+  --input: #003049;
+  --ring: #FF751F;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     color-scheme: dark;
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    --background: #0B1320;
+    --foreground: #F4F7FA;
+    --card: #003049;
+    --card-foreground: #F4F7FA;
+    --popover: #003049;
+    --popover-foreground: #F4F7FA;
+    --brand: #00D1C1;
+    --brand-foreground: #0B1320;
+    --primary: #FF751F;
+    --primary-foreground: #0B1320;
+    --secondary: #003049;
+    --secondary-foreground: #F4F7FA;
+    --muted: #0F2433;
+    --muted-foreground: #B8C0C8;
+    --accent: #F4F7FA;
+    --accent-foreground: #0B1320;
+    --risk: #FF5A3C;
+    --highlight: #FF9F1C;
+    --destructive: #FF5A3C;
+    --border: #1A3A4A;
+    --input: #003049;
+    --ring: #FF751F;
   }
 }
 
@@ -168,18 +156,20 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(ellipse 90% 55% at 50% -10%, rgba(0, 209, 193, 0.1), transparent 58%);
+    background-attachment: fixed;
   }
 }
 
 /* Orange Energy Animations */
 @keyframes neon-glow {
-  0%, 100% { filter: drop-shadow(0 0 8px #FF6B35) drop-shadow(0 0 16px #FF6B35); }
-  50% { filter: drop-shadow(0 0 16px #FF6B35) drop-shadow(0 0 32px #FFFFFF); }
+  0%, 100% { filter: drop-shadow(0 0 8px #FF751F) drop-shadow(0 0 16px #FF751F); }
+  50% { filter: drop-shadow(0 0 16px #FF751F) drop-shadow(0 0 32px #FFFFFF); }
 }
 
 @keyframes neon-pulse {
-  0%, 100% { text-shadow: 0 0 8px #FF6B35, 0 0 16px #FF6B35; }
-  50% { text-shadow: 0 0 16px #FFFFFF, 0 0 32px #FF6B35; }
+  0%, 100% { text-shadow: 0 0 8px #FF751F, 0 0 16px #FF751F; }
+  50% { text-shadow: 0 0 16px #FFFFFF, 0 0 32px #FF751F; }
 }
 
 @keyframes gradient-shift {
@@ -216,7 +206,36 @@
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 117, 31, 0.3), transparent);
   background-size: 1000px 100%;
   animation: shimmer 3s infinite;
+}
+
+.card-tap {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.card-tap:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--brand) 45%, var(--border));
+  box-shadow: 0 14px 36px rgba(11, 19, 32, 0.55), 0 0 0 1px rgba(0, 209, 193, 0.16);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neon-glow,
+  .neon-pulse,
+  .gradient-shift,
+  .float,
+  .shimmer {
+    animation: none;
+  }
+
+  .card-tap,
+  .card-tap:hover {
+    transition: none;
+    transform: none;
+  }
 }

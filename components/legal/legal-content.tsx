@@ -9,7 +9,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
   es: {
     title: 'Información legal',
     intro:
-      'XtraMetrik presta servicios de diagnóstico, governance de IA y auditoría para empresas B2B. Esta página resume cómo tratamos tus datos y en qué condiciones prestamos el servicio.',
+      'XtraMetrik presta servicios de diagnóstico de riesgo de IA, control de fugas y auditoría para empresas B2B. Esta página resume cómo tratamos tus datos y en qué condiciones prestamos el servicio.',
     sections: [
       {
         id: 'privacidad',
@@ -27,7 +27,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
         title: 'Términos de servicio',
         body: [
           'El diagnóstico preliminar es gratuito y de carácter informativo: estima tu nivel de exposición a partir de la información que declaras, y no sustituye a una auditoría formal.',
-          'Los plazos de 7 días descritos en el sitio corresponden al protocolo estándar de las tres fases (diagnóstico, governance y auditoría) y requieren disponibilidad del equipo del cliente y acceso a la información solicitada.',
+          'Los plazos de 7 días descritos en el sitio corresponden al protocolo estándar de las tres fases (diagnóstico, control de fugas y auditoría) y requieren disponibilidad del equipo del cliente y acceso a la información solicitada.',
           'Las cifras de casos publicadas corresponden a proyectos ejecutados y se presentan de forma anonimizada por acuerdos de confidencialidad.',
         ],
       },
@@ -43,7 +43,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
         id: 'compliance',
         title: 'Compliance ISO 42001',
         body: [
-          'ISO/IEC 42001 es la norma internacional de sistemas de gestión de inteligencia artificial. Nuestro marco de trabajo implanta los controles de gobierno, gestión de riesgos, clasificación de datos y trazabilidad que exige la norma.',
+          'ISO/IEC 42001 es la norma internacional de sistemas de gestión de inteligencia artificial. Nuestro marco de trabajo implanta los controles de manejo de riesgo, clasificación de datos y trazabilidad que exige la norma.',
           'La fase de auditoría se ejecuta con revisión independiente y produce un expediente documental que puedes presentar ante reguladores, clientes enterprise o tu propio comité de riesgos.',
           'XtraMetrik implanta y audita el marco de gestión; la emisión de un certificado acreditado corresponde siempre a un organismo de certificación externo.',
         ],
@@ -53,7 +53,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
   en: {
     title: 'Legal information',
     intro:
-      'XtraMetrik provides AI risk diagnostics, governance implementation and audit services for B2B companies. This page summarises how we handle your data and the terms under which we deliver the service.',
+      'XtraMetrik provides AI risk diagnostics, leak control and audit services for B2B companies. This page summarises how we handle your data and the terms under which we deliver the service.',
     sections: [
       {
         id: 'privacidad',
@@ -71,7 +71,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
         title: 'Terms of service',
         body: [
           'The preliminary diagnostic is free and informational: it estimates your exposure based on the information you declare and does not replace a formal audit.',
-          'The 7-day timeline described on this site refers to the standard three-phase protocol (diagnostic, governance, audit) and requires client team availability and access to the requested information.',
+          'The 7-day timeline described on this site refers to the standard three-phase protocol (diagnostic, leak control, audit) and requires client team availability and access to the requested information.',
           'Published case figures correspond to delivered projects and are presented anonymised due to confidentiality agreements.',
         ],
       },
@@ -87,7 +87,7 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
         id: 'compliance',
         title: 'ISO 42001 compliance',
         body: [
-          'ISO/IEC 42001 is the international standard for artificial intelligence management systems. Our framework implements the governance, risk management, data classification and traceability controls the standard requires.',
+          'ISO/IEC 42001 is the international standard for artificial intelligence management systems. Our framework implements the risk management, data classification and traceability controls the standard requires.',
           'The audit phase includes independent review and produces a documented file you can present to regulators, enterprise clients or your own risk committee.',
           'XtraMetrik implements and audits the management framework; issuing an accredited certificate is always the role of an external certification body.',
         ],

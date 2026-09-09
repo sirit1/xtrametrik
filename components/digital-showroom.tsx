@@ -5,15 +5,15 @@ import { ExternalLink, Code2 } from 'lucide-react'
 export default function DigitalShowroom() {
   const projects = [
     {
-      name: 'Cielo Efata - Biblia',
-      description: 'App de consulta interactiva de estudios bíblicos. Interfaz moderna con búsqueda avanzada, notas personalizadas y sincronización en la nube.',
+      name: 'Revelatio',
+      description: 'Producto IA en vivo de XtraMetrik para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp.',
       tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      url: 'https://v0-cieloefata-biblia.vercel.app/',
+      url: 'https://revelatiobiblia.vercel.app',
       focus: 'Experiencia de usuario + Escalabilidad'
     },
     {
-      name: 'Cielo Efata - App',
-      description: 'Plataforma integral de comunidad con dashboard de usuarios, gestión de eventos, contenido dinámico y análisis de engagement comunitario.',
+      name: 'Cielo Efatá - App Evaluación Emocional',
+      description: 'App móvil de IA de Cielo Efatá: evaluación emocional científica. Producto aparte de Revelatio (biblia de estudio).',
       tech: ['Next.js 16', 'Supabase', 'Realtime', 'PostgreSQL'],
       url: 'https://cielo-efata-app.vercel.app/',
       focus: 'Backend escalable + Datos en tiempo real'

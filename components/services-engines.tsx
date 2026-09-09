@@ -24,7 +24,7 @@ export default function ServicesEngines() {
     },
     {
       icon: Shield,
-      title: 'Gobernanza de la IA (ISO 42001)',
+      title: 'AILock · manejo de riesgo de IA',
       description: 'Marcos normativos para el uso ético, seguro y auditable de la IA en entornos corporativos. Cumplimiento regulatorio garantizado.',
       metrics: ['ISO 42001 certified', 'Auditoría completa', 'Políticas de privacidad']
     }

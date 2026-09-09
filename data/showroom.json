@@ -1,41 +1,31 @@
 {
   "webApps": [
     {
-      "id": "cielo-efata",
-      "name": "Cielo Efata - Plataforma Bíblica",
-      "description": "Plataforma de estudio bíblico con IA integrada. Análisis de escrituras, comunidad, y seguimiento espiritual.",
-      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300",
-      "url": "https://v0-cieloefata-biblia.vercel.app",
+      "id": "revelatio",
+      "name": "Revelatio",
+      "description": "Producto IA en vivo de XtraMetrik para estudio profundo de Escrituras. Asistente que interpreta el texto bíblico, estructura el camino evangelístico en tres etapas, y activa la comunidad con campañas automatizadas vía API de WhatsApp.",
+      "image": "/brand/revelatio-logo-master.jpeg",
+      "url": "https://revelatiobiblia.vercel.app",
       "tech": ["Next.js", "React", "Supabase", "Vercel"],
-      "metrics": {
-        "users": "12,000+",
-        "engagement": "85% DAU",
-        "retention": "79% M1"
-      },
       "features": [
         "Análisis bíblico IA",
         "Comunidad interactiva",
         "Seguimiento de lecturas",
-        "Generación de insights"
+        "Campañas WhatsApp"
       ]
     },
     {
       "id": "cielo-efata-app",
-      "name": "Cielo Efata - App Móvil",
-      "description": "Aplicación móvil nativa con sincronización en tiempo real. Estudio bíblico offline con sincronización en la nube.",
-      "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300",
+      "name": "Cielo Efatá - App Evaluación Emocional",
+      "description": "App móvil de IA de Cielo Efatá: evaluación emocional científica. Producto aparte de Revelatio.",
+      "image": "/projects/cielo-efata-mobile.png",
       "url": "https://cielo-efata-app.vercel.app",
-      "tech": ["React Native", "Firebase", "AWS"],
-      "metrics": {
-        "downloads": "8,500+",
-        "rating": "4.8/5",
-        "retention": "74% M3"
-      },
+      "tech": ["Next.js", "React", "PWA"],
       "features": [
-        "Estudio offline",
-        "Sincronización en tiempo real",
-        "Notificaciones inteligentes",
-        "Análisis de lectura"
+        "Evaluación emocional científica",
+        "Perfil emocional personal",
+        "Historial de evaluaciones",
+        "Campañas de comunidad vía WhatsApp"
       ]
     },
     {

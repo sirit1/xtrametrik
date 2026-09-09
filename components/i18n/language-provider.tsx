@@ -17,13 +17,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>('es')
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Locale | null
-    if (stored === 'es' || stored === 'en') {
+    const stored = window.localStorage.getItem(STORAGE_KEY)
+    // Spanish is the default. EN only after an explicit toggle (stored),
+    // never from the browser locale — that leaked mixed ES/EN on the live site.
+    if (stored === 'en' || stored === 'es') {
       setLocaleState(stored)
-      return
-    }
-    if (navigator.language?.toLowerCase().startsWith('en')) {
-      setLocaleState('en')
     }
   }, [])
 

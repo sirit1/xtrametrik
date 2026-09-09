@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="XtraMetrik">
+  <defs>
+    <mask id="growth">
+      <rect width="128" height="128" fill="#fff"/>
+      <path fill="#000" d="M34 92 C54 68 76 44 96 24 L108 36 C88 56 66 80 46 104 Z"/>
+      <path fill="#000" d="M84 10 L124 28 L98 52 Z"/>
+    </mask>
+  </defs>
+  <g fill="#00D1C1" mask="url(#growth)">
+    <rect x="14" y="54" width="100" height="20" rx="10" transform="rotate(40 64 64)"/>
+    <rect x="14" y="54" width="100" height="20" rx="10" transform="rotate(-40 64 64)"/>
+  </g>
+</svg>
