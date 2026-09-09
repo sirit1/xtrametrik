@@ -376,7 +376,7 @@ export const es = {
     liveBadge: 'Trabajo vivo de la casa',
     liveTitle: 'Prueba de ejecución. La casa también construye webapps.',
     liveSub:
-      'Revelatio, Café Central, Cobra y La Manzanita no son la marca. Son trabajo clickable de XtraMetrik. Ábrelos.',
+      'Revelatio, Café Central, Cobra, La Manzanita y Cielo Efatá no son la marca. Son trabajo clickable de XtraMetrik. Ábrelos.',
     openProject: 'Abrir →',
     viewPortfolio: 'Ver portafolio completo',
     madeBy: 'Hecho por XtraMetrik',
@@ -888,7 +888,7 @@ export const en: Dict = {
     liveBadge: 'Live work from the firm',
     liveTitle: 'Proof of execution. The firm also builds webapps.',
     liveSub:
-      'Revelatio, Café Central, Cobra and La Manzanita are not the brand. They are clickable XtraMetrik work. Open them.',
+      'Revelatio, Café Central, Cobra, La Manzanita and Cielo Efatá are not the brand. They are clickable XtraMetrik work. Open them.',
     openProject: 'Open →',
     viewPortfolio: 'See the full portfolio',
     madeBy: 'Made by XtraMetrik',

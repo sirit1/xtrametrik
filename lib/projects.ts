@@ -201,6 +201,45 @@ export const projects: Project[] = [
     stack: ['Next.js', 'Vercel', 'E-commerce'],
   },
   {
+    slug: 'cielo-efata',
+    engine: 'webapp',
+    name: 'Cielo Efatá',
+    subtitle: {
+      es: 'Sello editorial · El texto manda',
+      en: 'Editorial house · The text leads',
+    },
+    url: 'https://www.cieloefata.com',
+    urlLabel: 'www.cieloefata.com',
+    image: '/projects/cielo-efata-sello.jpg',
+    imageFit: 'contain',
+    creditXtraMetrik: true,
+    orientation: 'landscape',
+    imageAlt: {
+      es: 'Sello de Cielo Efatá, sitio editorial de lectura bíblica',
+      en: 'Cielo Efatá seal, editorial site for biblical reading',
+    },
+    sector: { es: 'Webapp · Editorial · Lectura bíblica', en: 'Webapp · Publishing · Biblical reading' },
+    summary: {
+      es: 'Sitio editorial de Cielo Efatá. El texto manda: taller de lectura, cortes (2 Pedro 1) y obras. No es Revelatio ni la app de evaluación emocional. Hecho por XtraMetrik. Público y clickable. Sin cifras de usuarios que no podamos demostrar.',
+      en: 'Cielo Efatá editorial site. The text leads: reading workshop, published cuts (2 Peter 1) and books. Not Revelatio and not the emotional-eval app. Made by XtraMetrik. Public and clickable. No user counts we cannot prove.',
+    },
+    features: {
+      es: [
+        'Taller de lectura y corte publicado (2 Pedro 1)',
+        'Obras y tratados bajo el sello',
+        'Agente bíblico para consultar el texto',
+        'Hecho por XtraMetrik. Sin métricas inventadas.',
+      ],
+      en: [
+        'Reading workshop and published cut (2 Peter 1)',
+        'Books and treatises under the imprint',
+        'Biblical agent to consult the text',
+        'Made by XtraMetrik. No invented metrics.',
+      ],
+    },
+    stack: ['Next.js', 'Vercel', 'Editorial'],
+  },
+  {
     slug: 'cielo-efata-emocional',
     engine: 'ia',
     name: 'Cielo Efatá - App Evaluación Emocional',

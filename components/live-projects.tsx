@@ -8,7 +8,7 @@ import { projects } from '@/lib/projects'
 import XtraMetrikCredit from '@/components/xtrametrik-credit'
 
 /** Home proof strip: live work you can open. Instagram is never the primary href. */
-const HOME_PROOF_SLUGS = ['revelatio', 'cafe-central', 'cobra', 'la-manzanita'] as const
+const HOME_PROOF_SLUGS = ['revelatio', 'cafe-central', 'cobra', 'la-manzanita', 'cielo-efata'] as const
 
 export default function LiveProjects() {
   const { t, locale } = useI18n()
