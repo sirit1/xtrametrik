@@ -2,6 +2,7 @@
 
 import Header from '@/components/header'
 import HeroPremium from '@/components/hero-premium'
+import AilockOffer from '@/components/ailock-offer'
 import MethodSteps from '@/components/method-steps'
 import EnginesSection from '@/components/engines-section'
 import PainPointsUrgency from '@/components/pain-points-urgency'
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroPremium />
+        <AilockOffer />
         <MethodSteps />
         <EnginesSection />
         <PainPointsUrgency />
