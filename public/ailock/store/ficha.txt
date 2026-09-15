@@ -1,0 +1,104 @@
+AILock · ficha de la Chrome Web Store
+Pegar tal cual. No enseñar el motor. Distribución: no listada.
+
+
+1. Subir el paquete
+En el panel: Elementos → Añadir nuevo elemento.
+Archivo: ailock-chrome.zip (el manifiesto va en la raíz; si Google se queja, el zip está mal anidado).
+Tras el alta, copie el ID del elemento (un texto tipo a-z de 32 caracteres). Ese es el identificador. Envíelo a la casa.
+
+
+2. Ficha (pestaña Listing)
+
+Nombre
+AILock de Xtrametrik
+
+Resumen (máx. 132)
+Detiene clientes, contratos y secretos antes de que salgan a un asistente público. Deja evidencia sin conservar el dato crudo.
+
+Descripción detallada
+AILock detiene o vela, en el propio navegador, el envío de datos sensibles a asistentes de IA públicos. El criterio se ejecuta en el aparato. El texto no viaja a servidores de Xtrametrik para clasificarlo, y el dato crudo interceptado no se conserva.
+
+Cubre ChatGPT, Claude, Gemini, Copilot, Perplexity y Grok.
+
+Qué hace
+• Detiene secretos y medios de pago antes de que crucen.
+• Vela carteras, correos, teléfonos, documentos y hasta veinte palabras propias de la casa.
+• Deja un registro local de noventa días: cuándo, hacia dónde y de qué clase. El valor no figura.
+• A la tercera detención de un secreto o de una tarjeta en la misma jornada, compone una carta al propietario, lista para el correo del aparato. No la envía sola.
+
+Qué no hace
+No lee el disco ni el correo de la empresa. No sustituye a un abogado ni a un curso de ética. No es una consola de seguridad ni un producto de catálogo masivo.
+
+Para quién
+Dueños y administradores de casas de ocho a ochenta personas que ya pegan trabajo en un modelo público y necesitan que el envío no salga.
+
+Casa y soporte
+https://xtrametrik.com
+https://xtrametrik.com/piloto
+alejandro.sirit@xtrametrik.com
+
+Idioma: Español (España)
+Categoría: Productividad
+Página de inicio: https://xtrametrik.com
+Página de soporte: https://xtrametrik.com/piloto
+Icono de la tienda: icono-128.png (128 × 128)
+Capturas (1280 × 800), en este orden:
+  01-detencion.png
+  02-probar.png
+  03-registro.png
+
+
+3. Privacidad (pestaña Privacy)
+
+Política de privacidad
+https://xtrametrik.com/legal#ailock
+
+Propósito único
+Detener o velar, en el propio navegador, el envío de datos sensibles a asistentes de IA públicos, y dejar un registro local del hecho sin conservar el secreto.
+
+¿Usa código remoto?
+No. Todo el criterio viaja dentro del paquete. No se descarga ni se ejecuta código de un servidor.
+
+¿Recoge datos de usuario el desarrollador?
+No. Nada se envía a Xtrametrik. El nombre de la empresa, el correo del propietario, las palabras de la casa y el registro permanecen en chrome.storage del aparato, noventa días, y desaparecen al desinstalar.
+
+Justificación de permisos
+
+storage
+Guardar, solo en este navegador, el nombre de la empresa, el correo del propietario, hasta veinte palabras propias y el registro de hechos (hora, destino, clase, resolución). Sin ese permiso la casa no se declara y la evidencia no existe. No se sincroniza a un servidor de Xtrametrik.
+
+alarms
+Caducar el registro a los noventa días y contar detenciones de secreto o tarjeta en veinticuatro horas, para componer la carta al propietario. Sin reloj, esa carta no sabría cuándo toca.
+
+Host permissions (chatgpt.com, chat.openai.com, claude.ai, gemini.google.com, copilot.microsoft.com, perplexity.ai, grok.com, grok.x.ai)
+Leer el cuadro de mensaje de esos asistentes, y solo de esos, para detener o velar el envío antes de que cruce. No se pide acceso a ningún otro sitio.
+
+Certificaciones
+Marque que el uso de los datos, si los hubiera, se limita al propósito único. Aquí no hay transmisión al desarrollador.
+
+
+4. Distribución (pestaña Distribution)
+
+Visibilidad: No listada (Unlisted).
+Quien tenga el enlace instala; la ficha no sale en el buscador de la tienda. Así se conserva la voz VIP y, aun así, nace el identificador que Workspace e Intune pedirán después.
+
+Regiones: Todas, o al menos España y América Latina de lengua española.
+
+¿Elemento de pago dentro de la tienda?: No. El piloto se cobra en xtrametrik.com, no en el checkout de Google.
+
+
+5. Enviar a revisión
+
+Active la verificación en dos pasos de la cuenta de Google si aún no lo está.
+Pulse Enviar para revisión.
+Desmarque la casilla de publicar en cuanto Google apruebe, si quiere ver el enlace antes de compartirlo. Si la deja marcada, el enlace no listado queda vivo al aprobarse.
+
+La revisión suele tardar de uno a varios días. Cuando Google dé el ID, escríbalo: entra en la carta de instalación, en el sitio y, más adelante, en Workspace.
+
+
+Lo que no se hace
+No se marca de pago en la tienda.
+No se lista en el buscador.
+No se pega el detector ni se explican patrones.
+No se pone un teléfono o una dirección de Venezuela al pie: esa cuenta es de no comerciante, y el contrato vive fuera de este mercado.

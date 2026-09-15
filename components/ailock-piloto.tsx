@@ -13,13 +13,13 @@ const copy = {
       'Esto no es la tienda de Chrome ni un empujón de Workspace. Es la carpeta que un administrador carga en diez navegadores, en una sola sesión, para que el dueño vea el envío detenerse antes de cruzar. El procedimiento no se publica; se entrega el paquete y la carta.',
     packTitle: 'El paquete',
     pack:
-      'Descomprima el archivo y quédese con la carpeta que contiene el manifiesto. En Chrome o en Edge abra el panel de extensiones —no es una web: se escribe en la barra de direcciones—, active el modo de desarrollador y elija Cargar descomprimida. Señale esa carpeta, no un archivo de dentro. Debe aparecer AILock de Xtrametrik. Si el navegador se queja de que no hay manifiesto, se ha elegido un nivel de más o de menos.',
+      'Descomprima el archivo. En esa carpeta tiene que estar el manifiesto. En Chrome o en Edge abra el panel de extensiones —no es una web: se escribe en la barra de direcciones—, active el modo de desarrollador y elija Cargar descomprimida. Señale esa carpeta, no un archivo de dentro. Debe aparecer AILock de Xtrametrik. Si el navegador se queja de que no hay manifiesto, se ha elegido un nivel de más o de menos.',
     houseTitle: 'La casa',
     house:
       'En las opciones se declara el nombre de la empresa, el correo de quien debe recibir los avisos y, si se desea, hasta veinte palabras propias. En Probar, una clave de servicio no debe salir; el registro anota el hecho y no el valor. Pegue después en ChatGPT un texto de trabajo con un cliente de esa lista: el envío se detiene o se vela. El secreto no figura en el CSV.',
     storeTitle: 'La tienda y Workspace',
     store:
-      'Aún no hay identificador de la tienda de Chrome. Sin ese número, Google Workspace e Intune no pueden imponer la pieza a la plantilla. Cuando exista, la misma carpeta se publicará como ficha y se empujará sin que el empleado elija instalarla. Hasta entonces el piloto se carga a mano, delante del dueño, en noventa minutos.',
+      'Aún no hay identificador de la tienda de Chrome. Sin ese número, Google Workspace e Intune no pueden imponer la pieza a la plantilla. El paquete ya está listo para esa ficha: el manifiesto va en la raíz y la política vive en /legal#ailock. Hasta que Google dé el identificador, el piloto se carga a mano, delante del dueño, en noventa minutos.',
     downloadPack: 'Descargar el paquete',
     downloadLetter: 'Descargar la carta de instalación',
     write: 'Escribir a la casa',
@@ -32,13 +32,13 @@ const copy = {
       'This is not the Chrome Web Store, and it is not a Workspace force-install. It is the folder an administrator loads into ten browsers, in a single sitting, so the owner sees a prompt stop before it leaves. The method is not published; the package and the letter are what you receive.',
     packTitle: 'The package',
     pack:
-      'Unzip the file and keep the folder that holds the manifest. In Chrome or Edge open the extensions panel — it is not a website: type it in the address bar — turn on developer mode and choose Load unpacked. Point to that folder, not a file inside it. AILock by Xtrametrik should appear. If the browser complains that there is no manifest, the wrong level was selected.',
+      'Unzip the file. The manifest must sit in that folder. In Chrome or Edge open the extensions panel — it is not a website: type it in the address bar — turn on developer mode and choose Load unpacked. Point to that folder, not a file inside it. AILock by Xtrametrik should appear. If the browser complains that there is no manifest, the wrong level was selected.',
     houseTitle: 'The house',
     house:
       'In options, declare the company name, the owner email that should receive notices and, if you wish, up to twenty house words. In Test, a service key must not leave; the log records the fact, not the value. Then paste into ChatGPT a working text that names a client from that list: the send is stopped or veiled. The secret does not appear in the CSV.',
     storeTitle: 'The store and Workspace',
     store:
-      'There is not yet a Chrome Web Store identifier. Without that number, Google Workspace and Intune cannot force the piece onto the fleet. When it exists, the same folder will be listed and pushed without the employee choosing to install it. Until then the pilot is loaded by hand, in front of the owner, in ninety minutes.',
+      'There is not yet a Chrome Web Store identifier. Without that number, Google Workspace and Intune cannot force the piece onto the fleet. The package is already shaped for that listing: the manifest sits at the root, and the policy lives at /legal#ailock. Until Google issues the identifier, the pilot is loaded by hand, in front of the owner, in ninety minutes.',
     downloadPack: 'Download the package',
     downloadLetter: 'Download the install letter',
     write: 'Write to the house',
