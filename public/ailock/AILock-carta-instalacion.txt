@@ -22,7 +22,7 @@ Cómo se declara la casa. Abra las opciones de la extensión. Ponga el nombre de
 
 Cómo se prueba delante del dueño. Pegue en ChatGPT un texto de trabajo que contenga un cliente de la lista o una clave. El envío se detiene o se vela antes de cruzar. Abra el registro, exporte el CSV y compruebe que el secreto no está escrito. Esa es la evidencia. Si en una misma jornada hay tres detenciones de secreto o de tarjeta, la carta al propietario queda lista para salir por correo.
 
-Lo que aún no es. El paquete del piloto se descarga en xtrametrik.com/piloto y se carga descomprimido, con quien administra el navegador. Aún no hay identificador de la tienda de Chrome, y por eso Google Workspace o Intune no pueden imponerla a toda la plantilla. Cuando exista ese identificador, la misma pieza se empujará sin que el empleado elija instalarla.
+El identificador de la tienda. El paquete del piloto se descarga en xtrametrik.com/piloto y se carga descomprimido, con quien administra el navegador. El identificador de Chrome es ffccgddaibjcogkbofnpofhcpbpcloia. La ficha está en borrador; hasta que Google la publique, Workspace o Intune no pueden imponerla a la plantilla. Cuando esté publicada y no listada, esa misma pieza se empujará con ese identificador, sin que el empleado elija instalarla.
 
 La casa de Xtrametrik para este piloto es alejandro.sirit@xtrametrik.com. Cualquier duda de carga, de lista o de evidencia se dirige ahí. El original de este escrito permanece en el tablero de AILock; cópielo o descárguelo, no hace falta que lo recuerde.
 

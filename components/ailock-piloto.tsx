@@ -5,6 +5,8 @@ import { ArrowRight, Download, Mail } from 'lucide-react'
 import { useI18n } from '@/components/i18n/language-provider'
 import { CONTACT_EMAIL } from '@/lib/site'
 
+const CWS_ID = 'ffccgddaibjcogkbofnpofhcpbpcloia'
+
 const copy = {
   es: {
     kicker: 'AILock · corte del piloto',
@@ -19,7 +21,7 @@ const copy = {
       'En las opciones se declara el nombre de la empresa, el correo de quien debe recibir los avisos y, si se desea, hasta veinte palabras propias. En Probar, una clave de servicio no debe salir; el registro anota el hecho y no el valor. Pegue después en ChatGPT un texto de trabajo con un cliente de esa lista: el envío se detiene o se vela. El secreto no figura en el CSV.',
     storeTitle: 'La tienda y Workspace',
     store:
-      'Aún no hay identificador de la tienda de Chrome. Sin ese número, Google Workspace e Intune no pueden imponer la pieza a la plantilla. El paquete ya está listo para esa ficha: el manifiesto va en la raíz y la política vive en /legal#ailock. Hasta que Google dé el identificador, el piloto se carga a mano, delante del dueño, en noventa minutos.',
+      'El identificador de la tienda es el de abajo. La ficha sigue en borrador: Google no la ha publicado. Hasta que salga, el piloto se carga a mano, delante del dueño. Cuando esté publicada y no listada, Workspace e Intune podrán imponer esa misma pieza a la plantilla con ese identificador, sin que el empleado elija instalarla.',
     downloadPack: 'Descargar el paquete',
     downloadLetter: 'Descargar la carta de instalación',
     write: 'Escribir a la casa',
@@ -38,7 +40,7 @@ const copy = {
       'In options, declare the company name, the owner email that should receive notices and, if you wish, up to twenty house words. In Test, a service key must not leave; the log records the fact, not the value. Then paste into ChatGPT a working text that names a client from that list: the send is stopped or veiled. The secret does not appear in the CSV.',
     storeTitle: 'The store and Workspace',
     store:
-      'There is not yet a Chrome Web Store identifier. Without that number, Google Workspace and Intune cannot force the piece onto the fleet. The package is already shaped for that listing: the manifest sits at the root, and the policy lives at /legal#ailock. Until Google issues the identifier, the pilot is loaded by hand, in front of the owner, in ninety minutes.',
+      'The store identifier is the one below. The listing is still a draft: Google has not published it. Until it is out, the pilot is loaded by hand, in front of the owner. Once it is published and unlisted, Workspace and Intune can force that same piece onto the fleet with that identifier, without the employee choosing to install it.',
     downloadPack: 'Download the package',
     downloadLetter: 'Download the install letter',
     write: 'Write to the house',
@@ -95,6 +97,7 @@ export default function AilockPiloto() {
           <article>
             <h2 className="mb-3 font-montserrat text-xl font-bold text-primary">{c.storeTitle}</h2>
             <p className="text-sm leading-relaxed text-foreground/75">{c.store}</p>
+            <p className="mt-4 font-mono text-sm tracking-wide break-all text-foreground">{CWS_ID}</p>
           </article>
         </div>
 
