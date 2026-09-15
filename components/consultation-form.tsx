@@ -51,6 +51,8 @@ export default function ConsultationForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle')
   const [submitted, setSubmitted] = useState(false)
   const [warning, setWarning] = useState('')
+  const [openedAt] = useState(() => Date.now())
+  const [companyUrl, setCompanyUrl] = useState('')
 
   // Derived on the client so the report follows the active language:
   // the scoring is a pure function of the answers.
@@ -123,7 +125,7 @@ export default function ConsultationForm() {
       const response = await fetch('/api/diagnostico', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...answers, ...contact, locale }),
+        body: JSON.stringify({ ...answers, ...contact, locale, openedAt, companyUrl }),
       })
       const data = await response.json()
       if (!response.ok) throw new Error(data.error ?? 'error')
@@ -258,6 +260,19 @@ export default function ConsultationForm() {
           {step === 1 && (
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               <h3 className="font-montserrat text-lg font-bold">{f.stepContact}</h3>
+              <div className="absolute -left-[10000px] h-0 w-0 overflow-hidden" aria-hidden="true">
+                <label>
+                  Sitio web
+                  <input
+                    type="text"
+                    name="company_url"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={companyUrl}
+                    onChange={(event) => setCompanyUrl(event.target.value)}
+                  />
+                </label>
+              </div>
               <div className="grid gap-5 sm:grid-cols-2">
                 <Field
                   label={f.name}
