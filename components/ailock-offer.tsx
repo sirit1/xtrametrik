@@ -50,6 +50,12 @@ export default function AilockOffer() {
           >
             {a.ctaMail}
           </a>
+          <Link
+            href="/piloto"
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-bold text-foreground transition-colors hover:border-primary/60 hover:text-primary"
+          >
+            {a.ctaLoad}
+          </Link>
         </div>
       </div>
     </section>

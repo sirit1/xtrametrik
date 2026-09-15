@@ -48,6 +48,17 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
           'XtraMetrik implanta y audita el marco de gestión; la emisión de un certificado acreditado corresponde siempre a un organismo de certificación externo.',
         ],
       },
+      {
+        id: 'ailock',
+        title: 'AILock, la extensión',
+        body: [
+          'AILock es una extensión de Chrome y Edge que el administrador de una casa carga en el navegador. El criterio se ejecuta en el aparato del empleado. El texto que se iba a enviar a un asistente público no viaja a servidores de Xtrametrik para clasificarlo, y el dato crudo interceptado no se conserva.',
+          'La extensión pide permiso solo sobre las páginas de los asistentes cubiertos —ChatGPT, Claude, Gemini, Copilot, Perplexity y Grok— y almacena en el propio navegador el nombre de la empresa, el correo del propietario, hasta veinte palabras propias y un registro de hechos (cuándo, hacia dónde, de qué clase) sin el secreto. Ese registro permanece noventa días en el aparato y se puede exportar. No hay cuenta de usuario, no hay analítica de terceros y no hay envío automático de correo: la carta al propietario se abre en el programa de correo del aparato cuando quien administra lo decide.',
+          'El paquete del piloto se descarga en xtrametrik.com/piloto. Aún no está en la tienda de Chrome. Para ejercer derechos sobre estos datos locales basta con desinstalar la extensión o borrar su almacenamiento. Cualquier duda se dirige a ' +
+            CONTACT_EMAIL +
+            '.',
+        ],
+      },
     ],
   },
   en: {
@@ -90,6 +101,17 @@ const content: Record<'es' | 'en', { title: string; intro: string; sections: Sec
           'ISO/IEC 42001 is the international standard for artificial intelligence management systems. Our framework implements the governance, risk management, data classification and traceability controls the standard requires.',
           'The audit phase includes independent review and produces a documented file you can present to regulators, enterprise clients or your own risk committee.',
           'XtraMetrik implements and audits the management framework; issuing an accredited certificate is always the role of an external certification body.',
+        ],
+      },
+      {
+        id: 'ailock',
+        title: 'AILock, the extension',
+        body: [
+          'AILock is a Chrome and Edge extension that a house administrator loads into the browser. The rule runs on the employee’s machine. The text that was about to be sent to a public assistant does not travel to Xtrametrik servers for classification, and the raw intercepted payload is not kept.',
+          'The extension asks permission only on the covered assistant pages — ChatGPT, Claude, Gemini, Copilot, Perplexity and Grok — and stores in the browser itself the company name, the owner email, up to twenty house words and a log of facts (when, where, of what kind) without the secret. That log remains ninety days on the device and can be exported. There is no user account, no third-party analytics and no automatic email: the owner letter opens in the device’s mail program when the administrator chooses.',
+          'The pilot package is downloaded at xtrametrik.com/piloto. It is not yet in the Chrome Web Store. To exercise rights over this local data, uninstall the extension or clear its storage. Questions go to ' +
+            CONTACT_EMAIL +
+            '.',
         ],
       },
     ],

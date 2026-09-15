@@ -1,0 +1,33 @@
+AILock · Xtrametrik
+
+Carta de instalación del piloto
+
+
+
+A la atención de quien administra el navegador de esta casa.
+
+AILock es el candado que Xtrametrik coloca entre el empleado y el modelo público. Antes de que un mensaje cruce hacia ChatGPT, Claude, Gemini, Copilot, Perplexity o Grok, examina si lleva consigo clientes, contratos, cuentas o secretos. Lo que debe quedar en casa no sale; lo que puede salir, sale ya velado. El propietario no ve el dato interceptado: ve que se intentó sacarlo, cuándo, hacia dónde y de qué clase era. Esa hoja es lo que un abogado puede sostener.
+
+Este escrito acompaña el piloto. No es un contrato de gobernanza ni una consola de seguridad. Es la instrucción para que diez Chrome o Edge de su empresa queden cubiertos en una sola sesión de trabajo, y para que usted sepa qué toca el candado y qué no toca.
+
+El piloto se ofrece a mil cuatrocientos noventa euros, cubre diez asientos durante dos a cuatro semanas y deja, al término, el registro de la jornada. Si la casa se queda, cada asiento posterior se cobra a veintinueve euros al mes. Quien firma no compra un modelo más sofisticado: compra que la cartera no cruce hacia un asistente que no le pertenece.
+
+Qué no hace. No envía el prompt a una nube de Xtrametrik para clasificarlo. No conserva el texto crudo. No lee el correo de la empresa ni los discos. No sustituye a un abogado, a un curso de ética ni a un sistema de archivos. Un curso, si algún día se ofrece, será un acompañamiento, nunca la llave de esta instalación.
+
+Qué sí hace. Declara, en no más de veinte líneas, las palabras propias de la casa —clientes, proyectos, marcas—. Si aparecen en un envío, el candado las sustituye. Una clave de servicio, una tarjeta o una cuenta no salen. A la tercera detención de un secreto o de un medio de pago en la misma jornada, AILock compone una carta dirigida al correo del propietario. El dato interceptado no figura en ella.
+
+Cómo se carga. Descargue el paquete, descomprímalo y quédese con la carpeta que contiene el manifiesto. En Chrome o en Edge escriba, en la barra de direcciones, la página de extensiones —no es una web, es el panel del navegador—, active el modo de desarrollador y elija Cargar descomprimida. Señale esa carpeta, no un archivo de dentro. Debe aparecer AILock de Xtrametrik con un candado. Si el navegador se queja de que no hay manifiesto, se ha elegido un nivel de más o de menos.
+
+Cómo se declara la casa. Abra las opciones de la extensión. Ponga el nombre de la empresa, el correo de quien debe recibir los avisos y, si lo desea, hasta veinte palabras propias. En la pestaña Probar, una clave de servicio no debe salir; el registro anota el hecho y no el valor. Cuando eso ocurra, el mismo criterio ya rige en ChatGPT de verdad y en los demás destinos cubiertos de ese navegador.
+
+Cómo se prueba delante del dueño. Pegue en ChatGPT un texto de trabajo que contenga un cliente de la lista o una clave. El envío se detiene o se vela antes de cruzar. Abra el registro, exporte el CSV y compruebe que el secreto no está escrito. Esa es la evidencia. Si en una misma jornada hay tres detenciones de secreto o de tarjeta, la carta al propietario queda lista para salir por correo.
+
+Lo que aún no es. El paquete del piloto se descarga en xtrametrik.com/piloto y se carga descomprimido, con quien administra el navegador. Aún no hay identificador de la tienda de Chrome, y por eso Google Workspace o Intune no pueden imponerla a toda la plantilla. Cuando exista ese identificador, la misma pieza se empujará sin que el empleado elija instalarla.
+
+La casa de Xtrametrik para este piloto es alejandro.sirit@xtrametrik.com. Cualquier duda de carga, de lista o de evidencia se dirige ahí. El original de este escrito permanece en el tablero de AILock; cópielo o descárguelo, no hace falta que lo recuerde.
+
+Quedo a su disposición.
+
+Alejandro Sirit
+AILock de Xtrametrik
+alejandro.sirit@xtrametrik.com

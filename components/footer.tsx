@@ -22,6 +22,7 @@ export default function Footer() {
     { label: t.nav.projects, href: '/proyectos' },
     { label: t.nav.sample, href: '/caso-real' },
     { label: t.nav.blog, href: '/blog' },
+    { label: t.ailock.ctaLoad, href: '/piloto' },
     { label: t.footer.newsletter, href: LINKEDIN_NEWSLETTER_URL, external: true },
     { label: t.footer.profile, href: LINKEDIN_PROFILE_URL, external: true },
   ]
@@ -31,6 +32,7 @@ export default function Footer() {
     { label: t.footer.terms, href: '/legal#terminos' },
     { label: t.footer.cookies, href: '/legal#cookies' },
     { label: t.footer.compliance, href: '/legal#compliance' },
+    { label: t.footer.extension, href: '/legal#ailock' },
   ]
 
   return (

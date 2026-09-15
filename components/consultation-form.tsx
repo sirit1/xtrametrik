@@ -1,7 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { useI18n } from '@/components/i18n/language-provider'
+import { CONTACT_EMAIL } from '@/lib/site'
 import { Button } from '@/components/ui/button'
 import {
   dailyCostOfInaction,
@@ -18,6 +20,7 @@ import {
   Clock,
   FileDown,
   Loader2,
+  Mail,
 } from 'lucide-react'
 
 type Answers = {
@@ -443,6 +446,26 @@ export default function ConsultationForm() {
                   <FileDown className="h-4 w-4" aria-hidden="true" />
                   {f.downloadAgain}
                 </Button>
+                <div className="flex flex-col gap-2 rounded-xl border border-border p-5">
+                  <p className="font-montserrat text-sm font-bold">{f.successPilotTitle}</p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{f.successPilotBody}</p>
+                  <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+                    <Link
+                      href="/piloto"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground hover:opacity-90"
+                    >
+                      {f.successPilotCta}
+                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    </Link>
+                    <a
+                      href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('AILock · diagnóstico')}`}
+                      className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-bold hover:border-primary/60 hover:text-primary"
+                    >
+                      <Mail className="h-4 w-4" aria-hidden="true" />
+                      {f.successPilotMail}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           )}

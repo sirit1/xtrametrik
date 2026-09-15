@@ -131,6 +131,7 @@ export const es = {
     priceDiagNote: 'Cinco preguntas y un informe. El primer paso, sin compromiso.',
     ctaDemo: 'Pedir información o una demo',
     ctaMail: 'Escribir a la casa',
+    ctaLoad: 'Cargar el piloto',
   },
   differentiator: {
     eyebrow: 'La diferencia',
@@ -300,6 +301,11 @@ export const es = {
     successBody:
       'El PDF con tu índice de exposición, los hallazgos y el plan de contención de 7 días se ha descargado en este dispositivo. Si tu navegador la bloqueó, usa el botón de abajo.',
     downloadAgain: 'Descargar el PDF de nuevo',
+    successPilotTitle: 'El candado se carga en una sesión',
+    successPilotBody:
+      'El PDF mide la exposición. El piloto es otra cosa: diez Chrome, noventa minutos, el envío que no sale. Si quiere sentarse delante del candado, escriba con el asunto de AILock —así entra en el cuaderno— o descargue el paquete y cárguelo con quien administra el navegador.',
+    successPilotCta: 'Cargar el piloto',
+    successPilotMail: 'Pedir la sesión de instalación',
     urgencyDaily: 'Lo que te cuesta cada día sin actuar',
     perDay: 'día',
     urgencyBody:
@@ -357,6 +363,7 @@ export const es = {
     terms: 'Términos',
     cookies: 'Cookies',
     compliance: 'Compliance ISO 42001',
+    extension: 'Privacidad de AILock',
     newsletter: 'Newsletter LinkedIn',
     profile: 'Perfil del director',
     rights: 'Todos los derechos reservados.',
@@ -627,6 +634,7 @@ export const en: Dict = {
     priceDiagNote: 'Five questions and a report. The first step, with no commitment.',
     ctaDemo: 'Request information or a demo',
     ctaMail: 'Write to the house',
+    ctaLoad: 'Load the pilot',
   },
   differentiator: {
     eyebrow: 'The difference',
@@ -796,6 +804,11 @@ export const en: Dict = {
     successBody:
       'The PDF with your exposure index, the findings and the 7-day containment plan has downloaded to this device. If your browser blocked it, use the button below.',
     downloadAgain: 'Download the PDF again',
+    successPilotTitle: 'The lock is loaded in a sitting',
+    successPilotBody:
+      'The PDF measures exposure. The pilot is something else: ten Chrome browsers, ninety minutes, a send that does not leave. If you want to sit in front of the lock, write with AILock in the subject — that is how it enters the ledger — or download the package and load it with whoever administers the browser.',
+    successPilotCta: 'Load the pilot',
+    successPilotMail: 'Ask for the install sitting',
     urgencyDaily: 'What every day without acting costs you',
     perDay: 'day',
     urgencyBody:
@@ -853,6 +866,7 @@ export const en: Dict = {
     terms: 'Terms',
     cookies: 'Cookies',
     compliance: 'ISO 42001 compliance',
+    extension: 'AILock privacy',
     newsletter: 'LinkedIn newsletter',
     profile: 'Director profile',
     rights: 'All rights reserved.',
