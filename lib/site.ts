@@ -6,7 +6,7 @@ export const LINKEDIN_NEWSLETTER_URL =
 export const LINKEDIN_PROFILE_URL =
   'https://www.linkedin.com/in/dr-alejandro-sirit-0659a414/'
 
-export const CONTACT_EMAIL = 'info@xtrametrik.com'
+export const CONTACT_EMAIL = 'alejandro.sirit@xtrametrik.com'
 
 /**
  * Builds a LinkedIn share URL. We always encode an absolute URL so the link
