@@ -5,9 +5,44 @@ import { NextResponse } from 'next/server'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+function hostAllowed(origin: string) {
+  if (!origin) return true
+  try {
+    const host = new URL(origin).hostname
+    return (
+      host === 'xtrametrik.com' ||
+      host === 'www.xtrametrik.com' ||
+      host.endsWith('.xtrametrik.com') ||
+      host === 'localhost' ||
+      host === '127.0.0.1'
+    )
+  } catch {
+    return false
+  }
+}
+
+function looksLikeSpam(body: Record<string, unknown>) {
+  if (String(body.companyUrl ?? '').trim()) return true
+  const opened = Number(body.openedAt)
+  if (!Number.isFinite(opened) || Date.now() - opened < 4000) return true
+  const notes = String(body.notes ?? '')
+  const urls = notes.match(/https?:\/\//gi) ?? []
+  if (urls.length >= 3) return true
+  return false
+}
+
 export async function POST(request: Request) {
   try {
-    const body = await request.json()
+    const origin = request.headers.get('origin') ?? ''
+    if (!hostAllowed(origin)) {
+      return NextResponse.json({ ok: true })
+    }
+
+    const body = (await request.json()) as Record<string, unknown>
+
+    if (looksLikeSpam(body)) {
+      return NextResponse.json({ ok: true })
+    }
 
     const name = String(body.name ?? '').trim()
     const email = String(body.email ?? '')
