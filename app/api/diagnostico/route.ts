@@ -3,6 +3,9 @@ import { leads } from '@/lib/db/schema'
 import { scoreDiagnostic, type Locale } from '@/lib/diagnostic'
 import { NextResponse } from 'next/server'
 
+export const maxDuration = 15
+export const runtime = 'nodejs'
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 function hostAllowed(origin: string) {

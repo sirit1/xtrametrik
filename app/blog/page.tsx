@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import BlogLibrary from '@/components/blog/blog-library'
 
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Blog · Governance de IA, compliance y rentabilidad B2B',
   description:

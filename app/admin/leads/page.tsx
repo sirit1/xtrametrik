@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button'
 import { isAuthenticated } from '@/lib/admin-auth'
 import { getLeads, summarize } from '@/lib/leads'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Leads | XtraMetrik',
   robots: { index: false, follow: false },

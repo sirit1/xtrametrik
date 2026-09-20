@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import ProjectsShowcase from '@/components/projects-showcase'
 
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Proyectos entregados: producto real en producción',
   description:

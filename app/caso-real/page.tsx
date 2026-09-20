@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import SampleReport from '@/components/sample-report'
 
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Caso real: cómo blindamos una fintech de 500 empleados en 7 días',
   description:

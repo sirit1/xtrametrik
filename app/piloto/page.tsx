@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import AilockPiloto from '@/components/ailock-piloto'
 
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Cargar AILock · paquete del piloto',
   description:

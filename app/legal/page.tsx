@@ -3,6 +3,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import LegalContent from '@/components/legal/legal-content'
 
+export const dynamic = 'force-static'
+
 export const metadata: Metadata = {
   title: 'Información legal · Privacidad, términos y compliance',
   description:

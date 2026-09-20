@@ -5,6 +5,8 @@ import Footer from '@/components/footer'
 import ArticleView from '@/components/blog/article-view'
 import { articles, getArticle } from '@/lib/articles'
 
+export const dynamic = 'force-static'
+
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }))
 }

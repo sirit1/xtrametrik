@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import { LanguageProvider } from '@/components/i18n/language-provider'
@@ -58,7 +57,6 @@ export default function RootLayout({
     <html lang="es" className={`${montserrat.variable} ${inter.variable} bg-background scroll-smooth`}>
       <body className="font-inter antialiased text-foreground">
         <LanguageProvider>{children}</LanguageProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
