@@ -1,14 +1,29 @@
 /** Apex home canonical. Do not use revelatio.app or invent product keywords. */
 export const HOME_CANONICAL = 'https://xtrametrik.com'
 
+export const GOOGLE_SITE_VERIFICATION =
+  'FjCx5lNWhQKJZL8ixbD2usxHpd_b5aDeUk3D2BDynpY'
+
+export const HOME_OG_IMAGE = '/og.png'
+export const HOME_LOGO = '/brand/xtrametrik-logo.png'
+
 export const HOME_TITLE =
-  'Fuga de datos ChatGPT empresa: menos multa · diagnóstico de 5 preguntas | XtraMetrik'
+  'Riesgo de IA en pymes: fuga a ChatGPT y multa | XtraMetrik'
 
 export const HOME_DESCRIPTION =
-  'AILock: manejo de riesgo de IA. Menos fuga de datos de empresa a ChatGPT y Claude, menos riesgo de multa. Empieza el diagnóstico de AILock: 5 preguntas, PDF al instante.'
+  'Riesgo de IA para pymes: evita fugas de datos a ChatGPT o Claude y el riesgo de multa. El primer paso es el diagnóstico de AILock: 5 preguntas y un PDF.'
 
 export const HOME_KEYWORDS =
-  'fuga de datos ChatGPT empresa, multa, diagnóstico, Claude, AILock, XtraMetrik'
+  'riesgo de IA pymes, fuga de datos ChatGPT, Claude, multa, diagnóstico AILock, XtraMetrik'
+
+export const homeOgImages = [
+  {
+    url: HOME_OG_IMAGE,
+    width: 1200,
+    height: 630,
+    alt: 'XtraMetrik',
+  },
+]
 
 /**
  * One FAQPage for the home. What XtraMetrik is, what the AILock diagnosis is,
@@ -43,4 +58,14 @@ export const homeFaqJsonLd = {
       },
     },
   ],
+} as const
+
+/** Organization + ProfessionalService. Name, url and logo only. No reviews or figures. */
+export const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'ProfessionalService'],
+  name: 'Xtrametrik',
+  url: HOME_CANONICAL,
+  logo: `${HOME_CANONICAL}${HOME_LOGO}`,
+  image: `${HOME_CANONICAL}${HOME_OG_IMAGE}`,
 } as const

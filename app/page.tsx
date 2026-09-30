@@ -4,8 +4,10 @@ import {
   HOME_CANONICAL,
   HOME_DESCRIPTION,
   HOME_KEYWORDS,
+  HOME_OG_IMAGE,
   HOME_TITLE,
   homeFaqJsonLd,
+  homeOgImages,
 } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
     siteName: 'XtraMetrik',
     locale: 'es_ES',
     type: 'website',
+    images: homeOgImages,
   },
   twitter: {
     card: 'summary_large_image',
     title: HOME_TITLE,
     description: HOME_DESCRIPTION,
+    images: [HOME_OG_IMAGE],
   },
 }
 

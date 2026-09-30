@@ -2,8 +2,16 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Montserrat, Inter } from 'next/font/google'
 import { LanguageProvider } from '@/components/i18n/language-provider'
-import { SITE_URL } from '@/lib/site'
-import { HOME_CANONICAL, HOME_DESCRIPTION, HOME_KEYWORDS, HOME_TITLE } from '@/lib/seo'
+import {
+  GOOGLE_SITE_VERIFICATION,
+  HOME_CANONICAL,
+  HOME_DESCRIPTION,
+  HOME_KEYWORDS,
+  HOME_OG_IMAGE,
+  HOME_TITLE,
+  homeOgImages,
+  organizationJsonLd,
+} from '@/lib/seo'
 import './globals.css'
 
 const montserrat = Montserrat({ 
@@ -19,13 +27,16 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(HOME_CANONICAL),
   title: {
     default: HOME_TITLE,
     template: '%s · XtraMetrik',
   },
   description: HOME_DESCRIPTION,
   keywords: HOME_KEYWORDS,
+  verification: {
+    google: GOOGLE_SITE_VERIFICATION,
+  },
   openGraph: {
     title: HOME_TITLE,
     description: HOME_DESCRIPTION,
@@ -33,11 +44,13 @@ export const metadata: Metadata = {
     url: HOME_CANONICAL,
     locale: 'es_ES',
     siteName: 'XtraMetrik',
+    images: homeOgImages,
   },
   twitter: {
     card: 'summary_large_image',
     title: HOME_TITLE,
     description: HOME_DESCRIPTION,
+    images: [HOME_OG_IMAGE],
   },
 }
 
@@ -56,6 +69,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${montserrat.variable} ${inter.variable} bg-background scroll-smooth`}>
       <body className="font-inter antialiased text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <LanguageProvider>{children}</LanguageProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
