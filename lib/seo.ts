@@ -69,3 +69,43 @@ export const organizationJsonLd = {
   logo: `${HOME_CANONICAL}${HOME_LOGO}`,
   image: `${HOME_CANONICAL}${HOME_OG_IMAGE}`,
 } as const
+
+/** Landing /diagnostico-riesgo-ia — Spanish only, no invent figures. */
+export const DIAGNOSTICO_CANONICAL = `${HOME_CANONICAL}/diagnostico-riesgo-ia`
+
+export const DIAGNOSTICO_TITLE =
+  'Diagnóstico gratis de riesgo de IA para pymes | Xtrametrik'
+
+export const DIAGNOSTICO_DESCRIPTION =
+  'Responde 5 preguntas y recibe un PDF con el nivel de riesgo de IA de tu pyme: fuga de datos a ChatGPT y Claude, y cómo evitar multas. AILock de Xtrametrik.'
+
+export const diagnosticoFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '¿Es gratis?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sí. El diagnóstico de 5 preguntas y el PDF son gratuitos.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Tengo que instalar algo?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. Solo respondes el cuestionario en el navegador y descargas el PDF.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '¿Qué hacen con mis respuestas?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Solo se usan para tu informe y para contactarte.',
+      },
+    },
+  ],
+} as const

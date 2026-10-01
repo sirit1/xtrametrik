@@ -2,7 +2,14 @@ import type { MetadataRoute } from 'next'
 import { articles } from '@/lib/articles'
 import { HOME_CANONICAL } from '@/lib/seo'
 
-const STATIC_PATHS = ['', '/blog', '/proyectos', '/legal', '/caso-real'] as const
+const STATIC_PATHS = [
+  '',
+  '/blog',
+  '/proyectos',
+  '/legal',
+  '/caso-real',
+  '/diagnostico-riesgo-ia',
+] as const
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = STATIC_PATHS.map((path) => ({

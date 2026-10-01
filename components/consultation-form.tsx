@@ -28,7 +28,12 @@ type Answers = {
   goal: string
 }
 
-export default function ConsultationForm() {
+type ConsultationFormProps = {
+  /** When true, skip badge/title/sub so the parent page can own the H1. */
+  hideIntro?: boolean
+}
+
+export default function ConsultationForm({ hideIntro = false }: ConsultationFormProps) {
   const { t, locale } = useI18n()
   const f = t.form
 
@@ -163,19 +168,24 @@ export default function ConsultationForm() {
     result?.level === 'high' ? f.riskHigh : result?.level === 'medium' ? f.riskMedium : f.riskLow
 
   return (
-    <section id="diagnostico" className="scroll-mt-24 bg-muted/40 py-12 md:py-16">
+    <section
+      id="diagnostico"
+      className={`scroll-mt-24 bg-muted/40 ${hideIntro ? 'py-4 md:py-6' : 'py-12 md:py-16'}`}
+    >
       <div className="mx-auto max-w-4xl px-4">
-        <div className="mb-10 text-center">
-          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary">
-            {f.badge}
-          </span>
-          <h2 className="mb-4 font-montserrat text-3xl font-bold text-balance md:text-4xl">
-            {f.title}
-          </h2>
-          <p className="mx-auto max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-            {f.sub}
-          </p>
-        </div>
+        {!hideIntro && (
+          <div className="mb-10 text-center">
+            <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary">
+              {f.badge}
+            </span>
+            <h2 className="mb-4 font-montserrat text-3xl font-bold text-balance md:text-4xl">
+              {f.title}
+            </h2>
+            <p className="mx-auto max-w-2xl text-pretty leading-relaxed text-muted-foreground">
+              {f.sub}
+            </p>
+          </div>
+        )}
 
         <div className="rounded-2xl border border-border bg-card p-6 shadow-sm md:p-10">
           {step < 2 && (
