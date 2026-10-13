@@ -13,6 +13,8 @@ export type BuiltWork = {
   imageFit?: 'cover' | 'contain'
   imageAlt?: Record<Locale, string>
   problem: Record<Locale, string>
+  /** Paused on purpose: no public URL. Show demo-on-request + WhatsApp. */
+  demoOnRequest?: boolean
 }
 
 export const builtWork: BuiltWork[] = [
@@ -46,6 +48,21 @@ export const builtWork: BuiltWork[] = [
     problem: {
       es: 'Landing para que el café muestre su carta y reciba pedidos, sin que el cliente haga fila solo para ver el menú.',
       en: 'Landing so the café can show its menu and take orders, without a queue just to see what is on offer.',
+    },
+  },
+  {
+    slug: 'cobra',
+    name: 'Cobra',
+    demoOnRequest: true,
+    image: '/projects/cobra-icon.png',
+    imageFit: 'contain',
+    imageAlt: {
+      es: 'Icono de Cobra, PWA de recibos por WhatsApp',
+      en: 'Cobra icon, WhatsApp receipts PWA',
+    },
+    problem: {
+      es: 'PWA de recibos por WhatsApp para negocios: emitir el recibo y mandarlo al cliente, sin un sistema de facturación grande.',
+      en: 'WhatsApp receipts PWA for businesses: issue the receipt and send it to the customer, without a large billing system.',
     },
   },
   {
@@ -103,9 +120,9 @@ export type Project = {
    */
   engine: 'ia' | 'blindaje' | 'o2o' | 'conversion' | 'webapp'
   name: string
-  /** Live, clickable proof. */
-  url: string
-  urlLabel: string
+  /** Live, clickable proof. Omit when the deploy is paused on purpose. */
+  url?: string
+  urlLabel?: string
   image: string
   /** Contain for brand marks; cover for screenshots. */
   imageFit?: 'cover' | 'contain'
@@ -213,8 +230,6 @@ export const projects: Project[] = [
       es: 'PWA de recibos por WhatsApp',
       en: 'WhatsApp receipts PWA',
     },
-    url: 'https://cobra-rho.vercel.app',
-    urlLabel: 'cobra-rho.vercel.app',
     image: '/projects/cobra-icon.png',
     imageFit: 'contain',
     creditXtraMetrik: true,

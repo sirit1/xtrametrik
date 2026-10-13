@@ -66,7 +66,22 @@ export default function ProjectsShowcase() {
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground text-pretty">
                     {item.problem[locale]}
                   </p>
-                  {item.url ? (
+                  {item.demoOnRequest ? (
+                    <div className="mt-4 flex flex-col gap-3">
+                      <p className="text-xs font-bold uppercase tracking-wide text-brand">
+                        {c.demoOnRequest}
+                      </p>
+                      <a
+                        href={WHATSAPP_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex w-fit items-center gap-2 text-sm font-bold text-brand hover:underline"
+                      >
+                        <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                        {c.servicesCta}
+                      </a>
+                    </div>
+                  ) : item.url ? (
                     <p className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-brand">
                       {item.urlLabel}
                       <ArrowUpRight className="h-4 w-4" aria-hidden="true" />

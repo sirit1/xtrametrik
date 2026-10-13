@@ -6,7 +6,7 @@ import ProjectsShowcase from '@/components/projects-showcase'
 export const metadata: Metadata = {
   title: 'Lo que construimos: miniapps, apps y landings',
   description:
-    'Portafolio de Xtrametrik: Vecino de la Cuadra, Signatio, Café Central, RevelatiO y Cielo Efatá. Miniapps para negocios locales, apps a la medida y landings que convierten.',
+    'Portafolio de Xtrametrik: Vecino de la Cuadra, Signatio, Café Central, Cobra, RevelatiO y Cielo Efatá. Miniapps para negocios locales, apps a la medida y landings que convierten.',
   alternates: { canonical: '/proyectos' },
 }
 
