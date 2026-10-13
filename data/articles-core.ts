@@ -221,7 +221,7 @@ export const articlesCore: Article[] = [
         { type: 'h2', text: 'Por qué acelera ventas' },
         {
           type: 'p',
-          text: 'Los departamentos de compras de grandes cuentas han añadido preguntas de governance de IA a sus cuestionarios de proveedor. Responder con un marco documentado acorta el ciclo de venta; responder con buenas intenciones lo alarga o lo detiene.',
+          text: 'Los departamentos de compras de grandes cuentas han añadido preguntas de gestión del riesgo de IA a sus cuestionarios de proveedor. Responder con un marco documentado acorta el ciclo de venta; responder con buenas intenciones lo alarga o lo detiene.',
         },
         {
           type: 'quote',
@@ -265,7 +265,7 @@ export const articlesCore: Article[] = [
         { type: 'h2', text: 'Why it accelerates sales' },
         {
           type: 'p',
-          text: 'Procurement teams at large accounts have added AI governance questions to their vendor questionnaires. Answering with a documented framework shortens the sales cycle; answering with good intentions stretches or stops it.',
+          text: 'Procurement teams at large accounts have added AI risk-management questions to their vendor questionnaires. Answering with a documented framework shortens the sales cycle; answering with good intentions stretches or stops it.',
         },
         {
           type: 'quote',

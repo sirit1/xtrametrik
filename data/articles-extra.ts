@@ -3,7 +3,7 @@ import type { Article } from '@/lib/articles'
 export const articlesExtra: Article[] = [
   {
     slug: 'alucinaciones-de-ia-en-decisiones',
-    category: 'Governance',
+    category: 'Riesgo',
     readTime: 6,
     date: '2026-06-20',
     es: {
@@ -426,7 +426,7 @@ export const articlesExtra: Article[] = [
         { type: 'h2', text: 'Cómo se controla' },
         {
           type: 'p',
-          text: 'Se define qué resultado sería inaceptable, se mide la distribución real de decisiones y se revisa periódicamente con un responsable asignado. No es un problema de algoritmos: es un problema de gobierno con soporte estadístico.',
+          text: 'Se define qué resultado sería inaceptable, se mide la distribución real de decisiones y se revisa periódicamente con un responsable asignado. No es un problema de algoritmos: es un problema de control del riesgo con soporte estadístico.',
         },
         {
           type: 'quote',
@@ -464,7 +464,7 @@ export const articlesExtra: Article[] = [
         { type: 'h2', text: 'How to control it' },
         {
           type: 'p',
-          text: 'Define which outcome would be unacceptable, measure the real distribution of decisions and review it periodically with a named owner. This is not an algorithm problem: it is a governance problem with statistical support.',
+          text: 'Define which outcome would be unacceptable, measure the real distribution of decisions and review it periodically with a named owner. This is not an algorithm problem: it is a risk-control problem with statistical support.',
         },
         {
           type: 'quote',
@@ -641,7 +641,7 @@ export const articlesExtra: Article[] = [
   },
   {
     slug: 'shadow-ai-en-tu-organizacion',
-    category: 'Governance',
+    category: 'Riesgo',
     readTime: 6,
     date: '2026-05-27',
     es: {
@@ -748,7 +748,7 @@ export const articlesExtra: Article[] = [
             '¿Se entrenan modelos con nuestros datos?',
             '¿Dónde se procesan y cuánto se retienen?',
             '¿Existe registro de consultas exportable?',
-            '¿Quién es el responsable interno de governance de IA?',
+            '¿Quién es el responsable interno del control del riesgo de IA?',
             '¿Han pasado una auditoría independiente?',
             '¿Cómo notifican incidentes y en qué plazo?',
             '¿Qué subprocesadores intervienen?',
@@ -787,7 +787,7 @@ export const articlesExtra: Article[] = [
             'Are models trained on our data?',
             'Where is data processed and how long is it retained?',
             'Is there an exportable prompt log?',
-            'Who is your internal AI governance owner?',
+            'Who is your internal AI risk-control owner?',
             'Have you passed an independent audit?',
             'How and how fast do you notify incidents?',
             'Which subprocessors are involved?',

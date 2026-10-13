@@ -204,11 +204,11 @@
       ],
       "industry": "Fintech",
       "solution": [
-        "Governance IA (ISO 42001)",
+        "Control del riesgo de IA (ISO 42001)",
         "Auditoría de compliance",
         "Arquitectura de datos"
       ],
-      "testimonial": "La IA es poderosa, pero sin governance es riesgosa. XtraMetrik nos dio ambas.",
+      "testimonial": "La IA es poderosa, pero sin control del riesgo es riesgosa. XtraMetrik nos dio ambas.",
       "author": "Chief Compliance Officer, TechBank",
       "images": {
         "hero": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400",
@@ -249,7 +249,7 @@
       "solution": [
         "IA local/privada",
         "Compliance HIPAA",
-        "Governance de datos"
+        "Control del riesgo de datos"
       ],
       "testimonial": "La privacidad del paciente no es negociable. XtraMetrik nos dio IA sin comprometer datos.",
       "author": "Médico Jefe, MediData",

@@ -68,7 +68,7 @@
     },
     {
       "id": "governance-dashboard",
-      "name": "Governance IA (ISO 42001)",
+      "name": "Control del riesgo de IA (ISO 42001)",
       "description": "Sistema de auditoría y compliance para IA. Incluido en todos nuestros servicios como stánddar.",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300",
       "metrics": {
@@ -102,7 +102,7 @@
       "image": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&h=300",
       "phase1": "Data Architecture (Día 0-3): Consolidación de datos de 50 sucursales, historial de entregas, variables geográficas",
       "phase2": "IA Deployment (Día 4-14): Modelo de predicción de demanda, optimización de rutas, asignación automática de entregas",
-      "phase3": "Scale & Monitor (Semana 3+): Mejora continua del modelo, integración con TMS existente, governance de IA",
+      "phase3": "Scale & Monitor (Semana 3+): Mejora continua del modelo, integración con TMS existente, control del riesgo de IA",
       "result": "+78% eficiencia operativa | -51% costo por entrega | +211% cobertura geográfica"
     },
     {
@@ -117,12 +117,12 @@
     },
     {
       "id": "impl-fintech-governance",
-      "name": "Implementación Governance IA - Fintech",
-      "description": "Auditoría y governance de IA para fintech regulada. Cumplimiento ISO 42001 + normativa local.",
+      "name": "Implementación de control del riesgo de IA - Fintech",
+      "description": "Auditoría y control del riesgo de IA para fintech regulada. Cumplimiento ISO 42001 + normativa local.",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300",
       "phase1": "Audit Phase (Día 0-7): Review de modelos IA en uso, risk assessment, mapeo de datos sensibles, documentación",
       "phase2": "Remediation (Día 8-21): Ajustes de modelos, implementación de controles, setup de monitoring, documentación regulatoria",
-      "phase3": "Certification (Semana 4-5): Auditoría externa, certificación ISO 42001, setup de governance board",
+      "phase3": "Certification (Semana 4-5): Auditoría externa, certificación ISO 42001, setup de un comité de control del riesgo",
       "result": "100% Compliance ISO 42001 | 0 risk events | Capacidad de auditoría regulatoria verificable"
     }
   ]
