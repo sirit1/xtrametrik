@@ -4,9 +4,9 @@ import Footer from '@/components/footer'
 import ProjectsShowcase from '@/components/projects-showcase'
 
 export const metadata: Metadata = {
-  title: 'Proyectos entregados: producto real en producción',
+  title: 'Lo que construimos: miniapps, apps y landings',
   description:
-    'Trabajo vivo de la casa matriz, con enlace para comprobarlo: Revelatio, Café Central, Cobra, La Manzanita, Cielo Efatá, Cielo Efatá App Evaluación Emocional y Táchira Protein.',
+    'Portafolio de Xtrametrik: Vecino de la Cuadra, Signatio, Café Central, RevelatiO y Cielo Efatá. Miniapps para negocios locales, apps a la medida y landings que convierten.',
   alternates: { canonical: '/proyectos' },
 }
 

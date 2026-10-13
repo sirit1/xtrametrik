@@ -1,6 +1,89 @@
 import type { Locale } from '@/lib/i18n/dictionary'
 
 /**
+ * Work XtraMetrik sells from the live portfolio.
+ * URLs only if given by the owner or already in this repo. No invented figures.
+ */
+export type BuiltWork = {
+  slug: string
+  name: string
+  url?: string
+  urlLabel?: string
+  image?: string
+  imageFit?: 'cover' | 'contain'
+  imageAlt?: Record<Locale, string>
+  problem: Record<Locale, string>
+}
+
+export const builtWork: BuiltWork[] = [
+  {
+    slug: 'vecino-de-la-cuadra',
+    name: 'Vecino de la Cuadra',
+    problem: {
+      es: 'Miniapps para que un negocio de barrio tome pedidos, muestre su carta o atienda al vecino sin montar un sistema grande.',
+      en: 'Miniapps so a neighborhood shop can take orders, show its menu or serve the block without standing up a large system.',
+    },
+  },
+  {
+    slug: 'signatio',
+    name: 'Signatio',
+    problem: {
+      es: 'App médica para llevar historias clínicas en un solo lugar, en lugar de papel y archivos sueltos.',
+      en: 'Medical app to keep clinical records in one place, instead of paper and loose files.',
+    },
+  },
+  {
+    slug: 'cafe-central',
+    name: 'Café Central',
+    url: 'https://cafe-central-8719.vercel.app',
+    urlLabel: 'cafe-central-8719.vercel.app',
+    image: '/projects/cafe-central-logo.png',
+    imageFit: 'contain',
+    imageAlt: {
+      es: 'Logo de Café Central',
+      en: 'Café Central logo',
+    },
+    problem: {
+      es: 'Landing para que el café muestre su carta y reciba pedidos, sin que el cliente haga fila solo para ver el menú.',
+      en: 'Landing so the café can show its menu and take orders, without a queue just to see what is on offer.',
+    },
+  },
+  {
+    slug: 'revelatio',
+    name: 'RevelatiO',
+    url: 'https://revelatio.app',
+    urlLabel: 'revelatio.app',
+    image: '/brand/revelatio-logo-master.jpeg',
+    imageFit: 'contain',
+    imageAlt: {
+      es: 'Logo de RevelatiO',
+      en: 'RevelatiO logo',
+    },
+    problem: {
+      es: 'Herramienta para estudiar el texto bíblico con un asistente, en lugar de saltar entre Biblias y apuntes sueltos.',
+      en: 'A tool to study the biblical text with an assistant, instead of jumping between Bibles and loose notes.',
+    },
+  },
+  {
+    slug: 'cielo-efata',
+    name: 'Cielo Efatá',
+    url: 'https://cieloefata.com',
+    urlLabel: 'cieloefata.com',
+    image: '/projects/cielo-efata-sello.jpg',
+    imageFit: 'contain',
+    imageAlt: {
+      es: 'Sello de Cielo Efatá',
+      en: 'Cielo Efatá seal',
+    },
+    problem: {
+      es: 'Sitio editorial para publicar la lectura, los cortes y las obras del sello en un dominio propio.',
+      en: 'Editorial site to publish the imprint’s reading, cuts and works on its own domain.',
+    },
+  },
+]
+
+
+/**
  * Real, shipped work.
  *
  * RULE: every field here must be verifiable by clicking the live URL.
