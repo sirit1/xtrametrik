@@ -2,95 +2,95 @@ import type { Article } from '@/lib/articles'
 
 export const articlesCore: Article[] = [
   {
-    slug: 'governance-de-ia-101',
-    category: 'Governance',
+    slug: 'riesgo-de-ia-101',
+    category: 'Riesgo',
     readTime: 7,
     date: '2026-07-20',
     es: {
-      title: 'Governance de IA 101: por qué tu empresa ya está expuesta',
+      title: 'Riesgo de IA 101: por qué tu pyme ya está expuesta',
       excerpt:
-        'Tus equipos usan ChatGPT, Claude y Copilot todos los días. La pregunta no es si adoptaste IA, sino si puedes demostrar quién la usa, con qué datos y bajo qué reglas.',
+        'Tus equipos usan ChatGPT y Claude todos los días. Cada pegado de clientes, precios o contratos es una fuga. La pregunta no es si adoptaste IA, sino si puedes evitar que esos datos —y una multa— salgan de la empresa.',
       takeaways: [
-        'La adopción de IA en las empresas ocurrió de abajo hacia arriba, sin control.',
-        'Governance no es prohibir: es registrar, clasificar y poder demostrar.',
-        'Sin evidencia documental, la carga de la prueba recae sobre la empresa.',
+        'En las pymes la IA entró por cuentas personales, sin inventario ni reglas.',
+        'Gestionar el riesgo no es prohibir: es saber qué sale a ChatGPT o Claude y con qué datos.',
+        'Si no puedes reconstruir lo que se pegó, tampoco puedes defenderte ante un cliente o una sanción.',
       ],
       body: [
         {
           type: 'p',
-          text: 'La mayoría de las direcciones descubre su nivel real de adopción de IA cuando ya es tarde. Nadie firmó un proyecto: los equipos empezaron a usar herramientas gratuitas para redactar propuestas, resumir llamadas y limpiar bases de datos. La productividad subió, la trazabilidad desapareció.',
+          text: 'La mayoría de las direcciones de una pyme descubre su nivel real de uso de IA cuando ya es tarde. Nadie firmó un proyecto: el equipo empezó a pegar texto en ChatGPT o Claude para redactar propuestas, resumir llamadas y limpiar bases de clientes. El trabajo salió más rápido. Los datos de la empresa también salieron.',
         },
-        { type: 'h2', text: 'Governance no significa frenar la IA' },
+        { type: 'h2', text: 'Gestionar el riesgo no significa frenar la IA' },
         {
           type: 'p',
-          text: 'El error más común es plantear el problema como una elección entre innovación y control. Prohibir herramientas solo desplaza el uso a dispositivos personales, donde no hay registro posible. Un marco de governance eficaz hace lo contrario: canaliza el uso hacia entornos donde cada consulta queda registrada y cada dato tiene una clasificación asignada.',
+          text: 'El error más común es plantear el problema como una elección entre innovar y controlar. Prohibir ChatGPT o Claude solo desplaza el uso al móvil personal, donde no queda rastro. Gestionar el riesgo hace lo contrario: deja usar la herramienta y deja claro qué datos nunca pueden pegarse —listas de clientes, precios, contratos, nóminas— porque eso es fuga y, si hay datos personales, puede terminar en multa.',
         },
-        { type: 'h2', text: 'Los cuatro pilares mínimos' },
+        { type: 'h2', text: 'Los cuatro mínimos para una pyme' },
         {
           type: 'ul',
           items: [
-            'Inventario: qué herramientas se usan, en qué área y con qué finalidad.',
-            'Clasificación de datos: qué información nunca puede salir del perímetro.',
-            'Audit trail: registro de consultas, usuarios y respuestas relevantes.',
-            'Revisión independiente: alguien externo valida que el marco funciona.',
+            'Inventario: qué herramientas se usan, en qué área y para qué.',
+            'Clasificación: qué información no puede ir a ChatGPT, Claude u otro modelo.',
+            'Registro: quién pegó qué y cuándo, al menos en los casos que tocan clientes o precios.',
+            'Revisión: alguien con nombre comprueba que la regla se cumple y se corrige lo que falla.',
           ],
         },
         {
           type: 'p',
-          text: 'Con estos cuatro elementos ya se puede responder a un cuestionario de cliente enterprise o a un requerimiento regulatorio. Sin ellos, cualquier respuesta es una declaración de intenciones.',
+          text: 'Con esos cuatro elementos puedes responder a un cliente que pregunta cómo tratáis sus datos, o a un requerimiento de protección de datos. Sin ellos, cualquier respuesta es una declaración de intenciones. El marco no exige un producto instalado: exige evidencia de lo que sale de la empresa.',
         },
         {
           type: 'quote',
-          text: 'Si no puedes reconstruir qué preguntó tu equipo a un modelo el mes pasado, no tienes governance: tienes suerte.',
+          text: 'Si no puedes reconstruir qué pegó tu equipo en ChatGPT o Claude el mes pasado, no gestionas el riesgo: tienes suerte.',
         },
         { type: 'h2', text: 'Dónde empezar esta semana' },
         {
           type: 'p',
-          text: 'Empieza por el inventario, no por la política. Una encuesta interna de diez preguntas suele revelar más herramientas en uso de las que la dirección imagina. Ese mapa es la base para priorizar: primero se controla lo que toca datos de clientes y precios, después el resto.',
+          text: 'Empieza por el inventario, no por la política. Pregunta al equipo qué herramientas usa y con qué tipo de archivo. El mapa sirve para priorizar: primero lo que toca datos de clientes y precios, después el resto. Una circular que prohíbe sin alternativa no reduce la fuga; la oculta.',
         },
       ],
     },
     en: {
-      title: 'AI Governance 101: why your company is already exposed',
+      title: 'AI risk 101: why your SME is already exposed',
       excerpt:
-        'Your teams use ChatGPT, Claude and Copilot every day. The question is not whether you adopted AI, but whether you can prove who uses it, with which data and under which rules.',
+        'Your teams use ChatGPT and Claude every day. Each paste of clients, prices or contracts is a leak. The question is not whether you adopted AI, but whether you can stop that data — and a fine — from leaving the company.',
       takeaways: [
-        'Enterprise AI adoption happened bottom-up, with no controls.',
-        'Governance is not banning: it is logging, classifying and proving.',
-        'With no documented evidence, the burden of proof falls on the company.',
+        'In SMEs, AI arrived through personal accounts, with no inventory and no rules.',
+        'Managing risk is not banning: it is knowing what goes into ChatGPT or Claude, and with which data.',
+        'If you cannot reconstruct what was pasted, you cannot defend yourself before a client or a sanction.',
       ],
       body: [
         {
           type: 'p',
-          text: 'Most boards discover their real level of AI adoption when it is already late. Nobody signed off a project: teams simply started using free tools to draft proposals, summarize calls and clean up databases. Productivity went up, traceability disappeared.',
+          text: 'Most SME leadership discovers their real level of AI use when it is already late. Nobody signed off a project: the team started pasting text into ChatGPT or Claude to draft proposals, summarize calls and clean client lists. The work got faster. Company data left too.',
         },
-        { type: 'h2', text: 'Governance does not mean slowing AI down' },
+        { type: 'h2', text: 'Managing risk does not mean slowing AI down' },
         {
           type: 'p',
-          text: 'The most common mistake is framing this as a choice between innovation and control. Banning tools only pushes usage onto personal devices, where no logging is possible. An effective governance framework does the opposite: it channels usage into environments where every prompt is recorded and every data category has an assigned classification.',
+          text: 'The most common mistake is framing this as a choice between innovation and control. Banning ChatGPT or Claude only pushes usage onto personal phones, where no trace remains. Managing the risk does the opposite: it lets people use the tool and makes clear which data must never be pasted — client lists, prices, contracts, payroll — because that is a leak and, if personal data is involved, it can end in a fine.',
         },
-        { type: 'h2', text: 'The four minimum pillars' },
+        { type: 'h2', text: 'The four minimums for an SME' },
         {
           type: 'ul',
           items: [
             'Inventory: which tools are used, by which team and for what purpose.',
-            'Data classification: which information can never leave the perimeter.',
-            'Audit trail: logging of prompts, users and relevant outputs.',
-            'Independent review: someone external validates that the framework works.',
+            'Classification: which information must never go into ChatGPT, Claude or another model.',
+            'Logging: who pasted what and when, at least when it touches clients or pricing.',
+            'Review: a named person checks that the rule holds and fixes what fails.',
           ],
         },
         {
           type: 'p',
-          text: 'With those four elements you can answer an enterprise client questionnaire or a regulatory request. Without them, any answer is a statement of intent.',
+          text: 'With those four elements you can answer a client who asks how you handle their data, or a data-protection request. Without them, any answer is a statement of intent. The frame does not require an installed product: it requires evidence of what leaves the company.',
         },
         {
           type: 'quote',
-          text: 'If you cannot reconstruct what your team asked a model last month, you do not have governance: you have luck.',
+          text: 'If you cannot reconstruct what your team pasted into ChatGPT or Claude last month, you are not managing the risk: you have luck.',
         },
         { type: 'h2', text: 'Where to start this week' },
         {
           type: 'p',
-          text: 'Start with the inventory, not the policy. A ten-question internal survey usually reveals more tools in use than leadership expects. That map is the basis for prioritization: first control whatever touches client data and pricing, then the rest.',
+          text: 'Start with the inventory, not the policy. Ask the team which tools they use and with what kind of file. That map is the basis for prioritization: first whatever touches client data and pricing, then the rest. A memo that bans tools without an alternative does not reduce leakage; it hides it.',
         },
       ],
     },
@@ -280,41 +280,41 @@ export const articlesCore: Article[] = [
     },
   },
   {
-    slug: 'roi-de-la-governance-de-ia',
+    slug: 'roi-de-gestionar-el-riesgo-de-ia',
     category: 'Business',
     readTime: 7,
     date: '2026-07-11',
     es: {
-      title: 'El ROI de la governance: no es un gasto de seguridad',
+      title: 'El ROI de gestionar el riesgo de IA: no es un gasto de seguridad',
       excerpt:
-        'Ordenar el uso de IA reduce riesgo, pero el retorno visible viene de otro lado: ciclos de venta más cortos, menos retrabajo y decisiones más rápidas.',
+        'Evitar fugas a ChatGPT y Claude reduce el riesgo de multa. El retorno que un comité puede ver también es otro: no perder un cliente porque sus datos salieron de la empresa, y poder responder cuando preguntan cómo usáis la IA.',
       takeaways: [
-        'El ahorro por multas evitadas es real pero difícil de defender internamente.',
-        'El retorno tangible aparece en velocidad comercial y productividad.',
+        'Una fuga a ChatGPT o Claude puede costar un cliente y abrir la puerta a una multa.',
+        'El retorno visible está en no perder cuentas y en seguir vendiendo cuando preguntan por el riesgo.',
         'Sin línea base medida, cualquier cifra de ROI es marketing.',
       ],
       body: [
         {
           type: 'p',
-          text: 'Presentar governance como un seguro contra multas es la peor forma de venderlo internamente. Los comités aprueban inversiones que generan ingresos o liberan capacidad, no las que evitan hipótesis.',
+          text: 'Presentar la gestión del riesgo de IA solo como un seguro contra multas es una conversación difícil dentro de una pyme. Los comités aprueban lo que evita un daño concreto o lo que permite seguir vendiendo, no lo que suena a hipótesis. El daño concreto ya existe: un comercial pega el histórico de una cuenta en ChatGPT o Claude y esos datos salen de la empresa.',
         },
-        { type: 'h2', text: 'Las tres palancas medibles' },
+        { type: 'h2', text: 'Las tres palancas que sí puedes argumentar' },
         {
           type: 'ul',
           items: [
-            'Ciclo de venta: responder cuestionarios de compliance en horas en lugar de semanas.',
-            'Productividad: uso de IA autorizado con plantillas por rol, sin miedo ni bloqueos.',
-            'Retrabajo: menos errores por respuestas de modelos sin validación.',
+            'Fuga evitada: clientes, precios y contratos no se pegan en ChatGPT ni en Claude.',
+            'Multa evitable: si hay datos personales, un regulador puede exigir que expliques el tratamiento. Sin registro, no hay defensa.',
+            'Venta que no se cae: un cliente que pregunta cómo usáis IA recibe una respuesta documentada, no una improvisación.',
           ],
         },
         {
           type: 'p',
-          text: 'En los casos que hemos medido, la palanca comercial explica la mayor parte del retorno. Una cuenta enterprise desbloqueada compensa el proyecto completo varias veces.',
+          text: 'Ninguna de esas palancas pide un producto instalado ni una cifra inventada. Pide poder decir qué herramientas usa el equipo, qué datos no pueden salir y quién revisa que se cumpla. Perder una cuenta por una fuga, o no poder responder a un requerimiento, es un coste que la dirección ya entiende.',
         },
         { type: 'h2', text: 'Cómo medirlo sin engañarse' },
         {
           type: 'p',
-          text: 'Antes de tocar nada, se congela una línea base: tiempo medio de respuesta a cuestionarios, horas dedicadas a tareas repetitivas, número de incidencias por contenido incorrecto. Sin esos tres números, el informe final es una narración.',
+          text: 'Antes de tocar nada, se congela una línea base: herramientas en uso, tipos de dato que el equipo pega en ChatGPT o Claude, y el tiempo que tardáis en responder si un cliente pregunta qué habéis hecho con su información. Sin esos tres puntos, el informe final es una narración. No uses porcentajes ni retornos que no hayas medido en tu propia empresa.',
         },
         {
           type: 'quote',
@@ -323,36 +323,36 @@ export const articlesCore: Article[] = [
       ],
     },
     en: {
-      title: 'The ROI of governance: it is not a security expense',
+      title: 'The ROI of managing AI risk: it is not a security expense',
       excerpt:
-        'Organizing AI usage reduces risk, but the visible return comes from elsewhere: shorter sales cycles, less rework and faster decisions.',
+        'Stopping leaks to ChatGPT and Claude reduces fine risk. The return a committee can see is also this: not losing a client because their data left the company, and being able to answer when they ask how you use AI.',
       takeaways: [
-        'Savings from avoided fines are real but hard to defend internally.',
-        'Tangible return shows up in commercial speed and productivity.',
+        'A leak to ChatGPT or Claude can cost a client and open the door to a fine.',
+        'Visible return sits in accounts you do not lose, and in still being able to sell when they ask about the risk.',
         'With no measured baseline, any ROI figure is marketing.',
       ],
       body: [
         {
           type: 'p',
-          text: 'Pitching governance as insurance against fines is the worst way to sell it internally. Committees approve investments that generate revenue or release capacity, not ones that avoid hypotheticals.',
+          text: 'Pitching AI risk management only as insurance against fines is a hard conversation inside an SME. Committees approve what avoids a concrete harm or what lets you keep selling, not what sounds hypothetical. The concrete harm already exists: a sales rep pastes an account history into ChatGPT or Claude and that data leaves the company.',
         },
-        { type: 'h2', text: 'The three measurable levers' },
+        { type: 'h2', text: 'The three levers you can actually argue' },
         {
           type: 'ul',
           items: [
-            'Sales cycle: answering compliance questionnaires in hours instead of weeks.',
-            'Productivity: authorized AI usage with role-based templates, without fear or blockers.',
-            'Rework: fewer errors caused by unvalidated model output.',
+            'Leak avoided: clients, prices and contracts are not pasted into ChatGPT or Claude.',
+            'Avoidable fine: if personal data is involved, a regulator can demand that you explain the processing. With no log, there is no defence.',
+            'A sale that does not fall through: a client who asks how you use AI gets a documented answer, not an improvisation.',
           ],
         },
         {
           type: 'p',
-          text: 'In the cases we have measured, the commercial lever explains most of the return. One unblocked enterprise account pays for the whole project several times over.',
+          text: 'None of those levers requires an installed product or an invented figure. They require being able to say which tools the team uses, which data must not leave, and who checks that the rule holds. Losing an account to a leak, or being unable to answer a request, is a cost leadership already understands.',
         },
         { type: 'h2', text: 'How to measure it honestly' },
         {
           type: 'p',
-          text: 'Before touching anything, freeze a baseline: average response time to questionnaires, hours spent on repetitive tasks, number of incidents from incorrect content. Without those three numbers, the final report is storytelling.',
+          text: 'Before touching anything, freeze a baseline: tools in use, types of data the team pastes into ChatGPT or Claude, and how long it takes you to answer if a client asks what you have done with their information. Without those three points, the final report is storytelling. Do not use percentages or returns you have not measured in your own company.',
         },
         {
           type: 'quote',
