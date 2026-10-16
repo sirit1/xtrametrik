@@ -7,7 +7,10 @@ const nextConfig = {
     unoptimized: true,
   },
   async rewrites() {
-    return [{ source: '/academy', destination: '/academy/index.html' }]
+    return [
+      { source: '/academy', destination: '/academy/index.html' },
+      { source: '/academy/kam', destination: '/academy/kam/index.html' },
+    ]
   },
   async redirects() {
     return [
