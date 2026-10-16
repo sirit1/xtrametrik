@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   keywords: HOME_KEYWORDS,
   verification: {
     google: GOOGLE_SITE_VERIFICATION,
+    other: {
+      'facebook-domain-verification': 'ku1tujyw37qbufrgsn9ogoa03ezvc7',
+    },
   },
   openGraph: {
     title: HOME_TITLE,
