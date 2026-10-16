@@ -16,6 +16,12 @@ export default function LegalPage() {
       <Header />
       <main>
         <LegalContent />
+        <section id="titular" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+          <h2 className="text-xl font-bold mb-3">Titular del sitio</h2>
+          <p className="text-sm text-foreground/70">
+            XtraMetrik es un nombre comercial de Alejandro José Sirit Acosta · San Cristóbal, Táchira, Venezuela
+          </p>
+        </section>
       </main>
       <Footer />
     </div>

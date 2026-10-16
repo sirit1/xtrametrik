@@ -122,6 +122,10 @@ export default function Footer() {
           </nav>
         </div>
 
+        <p className="text-xs text-foreground/50 text-center mb-4" data-legal-entity>
+          XtraMetrik es un nombre comercial de Alejandro José Sirit Acosta · San Cristóbal, Táchira, Venezuela
+        </p>
+
         <div className="border-t border-border/40 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-xs text-foreground/50">
             © {year} XtraMetrik. {t.footer.rights}
