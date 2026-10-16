@@ -6,6 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async rewrites() {
+    return [{ source: '/academy', destination: '/academy/index.html' }]
+  },
   async redirects() {
     return [
       {

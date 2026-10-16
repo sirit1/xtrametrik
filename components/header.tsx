@@ -15,6 +15,7 @@ export default function Header() {
     { label: t.homeAilock.title, href: '/#ailock' },
     { label: t.nav.projects, href: '/proyectos' },
     { label: t.nav.blog, href: '/blog' },
+    { label: 'Academy', href: '/academy' },
     { label: t.nav.contact, href: '/#diagnostico' },
   ]
 
