@@ -16,6 +16,7 @@ export default function Header() {
     { label: t.nav.projects, href: '/proyectos' },
     { label: t.nav.blog, href: '/blog' },
     { label: 'Academy', href: '/academy' },
+    { label: 'Seguimentum', href: '/seguimentum' },
     { label: t.nav.contact, href: '/#diagnostico' },
   ]
 

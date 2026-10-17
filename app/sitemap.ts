@@ -9,6 +9,7 @@ const STATIC_PATHS = [
   '/legal',
   '/caso-real',
   '/diagnostico-riesgo-ia',
+  '/seguimentum',
 ] as const
 
 export default function sitemap(): MetadataRoute.Sitemap {
